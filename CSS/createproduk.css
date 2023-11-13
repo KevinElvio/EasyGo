@@ -25,13 +25,16 @@ html, body{
     justify-content: center;
     width: 350px;
     height: 350px;
-    background-color: grey;
+    background-color: rgb(213, 213, 213);
     text-align: center;
     margin-right: 30px;
+    font-size: 13px;
+    border: 1px solid black;
 }
 
 .inputan input{
     width: 80%; /* Sesuaikan lebar input dengan kebutuhan */
-    padding: 10px; /* Sesuaikan padding input dengan kebutuhan */
+    /* padding: 10px; Sesuaikan padding input dengan kebutuhan */
     box-sizing: border-box;
+    padding: 12%;
 }
