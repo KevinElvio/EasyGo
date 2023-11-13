@@ -20,12 +20,18 @@ html, body{
 }
 
 .inputan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 350px;
     height: 350px;
     background-color: grey;
+    text-align: center;
     margin-right: 30px;
 }
 
 .inputan input{
-    margin: auto 0;
+    width: 80%; /* Sesuaikan lebar input dengan kebutuhan */
+    padding: 10px; /* Sesuaikan padding input dengan kebutuhan */
+    box-sizing: border-box;
 }
