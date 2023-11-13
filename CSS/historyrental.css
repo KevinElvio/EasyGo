@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.judul{
+    font-size: 30px;
+    font-weight: 600;
+    color: #004AAD;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.table-container{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-shadow: 5px 5px 10px rgba(148, 148, 148, 0.5);
+}
+
+.table-container .table th, 
+.table-container .table td{
+    vertical-align: middle;
+}
+
+.table-container .table .thead-light th {
+    padding: 10px;
+    color: black !important;
+}
+
+.thead {
+    border-radius: 15px !important;
+}
+
+.thead-light tr th{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.thead-light tr th.start {
+    border-radius: 5px 0 0 5px !important;
+}
+
+.thead-light tr th.end {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+tbody td{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+tbody td p{
+    margin: 0 auto;
+}
+
+.table-container .table img{
+    width: 70px;
+    border-radius: 5px;
+}
+
+tbody tr .status{
+    font-weight: 500;
+    color: rgb(27, 172, 27);
+}
+
+tbody tr .detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #004AAD;
+}
+
+.detail iconify-icon{
+    font-size: 18px;
+}
+
+tbody tr .detail:hover{
+    background-color: rgb(190, 190, 190);
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    transform: scale(1.02) translateY(3px)
+}
+
+
