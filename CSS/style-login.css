@@ -20,7 +20,9 @@ html, body{
     justify-content: center;
     margin-left: 40%;
     margin-right: 40%;
-    padding-bottom: 15%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
     margin-top: 8%;
     background-color: white;
     border-radius: 3%;
@@ -47,27 +49,37 @@ html, body{
 }
 
 .username-login input{
-    background-color: red;
     border: none;
     border-bottom: 1px solid black;
     height: 50px;
     width: 250px;
+    font-size: 15px;
+}
+.username-login input:focus{
+    outline: none;
 }
 .username-login iconify-icon{
-    background-color: #004AAD;
     font-size: 36px;
+    margin-top: 5%;
+    margin-right: 5px;
+    opacity: 50%;
 }
 .password-login input{
-    background-color: red;
     border: none;
     border-bottom: 1px solid black;
     margin-top: 30px;
     height: 50px;
     width: 250px;
+    font-size: 15px;
+}
+.password-login input:focus{
+    outline: none;
 }
 .password-login iconify-icon{
-    background-color: #004AAD;
     font-size: 36px;
+    margin-top: 15%;
+    margin-right: 5px;
+    opacity: 50%;
 }
 
 .button-login{
@@ -77,4 +89,18 @@ html, body{
     border-radius: 10px;
     height: 55px;
     width: 287px;
+    border-color: transparent;
+    font-size: 25px;
+}
+.button-login:hover{
+    margin-top: 20%;
+    background-color: #00285c;
+    color: white;
+    border-radius: 10px;
+    height: 55px;
+    width: 287px;
+    border-color: transparent;
+    font-size: 25px;
+    animation: alternate;
+    animation-delay: 3s;
 }
