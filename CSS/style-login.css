@@ -91,16 +91,14 @@ html, body{
     width: 287px;
     border-color: transparent;
     font-size: 25px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+
 }
 .button-login:hover{
-    margin-top: 20%;
-    background-color: #00285c;
-    color: white;
-    border-radius: 10px;
-    height: 55px;
-    width: 287px;
-    border-color: transparent;
-    font-size: 25px;
-    animation: alternate;
-    animation-delay: 3s;
+    background-color: #002861;
+    transform: translateY(-5px);
 }
