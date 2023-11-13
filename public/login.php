@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
-    <link rel="icon" href="../Asets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style-login.css">
+    <link rel="icon" href="../public/img/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/style-login.css">
 </head>
 
 <body>
     <div class="login">
-        <img src="../Asets/img/background-login.png" alt="">
+        <img src="../public/img/img/background-login.png" alt="">
         <div class="box">
-            <form>
+            <form> 
                 <H1>LOGIN</H1>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
