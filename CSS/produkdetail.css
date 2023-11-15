@@ -1,0 +1,56 @@
+.container1 {
+    display: flex;
+}
+
+.box1 img {
+    width: 37rem;
+    height: 30rem;
+    margin-left: 20vh;
+    margin-top: 15vh;
+}
+
+
+.box2 {
+    width: 70vh;
+    height: 70vh;
+    margin-left: 10vh;
+    margin-top: 15vh;
+}
+
+.box2 div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.box2 button {
+    width: 9rem;
+    height: 3rem;
+    margin-left: 20rem;
+    border: #004AAD;
+    color: white;
+    background-color: #004AAD;
+    cursor: pointer;
+}
+
+h1{
+    font-family: Poppins;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+
+}
+
+h2{
+    padding-top: 2rem;
+    font-family: Poppins;
+    letter-spacing: 0.3rem;
+}
+
+h4{
+    padding-left: 2rem;
+}
+
+h5 {
+    color: gray;
+}

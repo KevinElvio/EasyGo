@@ -1,0 +1,50 @@
+.container1 {
+    display: flex ;
+    justify-content: center;
+    margin :0 auto;
+    margin-top: 2%;
+    }
+
+button {
+    width: 16vh;
+    height: 8vh;
+    margin-left: 10vh;
+    border-color: #004AAD;
+    border-radius: 13%;
+    cursor: pointer;
+}
+
+.mobil {
+    background-color: #004AAD;
+    color: white;
+}
+
+.motor {
+    background-color: white;
+    color: black;
+}
+
+.container2{
+    display: grid;
+    justify-items: center;
+    margin-top: 10vh;
+}
+.box {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-items: center; 
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
+    cursor: pointer;
+}
+
+.box div {
+    margin-left: 20%;
+}
+
+.box img {
+    width: 15vh;
+    height: 9vh;
+    margin-left: 10%;
+}
