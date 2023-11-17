@@ -61,10 +61,6 @@ html, body{
     outline: none;
 }
 
-.form-penyewa{
-    display: none;
-}
-
 .button-login{
     margin-top: 20%;
     background-color: #004AAD;

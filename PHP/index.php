@@ -15,12 +15,12 @@
     <div class="atas">
         <img src="../Asets/img/logo.png" alt="">
         <div class="tombol">
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
             <a href="#">History</a>
             <a href="#">Profil</a>
         </div>
         <div class="login-awal">
-            <button>Login</button>
+            <button><a href="login.php">Login</a></button>
         </div>
     </div>
 
