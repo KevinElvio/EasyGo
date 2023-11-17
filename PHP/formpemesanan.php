@@ -54,13 +54,6 @@
                         <input type="text" placeholder="No Telepon">
                     </div>
             </div>
-            <div class="input">
-                <h3> Harga Sewa</h3>
-                    <div class="logo">
-                        <iconify-icon icon="solar:tag-price-bold" width="35" height="35"></iconify-icon>
-                        <input type="text" placeholder="Harga Sewa">
-                    </div>
-            </div>
             
         </div>
         <div class="box2">

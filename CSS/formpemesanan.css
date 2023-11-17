@@ -47,7 +47,7 @@
 input {
     width: 15rem;
     height: 2rem;
-    border: white
+    border: white;
     border-radius: 0.7rem;
     padding-left: 0.5rem;
     margin-left: 0.5rem;
@@ -79,7 +79,7 @@ table {
 
 
 .input{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .logo{
