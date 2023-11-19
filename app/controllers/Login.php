@@ -1,23 +1,20 @@
 <?php
 
 class login extends Controller{
-    // public function index($nama = 'Kevin', $pekerjaan = 'Mahasiswa')
-    // {
-    //     echo"Hello $nama, Saya bekerja sebagai $pekerjaan ";
-    // }
-    // public function page()
-    // {
-    //     echo"Hello, This is About";
-    // }
 
     public function index()
     {
-        $this->view('login/login');
+        $this->view('user/login/login');
     }
-
     public function register()
     {
-        $this->view('login/register-user');
+        $this->view('user/login/register');
+    }
+    public function logout()
+    {
+        $this->view('user/login/logout');
     }
 
+
+    
 }
