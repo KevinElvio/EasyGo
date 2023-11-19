@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: #BBD8FF;
+}
+
+.atas{
+    display: flex;
+}
+
+.atas img{
+    width: 7%;
+    margin-left: 3%;
+}
+
+.tombol{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.tombol a{
+    font-size: 12px;
+    margin: 0 auto; 
+    display: block;
+    padding: 0 38%; 
+    text-decoration: none;
+    color: black;
+}
+
+.tombol a:hover{
+    font-size: 13px;
+    font-weight: 500;
+    color: #0035ba;
+    text-shadow: 1px 2px 3px #A7ABB6;
+    transform: translateX(0.15em);
+}
+
+.login-awal{
+   display: inline-block;
+   margin-top: 1.5%;
+   margin-left: 25%;
+}
+
+.login-awal button{
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #004AAD;
+    background-color: #BBD8FF;
+}
+
+.tengah{
+    margin-top: 5%;
+}
+
+.tengah p{
+    text-align: center;
+}
+
+.satu, .tiga{
+    font-size: 14px;
+    color: #516371;
+    letter-spacing: 0.2px;
+}
+
+.satu{
+    margin-bottom: 1%;
+}
+
+.dua{
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 2%;
+}
+
+.tiga{
+    margin-bottom: 1%;
+}
+
+.list ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.list ul li{
+    font-size: 10px;
+    font-weight: 350;
+    color: #516371;
+    letter-spacing: 0.2px;
+    padding-left: 2%;
+}
+
+.list ul li::before {
+    content: '\2022';
+    color: #516371;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.daftar-tengah{
+    margin-top: 2%;
+    display: grid;
+    place-items: center;
+}
+
+.btn-daftar{
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+    color: white;
+    font-weight: 550;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #004AAD;
+    letter-spacing: 0.2px;
+}
+
+.icon-tengah{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.icon-tengah iconify-icon{
+    font-size: 23px;
+    color: #000000;
+    padding: 0.9%;
+}
+
+.kotak-putih{
+    width: 700px;
+    height: 235px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3.5%;
+}
+
+.isian-kotak {
+    display: flex;
+    padding: 20px;
+}
+
+.satu-kiri{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.kiri-pertama{
+    font-size: 29px;
+    font-weight: 750;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    padding-top: 2%;
+    color: #2D2D2D;
+}
+
+.isian-kedua{
+    margin-top: 7%;
+    font-size: 12px;
+    color: #A7ABB6;
+}
+
+.isian-abu{
+    margin-top: 10%;
+    font-size: 12px;
+    color: #A7ABB6;
+}
+
+.dua-tengah{
+    margin-left: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tengah-pertama{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+    padding-top: 2%;
+    color: #0041E8;
+}
+
+.tiga-kanan{
+    margin-left: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.daftar-kotak{
+    margin-top:-3%;
+    margin-right: 6%;
+    display: block;
+    float: right;
+}
+
+.btn-kotak{
+    height: 35px;
+    width: 110px;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #004AAD;
+    letter-spacing: 0.2px;
+}

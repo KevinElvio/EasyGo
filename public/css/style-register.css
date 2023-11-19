@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+.login img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-top: -3%;
+}
+.box{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 14px 15px 72px -12px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 14px 15px 72px -12px rgba(0,0,0,0.48);
+    -moz-box-shadow: 14px 15px 72px -12px rgba(0,0,0,0.48);
+}
+
+.box form h1{
+    text-align: center;
+    color: #03008F;
+    font-size: 5vh;
+}
+
+.box form{
+    justify-content: center;
+    margin-top: 35%;
+}
+
+.ketentuan{
+    font-size: 3vh;
+}
+
+.register{
+    display: flex ;
+}
+
+.register input{
+    border: none;
+    border-bottom: 1px solid black;
+    height: 10vh;
+    width: 40vh;
+    font-size: 15px;
+    padding: auto;
+}
+.register input:focus{
+    outline: none;
+}
+
+.button-login{
+    margin-top: 20%;
+    background-color: #004AAD;
+    color: white;
+    border-radius: 10px;
+    height: 55px;
+    width: 287px;
+    border-color: transparent;
+    font-size: 25px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+
+}
+.button-login:hover{
+    background-color: #002861;
+    transform: translateY(-5px);
+}
+
+.form-penyewa {
+    display: none;
+}
