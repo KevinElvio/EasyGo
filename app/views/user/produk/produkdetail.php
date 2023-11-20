@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/produkdetail.css">
+    <link rel="stylesheet" href="<?= BASEURL;?>/css/produkdetail.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     ?>
     <div class="container1">
         <div class="box1">
-            <img src='../Asets/img/surabaya.jpg' alt="mobil">
+            <img src='<?= BASEURL;?>/img/surabaya.jpg' alt="mobil">
         </div>
         <div class="box2">
             <h1>avanza</h1>

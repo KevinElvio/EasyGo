@@ -8,7 +8,7 @@ include("navbaruser.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/profiluser.css">
+    <link rel="stylesheet" href="<?= BASEURL;?>/css/profiluser.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@ include("navbaruser.php");
         <h1>Seller</h1>
         <h2>Kevin Elvio</h2>
         <div class="keterangan">
-            <img src="../Asets/img/profil.JPG" alt="">
+            <img src="<?= BASEURL;?>/img/profil.JPG" alt="">
             <div class="telepon">
                 <iconify-icon icon="lets-icons:phone-light"></iconify-icon>
                 <h4>0853423458923</h4>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/formpemesanan.css">
+    <link rel="stylesheet" href="<?= BASEURL;?>/css/formpemesanan.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div class="judul">
             EasyGo Rental Form
         </div>
-        <img src='../Asets/img/avanza.jpg' alt="mobil">
+        <img src='<?= BASEURL;?>/img/avanza.jpg' alt="mobil">
     </div>
     <div class="container2">
         <div class="box1">
