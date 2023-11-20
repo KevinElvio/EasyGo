@@ -16,20 +16,21 @@
         <div class="box">
             <form>
                 <H1>Register</H1>
+                <form action="" method="post"></form>
                 <div class="register">
-                    <input type="text" placeholder="Nama">
+                    <input type="text" placeholder="Nama" name="nama" id="nama">
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" name="username" id="username">
                 </div>
                 <div class="register">
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" name="email" id="email">
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password" id="password">
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Re-Password">
+                    <input type="password" placeholder="Re-Password" name="password" id="password">
                 </div>
                 <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox">
@@ -37,19 +38,19 @@
                 </label>
                 <div class="form-penyewa">
                     <div class="register">
-                        <input type="text" placeholder="Nama Rental">
+                        <input type="text" placeholder="Nama Rental" name="namaRental">
                     </div>
                     <div class="register">
-                        <input type="text" placeholder="No Telepon">
+                        <input type="text" placeholder="No Telepon" name="telp">
                     </div>
                     <div class="register">
-                        <input type="text" placeholder="Provinsi">
+                        <input type="text" placeholder="Provinsi" name="provinsi">
                     </div>
                     <div class="register">
-                        <input type="text" placeholder="Kota">
+                        <input type="text" placeholder="Kota" name="kota">
                     </div>
                 </div>
-                <input class="button-login" type="button" value="Register">
+                <input class="button-login" type="button" value="Register" name="register" >
             </form>
         </div>
     </div>
