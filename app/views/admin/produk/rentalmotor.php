@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    include "navbarrental.php";
+    // include "navbarrental.php";
     ?>
 
     <div class="button-atas">

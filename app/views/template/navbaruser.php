@@ -7,7 +7,7 @@
     <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="icon" href="Asets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/navbaruser.css">
+    <link rel="stylesheet" href="<?= BASEURL;?>/css/navbaruser.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 

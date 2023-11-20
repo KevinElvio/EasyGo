@@ -6,9 +6,11 @@ class Produk extends Controller{
         $this->view("user/produk/produkuser");
     }
     public function detail(){
+        $this->view("template/navbaruser");
         $this->view("user/produk/produkdetail");
     }
     public function pemesanan(){
+        $this->view("template/navbaruser");
         $this->view("user/produk/formpemesanan");
     }
 }

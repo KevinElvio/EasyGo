@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include "navbaruser.php";
+    // include "navbaruser.php";
     ?>
     <div class="container1">
         <div class="box1">
