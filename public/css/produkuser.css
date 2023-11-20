@@ -4,7 +4,12 @@
     margin :0 auto;
     margin-top: 2%;
     }
-
+    
+a{
+    width: 89rem;
+    margin-left: 5rem;
+    text-decoration: none;
+}
 button {
     width: 16vh;
     height: 8vh;
@@ -48,7 +53,6 @@ button {
     justify-items: center; 
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
     cursor: pointer;
-    margin-top: 2rem;
 }
 
 .car div {

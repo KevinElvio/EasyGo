@@ -42,7 +42,7 @@ html, body{
 
 .username-login{
     display: flex ;
-    margin-top: 30px;
+    margin-top: 1.8rem;
 }
 .password-login{
     display: flex ;
@@ -51,15 +51,15 @@ html, body{
 .username-login input{
     border: none;
     border-bottom: 1px solid black;
-    height: 50px;
-    width: 250px;
-    font-size: 15px;
+    height: 3.135rem;
+    width: 15.6rem;
+    font-size: 0.9rem;
 }
 .username-login input:focus{
     outline: none;
 }
 .username-login iconify-icon{
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-top: 5%;
     margin-right: 5px;
     opacity: 50%;
@@ -67,16 +67,16 @@ html, body{
 .password-login input{
     border: none;
     border-bottom: 1px solid black;
-    margin-top: 30px;
-    height: 50px;
-    width: 250px;
-    font-size: 15px;
+    margin-top: 1.8rem;
+    height: 3.125rem;
+    width: 15.6rem;
+    font-size: 0.9rem;
 }
 .password-login input:focus{
     outline: none;
 }
 .password-login iconify-icon{
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-top: 15%;
     margin-right: 5px;
     opacity: 50%;
@@ -86,11 +86,11 @@ html, body{
     margin-top: 20%;
     background-color: #004AAD;
     color: white;
-    border-radius: 10px;
-    height: 55px;
-    width: 287px;
+    border-radius: 0.8rem;
+    height: 3.4rem;
+    width: 17.9rem;
     border-color: transparent;
-    font-size: 25px;
+    font-size: 1.5rem;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;

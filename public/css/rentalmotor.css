@@ -17,16 +17,16 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 .mobil, .motor{
-    width: 120px;
-    height: 35px;
-    font-size: 13px;
+    width: 7.5rem;
+    height: 2.1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     background-color: white;
 }
 
@@ -52,13 +52,13 @@ html, body{
 .produk-motor{
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
 .produk-motor img{
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: block;
     transition: transform 0.5s;
 }
@@ -68,19 +68,19 @@ html, body{
     height: 0;
     background: rgba(97, 97, 97, 0.6);
     position: absolute;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     left: 0;
     bottom: 0;
     display: flex;
     overflow: hidden;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     transition: background-color 0.3s ease;
     flex-direction: column;
 }
 
 .layer p{
     color:#ffffff;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     position: absolute;
@@ -97,18 +97,18 @@ html, body{
     align-items: center;
     margin-right: 12%;
     margin-top: 3%;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 .button-icon button{
-    width: 30px;
-    height: 35px;
+    width: 1.875rem;
+    height: 2.1rem;
     border-style: none;
     border-radius: 3px;
 }
 
 .button-icon iconify-icon{
-    font-size: 17px;
+    font-size: 1.1rem;
     color: #000000;
 }
 
@@ -137,15 +137,15 @@ html, body{
 }
 
 .tambah-motor button{
-    width: 65px;
-    height: 65px;
+    width: 4rem;
+    height: 4rem;
     border-style: none;
     border-radius: 5px;
     background-color: #cecece;
 }
 
 .plus-motor iconify-icon{
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #000000;
 }
 

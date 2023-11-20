@@ -15,9 +15,9 @@
     <div class="atas">
         <img src="../Asets/img/logo.png" alt="">
         <div class="tombol">
-            <a href="#" onclick="home()">Home</a>
-            <a href="#" onclick="history()">History</a>
-            <a href="#" onclick="profil()">Profil</a>
+            <a href="<?= BASEURL;?>/Destinasi" onclick="home()">Home</a>
+            <a href="<?= BASEURL;?>/History" onclick="history()">History</a>
+            <a href="<?= BASEURL;?>/Profile" onclick="profil()">Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>

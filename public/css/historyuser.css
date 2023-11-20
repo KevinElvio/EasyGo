@@ -33,17 +33,17 @@ html, body{
 }
 
 .table-container .table .thead-light th {
-    padding: 10px;
+    padding: 0.7rem;
     color: black !important;
 }
 
 .thead {
-    border-radius: 15px !important;
+    border-radius: 1rem !important;
 }
 
 .thead-light tr th{
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 600;
     vertical-align: middle;
 }
@@ -58,7 +58,7 @@ html, body{
 
 tbody td{
     text-align: center;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -67,8 +67,8 @@ tbody td p{
 }
 
 .table-container .table img{
-    width: 70px;
-    border-radius: 5px;
+    width: 4.3rem;
+    border-radius: 0.5;
 }
 
 tbody tr .status{
@@ -85,16 +85,14 @@ tbody tr .detail{
 }
 
 .detail iconify-icon{
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 tbody tr .detail:hover{
     background-color: rgb(190, 190, 190);
-    width: 80px;
-    height: 35px;
-    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.4rem;
     font-weight: 600;
     transform: scale(1.02) translateY(3px)
 }
-
-

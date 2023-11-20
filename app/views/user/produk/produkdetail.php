@@ -35,17 +35,14 @@
             <iconify-icon icon="fluent:text-description-20-regular" width="40" height="40"></iconify-icon>
                 <h4>mobil keluaran tahun 2019 ini tidak pernah mengalami kendala saat dijalan kecuali terkena jebakan paku</h4>
             </div>
-            <button onclick="myfungsi()">
+            <a href="<?= BASEURL;?>/produk/pemesanan">
+            <button>
                 Rent Now ->
             </button>
+            </a>
 
         </div>
     </div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script>
-        function myfungsi() {
-        window.location.href = "formpemesanan.php";
-        }
-    </script>
 </body>
 </html>

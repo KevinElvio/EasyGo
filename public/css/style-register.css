@@ -66,11 +66,11 @@ html, body{
     margin-top: 20%;
     background-color: #004AAD;
     color: white;
-    border-radius: 10px;
-    height: 55px;
-    width: 287px;
+    border-radius: 0.625rem;
+    height: 3.4rem;
+    width: 17.9rem;
     border-color: transparent;
-    font-size: 25px;
+    font-size: 1.5rem;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;

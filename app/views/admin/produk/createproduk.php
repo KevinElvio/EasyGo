@@ -30,35 +30,35 @@
                 <div class="form-1">
                     <label for="MerkMobil">Merk Mobil</label>
                     <div class="input-with-icon">
-                        <iconify-icon icon="arcticons:car"></iconify-icon>
+                        <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
                         <input type="text" name="MerkMobil" id="">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="HargaSewa">Harga Sewa</label>
                     <div class="input-with-icon">
-                        <iconify-icon icon="fa6-solid:rupiah-sign"></iconify-icon>
+                        <iconify-icon icon="fa6-solid:rupiah-sign" width="30" height="30"></iconify-icon>
                         <input type="text" name="MerkMobil" id="">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="TotalKilo">Total Kilometer</label>
                     <div class="input-with-icon">
-                        <iconify-icon icon="material-symbols-light:speed-outline"></iconify-icon>
+                        <iconify-icon icon="material-symbols-light:speed-outline" width="30" height="30"></iconify-icon>
                         <input type="text" name="MerkMobil" id="">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="TahunKeluar">Tahun Keluaran</label>
                     <div class="input-with-icon">
-                        <iconify-icon icon="ph:calendar-thin"></iconify-icon>
+                        <iconify-icon icon="ph:calendar-thin" width="30" height="30"></iconify-icon>
                         <input type="text" name="MerkMobil" id="">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="Deskripsi">Deskripsi Singkat</label>
                     <div class="input-with-icon">
-                        <iconify-icon icon="material-symbols-light:text-ad-outline"></iconify-icon>
+                        <iconify-icon icon="material-symbols-light:text-ad-outline" width="30" height="30"></iconify-icon>
                         <input type="text" name="MerkMobil" id="">
                     </div>
                 </div>
