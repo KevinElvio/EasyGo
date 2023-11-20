@@ -13,7 +13,7 @@
 
 <body>
     <div class="atas">
-        <img src="../Asets/img/logo.png" alt="">
+        <img src="<?= BASEURL; ?>/img/logo.png" alt="">
         <div class="tombol">
             <a href="index.php">Home</a>
             <a href="#">History</a>
