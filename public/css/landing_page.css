@@ -32,7 +32,7 @@ body{
 }
 
 .tombol a{
-    font-size: 12px;
+    font-size: 0.8rem;
     margin: 0 auto; 
     display: block;
     padding: 0 38%; 
@@ -41,7 +41,7 @@ body{
 }
 
 .tombol a:hover{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #0035ba;
     text-shadow: 1px 2px 3px #A7ABB6;
@@ -55,12 +55,12 @@ body{
 }
 
 .login-awal button{
-    height: 30px;
-    width: 70px;
-    font-size: 12px;
+    height: 1.8rem;
+    width: 6rem;
+    font-size: 0.8rem;
     Font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    border-radius: 5px;
+    border-radius: 0.4rem;
     border: 1px solid #004AAD;
     background-color: #BBD8FF;
 }
@@ -74,7 +74,7 @@ body{
 }
 
 .satu, .tiga{
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #516371;
     letter-spacing: 0.2px;
 }
@@ -84,7 +84,7 @@ body{
 }
 
 .dua{
-    font-size: 46px;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 1;
@@ -102,7 +102,7 @@ body{
 }
 
 .list ul li{
-    font-size: 10px;
+    font-size: 0.7rem;
     font-weight: 350;
     color: #516371;
     letter-spacing: 0.2px;
@@ -112,8 +112,8 @@ body{
 .list ul li::before {
     content: '\2022';
     color: #516371;
-    font-size: 13px;
-    margin-right: 5px;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
 }
 
 .daftar-tengah{
@@ -123,13 +123,13 @@ body{
 }
 
 .btn-daftar{
-    height: 40px;
-    width: 150px;
-    font-size: 12px;
+    height: 2.5rem;
+    width: 9.3rem;
+    font-size: 0.8rem;
     color: white;
     font-weight: 550;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #004AAD;
     letter-spacing: 0.2px;
 }
@@ -141,16 +141,16 @@ body{
 }
 
 .icon-tengah iconify-icon{
-    font-size: 23px;
+    font-size: 1.7rem;
     color: #000000;
     padding: 0.9%;
 }
 
 .kotak-putih{
-    width: 700px;
-    height: 235px;
+    width: 43.7rem;
+    height: 14.6rem;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -159,7 +159,7 @@ body{
 
 .isian-kotak {
     display: flex;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .satu-kiri{
@@ -168,7 +168,7 @@ body{
 }
 
 .kiri-pertama{
-    font-size: 29px;
+    font-size: 1.8rem;
     font-weight: 750;
     letter-spacing: 0.3px;
     line-height: 1.4;
@@ -178,13 +178,13 @@ body{
 
 .isian-kedua{
     margin-top: 7%;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #A7ABB6;
 }
 
 .isian-abu{
     margin-top: 10%;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #A7ABB6;
 }
 
@@ -196,7 +196,7 @@ body{
 }
 
 .tengah-pertama{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.3px;
     line-height: 1.6;
@@ -219,13 +219,13 @@ body{
 }
 
 .btn-kotak{
-    height: 35px;
-    width: 110px;
-    font-size: 12px;
+    height: 2.1rem;
+    width: 6.8rem;
+    font-size: 0.75rem;
     color: white;
     font-weight: 500;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #004AAD;
     letter-spacing: 0.2px;
 }

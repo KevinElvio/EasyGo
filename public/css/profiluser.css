@@ -16,8 +16,8 @@ html, body{
 
 .box-profile img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
     object-fit: cover;
     margin-left: 10%;
     margin-top: 1%;
@@ -27,8 +27,8 @@ html, body{
     display: flex;
     justify-content: right;
     margin-right: 10%;
-    font-size: 25px;
-    padding-top: 20px;
+    font-size: 1.5rem;
+    padding-top: 1.25rem;
     font-weight: 550;
     color: rgb(0, 0, 0);
     
@@ -36,7 +36,7 @@ html, body{
 .box-profile h2{
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 .telepon{
@@ -48,10 +48,10 @@ html, body{
 }
 
 .telepon iconify-icon{
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 .telepon h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 0.5%;
     margin-left: 1%;
@@ -64,10 +64,10 @@ html, body{
     margin-top: -5%;
 }
 .lokasi iconify-icon{
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 .lokasi h4{
-    font-size: 20px;
+    font-size: 1.25;
     font-weight: 500;
     margin-top: 0.5%;
     margin-left: 1%;
@@ -80,10 +80,10 @@ html, body{
     margin-left: 40%;
 }
 .email iconify-icon{
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 .email h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 1%;
     margin-left: 1%;
@@ -125,14 +125,14 @@ html, body{
 }
 
 .edit-profile a iconify-icon{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-left: 10px;
+    font-size: 1.25rem;
+    margin-top: 0.4rem;
+    margin-left: 0.8rem;
 }
 .logout{
     display: flex;
     justify-content: right;
-    font-size: 50px;
+    font-size: 3.125rem;
     padding-right: 5%;
     margin-top: -3%;
  

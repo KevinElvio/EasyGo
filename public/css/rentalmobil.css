@@ -21,9 +21,9 @@ html, body{
 }
 
 .mobil, .motor{
-    width: 120px;
-    height: 35px;
-    font-size: 13px;
+    width: 9rem;
+    height: 4rem;
+    font-size: 0.9rem;
     font-weight: 500;
     border-style: none;
     border-radius: 5px;
@@ -56,16 +56,20 @@ html, body{
 }
 
 .list-mobil{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto 0;
+    width: 100%;
     gap: 2rem;
     margin-top: 3%;
-    padding: 0 13% 100px;
+    margin-left: 2rem;
 }
 
 .produk-mobil{
+    width: 100rem;
+    height: 12rem;
+    margin-left: 4rem;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -117,8 +121,8 @@ html, body{
 }
 
 .button-icon button{
-    width: 30px;
-    height: 35px;
+    width: 1.9rem;
+    height: 2.1rem;
     border-style: none;
     border-radius: 3px;
 }
@@ -148,20 +152,21 @@ html, body{
 
 .tambah-mobil{
     display: flex;
+    width: 80rem;
     justify-content: center;
     align-items: center;
 }
 
 .tambah-mobil button{
-    width: 65px;
-    height: 65px;
+    width: 4rem;
+    height: 4rem;
     border-style: none;
     border-radius: 5px;
     background-color: #cecece;
 }
 
 .plus-mobil iconify-icon{
-    font-size: 30px;
+    font-size: 2rem;
     color: #000000;
 }
 
@@ -172,15 +177,19 @@ html, body{
 
 .list-motor{
     display: none;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
+    justify-content: center;
     margin: auto 0;
+    width: 80rem;
     gap: 2rem;
     margin-top: 3%;
-    padding: 0 13% 100px;
+    margin-left: 2rem;
 }
 
 .produk-motor{
+    width: 100rem;
+    height: 12rem;
+    margin-left: 4rem;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -211,7 +220,7 @@ html, body{
 
 .layer p{
     color:#ffffff;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     position: absolute;
@@ -232,14 +241,14 @@ html, body{
 }
 
 .button-icon button{
-    width: 30px;
-    height: 35px;
+    width: 1.9rem;
+    height: 2.1rem;
     border-style: none;
     border-radius: 3px;
 }
 
 .button-icon iconify-icon{
-    font-size: 17px;
+    font-size: 1rem;
     color: #000000;
 }
 
@@ -268,15 +277,15 @@ html, body{
 }
 
 .tambah-motor button{
-    width: 65px;
-    height: 65px;
+    width: 4rem;
+    height: 4rem;
     border-style: none;
     border-radius: 5px;
     background-color: #cecece;
 }
 
 .plus-motor iconify-icon{
-    font-size: 30px;
+    font-size: 2rem;
     color: #000000;
 }
 

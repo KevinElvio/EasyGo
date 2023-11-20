@@ -20,7 +20,7 @@ html, body{
 }
 
 .gambar h2{
-    font-size: 27px;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #004AAD;
     text-align: center;
@@ -30,12 +30,12 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    height: 350px;
+    width: 20.9rem;
+    height: 20.9rem;
     background-color: rgb(213, 213, 213);
     text-align: center;
-    margin-right: 30px;
-    font-size: 13px;
+    margin-right: 1.8rem;
+    font-size: 0.9rem;
     border: 1px solid black;
     margin-top: 4%;
 }
@@ -45,7 +45,7 @@ html, body{
 }
 
 .form-1 label{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #141414;
     margin-bottom: 1px;
@@ -53,37 +53,38 @@ html, body{
 
 .input-with-icon{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
 }
 
 .input-with-icon input{
     border:1px solid #bababa;
     border-radius: 3px;
-    height: 35px;
-    width: 250px;
-    font-size: 12px;
-    padding: 10px;
+    height: 2rem;
+    width: 15.6rem;
+    font-size: 1rem;
+    padding: 0.6rem;
 }
 
 .input-with-icon iconify-icon{
     border:1px solid #bababa;
     color: #5a5a5a;
-    height: 35px;
-    width: 35px;
-    border-radius: 3px;
-    padding: 7px; 
-    font-size: 20px;
-    margin-right: 2%;
+    height: 2.1rem;
+    width: 2.1rem;
+    border-radius: 0.25rem;
+    padding: 0.3; 
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+
 }
 
 .button-kirim button{
     float: right;
-    width: 85px;
-    height: 33px;
+    width: 5.3rem;
+    height: 2rem;
     border-style: none;
-    border-radius: 3px;
-    font-size: 13px;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
     background-color: #004AAD;
     color: #ffff;
     margin-right: 24%;

@@ -15,29 +15,36 @@
         <div class="judul">Pilih Kota Tujuan</div>
     </div>
     <div class="container2">
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
-        <div class="box" onclick="myfungsi()">
-            <div class="textbox" >surabaya</div>            
-        </div>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        <a href="<?= BASEURL;?>/produk">
+            <div class="box">
+                <div class="textbox" >surabaya</div>            
+            </div>
+        </a>
+        
     </div>
-
-    <script>
-        function myfungsi() {
-        window.location.href = "produkuser.php";
-        }
-    </script>
 </body>

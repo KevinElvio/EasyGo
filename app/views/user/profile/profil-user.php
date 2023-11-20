@@ -1,6 +1,4 @@
-<?php
-include("navbaruser.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 

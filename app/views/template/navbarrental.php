@@ -15,10 +15,10 @@
     <div class="atas">
         <img src="<?= BASEURL;?>/img/logo.png" alt="">
         <div class="tombol">
-            <a href="#" onclick="home()">Home</a>
-            <a href="#" onclick="product()">Produk</a>
-            <a href="#" onclick="history()">History</a>
-            <a href="#" onclick="profil()">Profil</a>
+            <a href="<?= BASEURL;?>/HomeAdmin">Home</a>
+            <a href="<?= BASEURL;?>/ProdukAdmin">Produk</a>
+            <a href="<?= BASEURL;?>/HistoryAdmin">History</a>
+            <a href="<?= BASEURL;?>/ProfilAdmin">Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>

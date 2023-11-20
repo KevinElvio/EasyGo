@@ -18,7 +18,7 @@ html, body{
     overflow: hidden;
     border:0.3px #e4e4e4;
     width: 100%;
-    height: 55px;
+    height: 3.4rem;
 }
 
 .atas img{
@@ -33,7 +33,7 @@ html, body{
 }
 
 .tombol a{
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 0 auto; 
     display: block;
     padding: 0 25%; 
@@ -42,7 +42,7 @@ html, body{
 }
 
 .tombol a:hover{
-    font-size: 13px;
+    font-size: 0.75rem;
     font-weight: 500;
     color: #0035ba;
     text-shadow: 1px 2px 3px #A7ABB6;
@@ -53,7 +53,7 @@ html, body{
     display: flex;
     margin-left: 20%;
     margin-top: 0.8%;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .profil p{
@@ -62,7 +62,7 @@ html, body{
 }
 
 .profil iconify-icon{
-    font-size: 35px;
+    font-size: 2.1rem;
     color: #0041E8;
     padding: 0 5%;
 }
