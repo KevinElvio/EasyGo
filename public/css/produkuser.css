@@ -1,68 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
 .container1 {
-    display: flex ;
+    margin-top: 3%;
+    display: flex;
     justify-content: center;
-    margin :0 auto;
-    margin-top: 2%;
+    align-items: center;
+    gap: 25px;
     }
     
 a{
     width: 89rem;
-    margin-left: 5rem;
     text-decoration: none;
+    color: black;
 }
-button {
-    width: 16vh;
-    height: 8vh;
-    margin-left: 10vh;
-    border-color: #004AAD;
-    border-radius: 13%;
-    cursor: pointer;
+
+.mobil, .motor{
+    width: 9rem;
+    height: 2.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .mobil.active{
     background-color: #004AAD;
     color: white;
+    cursor: pointer;
 }
-
 .motor.active{
     background-color: #004AAD;
     color: white;
+    cursor: pointer;
 }
 
-.motor {
+.mobil{
+    border: 1px solid #004AAD;
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
-.mobil {
+.motor{
+    border: 1px solid #004AAD;
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 
 .container2{
-    display: grid;
-    justify-items: center;
     margin-top: 10vh;
 }
 .car {
-    width: 90%;
-    height: 10vh;
+    width: 80%;
+    height: 5rem;
+    margin: 0 auto;
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-items: center; 
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
+    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 5px 10px rgba(148, 148, 148, 0.5);
     cursor: pointer;
 }
 
-.car div {
-    margin-left: 20%;
+.car .tulisan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30%;
+}
+
+.tulisan p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: auto 25%;
+    padding: 0 10%;
 }
 
 .car img {
     width: 15vh;
     height: 9vh;
     margin-left: 10%;
+    border-radius: 5px;
 }
 
 .sepedah {

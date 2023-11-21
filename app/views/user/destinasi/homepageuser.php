@@ -17,32 +17,32 @@
     <div class="container2">
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox" >Surabaya</div>            
             </div>
         </a>
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox" >Surabaya</div>            
             </div>
         </a>
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox">Surabaya</div>            
             </div>
         </a>
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox" >Surabaya</div>            
             </div>
         </a>
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox" >Surabaya</div>            
             </div>
         </a>
         <a href="<?= BASEURL;?>/produk">
             <div class="box">
-                <div class="textbox" >surabaya</div>            
+                <div class="textbox" >Surabaya</div>            
             </div>
         </a>
         

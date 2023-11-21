@@ -1,56 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.judul{
+    font-size: 30px;
+    font-weight: 600;
+    color: #004AAD;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.back{
+    width: 2.5rem;
+    height: 2rem;
+    background-color: #004AAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 0.4rem;
+}
+
+.back iconify-icon{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .container1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 .box1 img {
-    width: 37rem;
-    height: 30rem;
+    width: 25.9rem;
+    height: 20.9rem;
     margin-left: 20vh;
-    margin-top: 15vh;
+    margin-top: 1%;
 }
 
 
 .box2 {
-    width: 70vh;
+    width: 80vh;
     height: 70vh;
     margin-left: 10vh;
-    margin-top: 15vh;
+    margin-top: 1%;
 }
 
 .box2 div {
     display: flex;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.3rem;
 }
 
 .box2 button {
-    width: 9rem;
-    height: 3rem;
+    width: 8.5rem;
+    height: 2.5rem;
     margin-left: 20rem;
     border: #004AAD;
     color: white;
     background-color: #004AAD;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 h1{
-    font-family: Poppins;
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: 0.3rem;
-
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1%;
+    letter-spacing: 0.5px;
 }
 
 h2{
-    padding-top: 2rem;
-    font-family: Poppins;
-    letter-spacing: 0.3rem;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 3%;
+    letter-spacing: 0.5px;
 }
 
+
 h4{
-    padding-left: 2rem;
+    padding-left: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 h5 {
     color: gray;
+    margin-bottom: 5%;
+}
+
+div iconify-icon{
+    color: #004AAD;
+    margin-left: 3%;
+}
+
+button iconify-icon{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-left: 3%;
+}
+
+.box2 button:hover{
+    background-color: #3266aa;
 }

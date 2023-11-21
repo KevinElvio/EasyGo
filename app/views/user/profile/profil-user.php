@@ -34,7 +34,7 @@
                 </div>
                 <div class="edit-profile">
                     <h3><a href="">Edit Profile</a></h3>
-                    <a href=""><iconify-icon icon="akar-icons:edit" style="color: white;"></iconify-icon></a>
+                    <a href=""><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
                 </div>
             </div>
             <a class="logout" href=""><iconify-icon icon="tabler:logout" style="color: #004aad;"></iconify-icon></a>

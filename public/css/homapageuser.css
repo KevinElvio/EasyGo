@@ -1,51 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
 }
 
 .container1 {
-    padding-top: 4vh;
+    margin-top: 5%;
 }
 
 .container2 {
+    margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
   }
   
 
 .judul {
     text-align: center;
-    width: 100%; 
-    height: 100%; 
     color: #111827; 
     font-size: 36px; 
-    font-family: Poppins; 
     font-weight: 600; 
-    line-height: 20px; 
-    word-wrap: break-word}
+    line-height: 20px;}
 
 .box{
-    width: 25rem;
-    height: 15rem;
+    width: 20rem;
+    height: 13rem;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: aquamarine;
+    background-color: rgb(174, 174, 174);
     margin-top: 5%;
     background-image:  
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('../Asets/img/surabaya.jpg');
+    url("<?= BASEURL;?>/img/surabaya.jpg");
     }
 
 
 
 .textbox {
     position: relative;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4rem;
-    font-weight: 100;
+    font-size: 2rem;
+    font-weight: 400;
     color: whitesmoke;
+    letter-spacing: 0.3px;
+}
+
+.box:hover{
+    background: rgba(97, 97, 97, 0.6);
+    transform: scale(1);
+    width: 21rem;
+    height: 14rem;
+}
+
+.box:hover .textbox{
+    font-size: 2.3rem;
+    font-weight: 500;
 }
