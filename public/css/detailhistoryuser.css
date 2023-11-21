@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.judul{
+    font-size: 30px;
+    font-weight: 600;
+    color: #004AAD;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.back{
+    width: 2.5rem;
+    height: 2rem;
+    background-color: #004AAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 0.4rem;
+}
+
+.back iconify-icon{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.pembungkus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.gambar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.9rem;
+    height: 20.9rem;
+    background-color: rgb(213, 213, 213);
+    margin-top: 4%;
+}
+
+.list-isi{
+    margin-left: 18%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #141414;
+    margin-bottom: 1px;
+}
+
+.isi{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    letter-spacing: 0.5px;
+}
+
+.isi iconify-icon{
+    display: inline-block;
+    color: #004AAD;
+    height: 2.1rem;
+    width: 2.1rem;
+    padding: 0.3; 
+    font-size: 3rem;
+    margin-left: 3%;
+}
+
+.isi span{
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #141414;
+}
+
+.back:hover{
+    background-color: #104ea0;
+    width: 2.6rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    transform: scale(1.02) translateY(3px)
+}

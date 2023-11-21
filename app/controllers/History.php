@@ -6,4 +6,9 @@ class History extends Controller {
         $this->view("template/navbaruser");
         $this->view('user/history/historyuser');
     }
+
+    public function detail(){
+        $this->view("template/navbaruser");
+        $this->view('user/history/detailhistoryuser');
+    }
 }

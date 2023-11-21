@@ -6,4 +6,9 @@ class Historyadmin extends Controller {
         $this->view("template/navbarrental");
         $this->view('admin/history/historyrental');
     }
+
+    public function detail(){
+        $this->view("template/navbarrental");
+        $this->view('admin/history/detailhistoryrental');
+    }
 }
