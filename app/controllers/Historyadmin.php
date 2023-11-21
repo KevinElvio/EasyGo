@@ -3,8 +3,9 @@
 class Historyadmin extends Controller {
 
     public function index(){
+        $data['history'] = $this->model('historyRental')->getAllhistory();
         $this->view("template/navbarrental");
-        $this->view('admin/history/historyrental');
+        $this->view('admin/history/historyrental', $data);
     }
 
     public function detail(){

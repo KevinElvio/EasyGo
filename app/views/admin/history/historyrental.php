@@ -32,7 +32,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <?php foreach($data['history'] as $historyy):?>
+                    <tr>
+                        <td><img src="<?= BASEURL;?>/img/mobilcontoh.jpeg" alt=""></td>
+                        <td><p><?= $historyy['nama_transport'] ?></p></td>
+                        <td><p><?= $historyy['tgl_order'] ?></p></td>
+                        <td><p><?= $historyy['id_order'] ?></p></td>
+                        <td><p><?= $historyy['total'] ?></p></td>
+                        <td><p class="status"><?= $historyy['jenis_status'] ?></p></td>
+                        <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
+                    </tr>
+                <?php endforeach; ?>
+                <!-- <tr>
                     <td><img src="<?= BASEURL;?>/img/mobilcontoh.jpeg" alt=""></td>
                     <td><p>Azriel</p></td>
                     <td><p>10-05-2023</p></td>
@@ -40,16 +51,7 @@
                     <td><p>Rp 290.000</p></td>
                     <td><p class="status">Confirmed</p></td>
                     <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
-                </tr>
-                <tr>
-                    <td><img src="<?= BASEURL;?>/img/mobilcontoh.jpeg" alt=""></td>
-                    <td><p>Azriel</p></td>
-                    <td><p>10-05-2023</p></td>
-                    <td><p>22</p></td>
-                    <td><p>Rp 290.000</p></td>
-                    <td><p class="status">Confirmed</p></td>
-                    <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
-                </tr>
+                </tr> -->
 
             </tbody>
         </table>
