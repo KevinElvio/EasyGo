@@ -18,7 +18,9 @@
             EasyGo Rental Form
         </div>
         <div class="back">
+        <a href="<?= BASEURL; ?>/produk/detail">
             <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+        </a>
         </div>
         <img src='<?= BASEURL; ?>/img/avanza.jpg' alt="mobil">
     </div>

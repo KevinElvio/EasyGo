@@ -15,8 +15,11 @@
     ?>
 
     <h2 class="judul">Detail Kendaraan</h2>
+    
     <div class="back">
+    <a href="<?= BASEURL;?>/produk">
         <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+    </a>
     </div>
     <div class="container1">
         <div class="box1">

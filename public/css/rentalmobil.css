@@ -30,26 +30,43 @@ html, body{
     background-color: white;
 }
 
-.motor{
+.mobil.active{
     background-color: #004AAD;
     color: white;
+    cursor: pointer;
+}
+.motor.active{
+    background-color: #004AAD;
+    color: white;
+    cursor: pointer;
 }
 
 .mobil{
     border: 1px solid #004AAD;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.motor{
+    border: 1px solid #004AAD;
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .list-mobil{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
-    margin: auto 0;
-    gap: 2rem;
     margin-top: 3%;
-    padding: 0 13% 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .produk-mobil{
+    width: 23rem;
+    height: 15rem;
+    margin: 2rem;
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -156,16 +173,17 @@ html, body{
 
 
 .list-motor{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
-    margin: auto 0;
-    gap: 2rem;
     margin-top: 3%;
-    padding: 0 13% 100px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .produk-motor{
+    width: 23rem;
+    height: 15rem;
+    margin: 2rem;
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;

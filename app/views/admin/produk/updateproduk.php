@@ -16,9 +16,13 @@
 
     <div class="luar">
         <h2 class="judul">Update Kendaraan</h2>
+        
         <div class="back">
+        <a href="<?= BASEURL; ?>/Produkadmin">
             <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+        </a>
         </div>
+        
 
         <div class="pembungkus">
             <div class="gambar">

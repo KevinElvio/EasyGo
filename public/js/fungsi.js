@@ -1,7 +1,5 @@
-function myfungsi() {
-    window.location.href = "produkdetail.php";
-    }    
-    function page(type) {
+
+function pg(type) {
   // Ambil elemen dengan class "mobil", "motor", "car", dan "sepedah"
   var mobilBtn = document.querySelector('.mobil');
   var motorBtn = document.querySelector('.motor');

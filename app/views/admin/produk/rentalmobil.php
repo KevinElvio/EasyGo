@@ -118,6 +118,18 @@
                 <p>Vespa Matic</p>
             </div>
         </div>
+        <div class="produk-motor">
+            <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
+            <div class="layer">
+                <div class="button-icon">
+                    <a href="<?= BASEURL; ?>/Produkadmin/update">
+                        <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
+                    </a>
+                    <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                </div>
+                <p>Vespa Matic</p>
+            </div>
+        </div>
 
         <div class="tambah-motor">
             <a href="<?= BASEURL; ?>/Produkadmin/tambah">
