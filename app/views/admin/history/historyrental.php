@@ -32,14 +32,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($data['history'] as $historyy):?>
+                <?php foreach($data['history'] as $history):?>
                     <tr>
                         <td><img src="<?= BASEURL;?>/img/mobilcontoh.jpeg" alt=""></td>
-                        <td><p><?= $historyy['nama_transport'] ?></p></td>
-                        <td><p><?= $historyy['tgl_order'] ?></p></td>
-                        <td><p><?= $historyy['id_order'] ?></p></td>
-                        <td><p><?= $historyy['total'] ?></p></td>
-                        <td><p class="status"><?= $historyy['jenis_status'] ?></p></td>
+                        <td><p><?= $history['nama_transport'] ?></p></td>
+                        <td><p><?= $history['tgl_order'] ?></p></td>
+                        <td><p><?= $history['id_order'] ?></p></td>
+                        <td><p><?= $history['total'] ?></p></td>
+                        <td><p class="status"><?= $history['jenis_status'] ?></p></td>
                         <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
                     </tr>
                 <?php endforeach; ?>

@@ -13,20 +13,21 @@ class Database{
     private $stmt;
 
     public function __construct() {
-        // Source
+        // Data soucre name
         $dsn = 'mysql:host='. $this->host .';dbname='. $this->db_name;
 
-        $option=[
+        $option = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ];
 
-
-        try {
+        try
+        {
             $this->dbh = new PDO($dsn, $this->user, $this->pass, $option);
         }
-        catch(PDOException $e) {
-            die($e->getMessage());
+        catch (PDOException $e)
+        {
+            die($e->getMessage('ERROR BRO'));
         }
     }
 
