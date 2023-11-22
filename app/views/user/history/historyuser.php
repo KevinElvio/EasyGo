@@ -37,30 +37,9 @@
                         <td><p><?= $historyUser['id_order'] ?></p></td>
                         <td><p><?= $historyUser['total'] ?></p></td>
                         <td><p class="status"><?= $historyUser['jenis_status'] ?></p></td>
-                        <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
+                        <td><p class="detail"><a href="<?= BASEURL;?>/history/detail <?=$historyUser['id_order'];?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
                     </tr>
                 <?php endforeach;?>
-                <!-- <tr>
-                    <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
-                    <td>
-                        <p>Azriel</p>
-                    </td>
-                    <td>
-                        <p>10-05-2023</p>
-                    </td>
-                    <td>
-                        <p>22</p>
-                    </td>
-                    <td>
-                        <p>Rp 290.000</p>
-                    </td>
-                    <td>
-                        <p class="status">Confirmed</p>
-                    </td>
-                    <td>
-                        <p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
-                    </td>
-                </tr> -->
 
             </tbody>
         </table>

@@ -28,7 +28,7 @@ class historyRental_model {
         join tbl_transport t on t.id_transport = o.id_transport
         join tbl_statusorder s on s.id_statusorder = o.id_statusorder
         join tbl_rental r on r.id_rental = t.id_rental
-        join tbl_kota k on k.id_kota = r.id_kota where id_user=:id_user");
+        join tbl_kota k on k.id_kota = r.id_kota where id_order=:id_order");
 
         $this->db->bind('id_order', $id_order);
         return $this->db->single();
