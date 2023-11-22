@@ -13,9 +13,6 @@
 </head>
 
 <body>
-    <?php
-    // include "navbaruser.php";
-    ?>
 
     <h2 class="judul">History</h2>
     <div class="table-container">
@@ -32,30 +29,18 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($data['histroyUser'] as $historyUser) : ?>
+                <?php foreach($data['historyUser'] as $historyUser) : ?>
                     <tr>
                         <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
-                        <td>
-                            <p><?= $historyUser['nama']; ?></p>
-                        </td>
-                        <td>
-                            <p><?= $historyUser['tgl_order']; ?></p>
-                        </td>
-                        <td>
-                            <p><?= $historyUser['order_id']; ?></p>
-                        </td>
-                        <td>
-                            <p><?= $historyUser['total']; ?></p>
-                        </td>
-                        <td>
-                            <p class="status"><?= $historyUser['status']; ?></p>
-                        </td>
-                        <td>
-                            <p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
-                        </td>
+                        <td><p><?= $historyUser['nama_transport'] ?></p></td>
+                        <td><p><?= $historyUser['tgl_order'] ?></p></td>
+                        <td><p><?= $historyUser['id_order'] ?></p></td>
+                        <td><p><?= $historyUser['total'] ?></p></td>
+                        <td><p class="status"><?= $historyUser['jenis_status'] ?></p></td>
+                        <td><p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
                     </tr>
-                <?php endforeach; ?>
-                <tr>
+                <?php endforeach;?>
+                <!-- <tr>
                     <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
                     <td>
                         <p>Azriel</p>
@@ -75,7 +60,7 @@
                     <td>
                         <p class="detail">Detail <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
                     </td>
-                </tr>
+                </tr> -->
 
             </tbody>
         </table>
