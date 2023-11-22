@@ -43,7 +43,7 @@
             <div class="icon-tengah">
                 <iconify-icon icon="pepicons-pencil:car"></iconify-icon>
                 <iconify-icon icon="carbon:map"></iconify-icon>
-                <iconify-icon icon="healthicons:vespa-motorcycle-outline" style="font-size: 30px;"></iconify-icon>
+                <iconify-icon class="motor" icon="healthicons:basic-motorcycle-outline"></iconify-icon>
                 <iconify-icon icon="codicon:workspace-trusted"></iconify-icon>
             </div>
         </div>

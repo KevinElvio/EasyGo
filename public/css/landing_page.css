@@ -229,3 +229,250 @@ body{
     background-color: #004AAD;
     letter-spacing: 0.2px;
 }
+
+
+
+@media (max-width: 768px) {
+    .dua{
+        font-size: 2.5rem;
+        font-weight: 750;
+        letter-spacing: 0.3px;
+        line-height: 1.2;
+        margin-bottom: 2%;
+        padding: 0% 10%;
+    }
+
+    
+    .list ul{
+        margin: auto 0;
+        margin-top: 3%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0% 10%;
+        
+    }
+
+    .list ul li{
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .icon-tengah iconify-icon{
+        
+        font-size: 1.3rem;
+        color: #000000;
+        padding: 1.2%;
+    }
+
+    .daftar-tengah{
+        margin-top: 2.5%;
+        display: grid;
+        place-items: center;
+    }
+
+    .btn-daftar{
+        padding:0rem 0.7rem;
+        height: 2.2rem;
+        width: 7rem;
+        font-size: 0.65rem;
+        color: white;
+        font-weight: 500;
+        border-style: none;
+        border-radius: 0.3rem;
+        background-color: #004AAD;
+        letter-spacing: 0.2px;
+    }
+
+    .kotak-putih{
+        display: grid;
+        place-items: center;
+        width: 26rem;
+        height: 13rem;
+        position: relative;
+        margin-top: 3%;
+        margin-bottom: 10%;
+        
+    }
+
+    
+.isian-kotak {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 5%;
+    margin-top: -3%;
+}
+
+.satu-kiri{
+    text-align: center;
+}
+
+.kiri-pertama{
+    font-size: 1.25rem;
+}
+
+.isian-kedua{
+    font-size: 0.6rem;
+}
+
+.isian-abu{
+    /* margin-top: 4%; */
+    font-size: 0.6rem;
+}
+
+.dua-tengah{
+    /* margin-top: 10%; */
+    text-align: center;
+}
+
+.tengah-pertama{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tiga-kanan{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.daftar-kotak{
+    margin-top: -7%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.btn-kotak{
+    padding:0rem 0.5rem;
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.65rem;
+}
+}
+
+
+
+@media (max-width: 480px) {
+    .dua{
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        margin-bottom: 2%;
+        padding: 0% 10%;
+    }
+
+    
+    .list ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0% 10%;
+    }
+
+    .icon-tengah{
+        margin-top: 4%;
+    }
+
+    .icon-tengah iconify-icon{
+        
+        font-size: 1rem;
+        color: #000000;
+        padding: 1.2%;
+    }
+
+    .motor{
+        font-size: 28px;
+    }
+
+        
+    .daftar-tengah{
+        margin-top: 2.5%;
+        display: grid;
+        place-items: center;
+    }
+
+    .btn-daftar{
+        padding:0rem 0.7rem;
+        height: 2.5rem;
+        width: 6rem;
+        font-size: 0.6rem;
+        color: white;
+        font-weight: 500;
+        border-style: none;
+        border-radius: 0.3rem;
+        background-color: #004AAD;
+        letter-spacing: 0.2px;
+    }
+
+
+    .kotak-putih{
+        display: grid;
+        place-items: center;
+        width: 17rem;
+        height: 26rem;
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    
+.isian-kotak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.satu-kiri{
+    margin-top:-8%;
+    text-align: center;
+}
+
+.kiri-pertama{
+    font-size: 1.5rem;
+}
+
+.isian-kedua{
+    margin-top: 4%;
+}
+
+.isian-abu{
+    margin-top: 4%;
+}
+
+.dua-tengah{
+    margin-top: 10%;
+}
+
+.tengah-pertama{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.tiga-kanan{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.daftar-kotak{
+    margin-top: -20%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.btn-kotak{
+    padding:0rem 0.5rem;
+        height: 2.5rem;
+        width: 6.8rem;
+        font-size: 0.65rem;
+}
+}
+
