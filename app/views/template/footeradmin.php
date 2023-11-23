@@ -16,7 +16,7 @@
     <footer>
         <div class="footer-section">
             <div class="left-section">
-                <h2>Easy Go</h2>
+                <h2 class="judul-footer">Easy Go</h2>
                 <p>For Your Friends Rent</p>
             </div>
             <div class="right-section">
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="lokasi">
-                    <div class="isi">
+                    <div class="list-lokasi">
                         <p>Lokasi</p>
                         <ul>
                             <li>Surabaya</li>
@@ -38,7 +38,7 @@
                             <li>Bandung</li>
                         </ul>
                     </div>
-                    <button><a href="<?= BASEURL; ?>/destinasi">See details</a></button>
+                    <button><a href="<?= BASEURL; ?>/homeadmin">See details</a></button>
                 </div>
             </div>
         </div>

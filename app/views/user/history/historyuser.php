@@ -14,36 +14,52 @@
 
 <body>
 
-    <h2 class="judul">History</h2>
-    <div class="table-container">
-        <table class="table rounded table-borderless">
-            <thead class="thead-light">
-                <tr>
-                    <th class="start">Transportasi</th>
-                    <th>Nama</th>
-                    <th>Tanggal Order</th>
-                    <th>Order ID</th>
-                    <th>Total</th>
-                    <th>Status</th>
-                    <th class="end">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($data['historyUser'] as $historyUser) : ?>
+    <div class="dalamnya">
+        <h2 class="judul">History</h2>
+        <div class="table-container">
+            <table class="table rounded table-borderless">
+                <thead class="thead-light">
                     <tr>
-                        <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
-                        <td><p><?= $historyUser['nama_transport'] ?></p></td>
-                        <td><p><?= $historyUser['tgl_order'] ?></p></td>
-                        <td><p><?= $historyUser['id_order'] ?></p></td>
-                        <td><p><?= $historyUser['total'] ?></p></td>
-                        <td><p class="status"><?= $historyUser['jenis_status'] ?></p></td>
-                        <td><p class="detail"><a href="<?= BASEURL;?>/history/detail/<?= $historyUser['id_order'];?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
+                        <th class="start">Transportasi</th>
+                        <th>Nama</th>
+                        <th>Tanggal Order</th>
+                        <th>Order ID</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th class="end">Action</th>
                     </tr>
-                <?php endforeach;?>
+                </thead>
+                <tbody>
+                    <?php foreach ($data['historyUser'] as $historyUser) : ?>
+                        <tr>
+                            <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
+                            <td>
+                                <p><?= $historyUser['nama_transport'] ?></p>
+                            </td>
+                            <td>
+                                <p><?= $historyUser['tgl_order'] ?></p>
+                            </td>
+                            <td>
+                                <p><?= $historyUser['id_order'] ?></p>
+                            </td>
+                            <td>
+                                <p><?= $historyUser['total'] ?></p>
+                            </td>
+                            <td>
+                                <p class="status"><?= $historyUser['jenis_status'] ?></p>
+                            </td>
+                            <td>
+                                <p class="detail"><a href="<?= BASEURL; ?>/history/detail/<?= $historyUser['id_order']; ?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+
 </body>
 
 </html>

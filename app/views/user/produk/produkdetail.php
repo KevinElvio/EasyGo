@@ -30,19 +30,19 @@
             <h5>250.000/D</h5>
             <h2>Deskripsi Mobil</h2>
             <div>
-                <iconify-icon icon="ion:speedometer-outline" ></iconify-icon>
+                <iconify-icon icon="ion:speedometer-outline" width="30" height="30"></iconify-icon>
                 <h4>2400km</h4>
             </div>
             <div>
-                <iconify-icon icon="ph:calendar-light" ></iconify-icon>
+                <iconify-icon icon="ph:calendar-light" width="30" height="30"></iconify-icon>
                 <h4>2019</h4>
             </div>
             <div>
-                <iconify-icon icon="mynaui:location" ></iconify-icon>
+                <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
                 <h4>JL.mawar 8,Surabaya,Jawa Timur</h4>
             </div>
             <div>
-                <iconify-icon icon="fluent:text-description-20-regular" ></iconify-icon>
+                <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
                 <h4>Mobil keluaran tahun 2019 ini tidak pernah mengalami kendala saat dijalan kecuali terkena jebakan paku</h4>
             </div>
             <a href="<?= BASEURL; ?>/produk/pemesanan">
@@ -51,8 +51,11 @@
                 </button>
             </a>
 
+            </div>
         </div>
-    </div>
+
+
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
