@@ -5,6 +5,10 @@ html, body{
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 
+.luar {
+    margin-bottom: 8%;
+}
+
 * {
     margin: 0px;
     padding: 0px;

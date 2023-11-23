@@ -20,7 +20,7 @@
                 <iconify-icon icon="lets-icons:phone-light"></iconify-icon>
                 <h4>0853423458923</h4>
             </div>
-            <div class="lokasi">
+            <div class="lokasi-profil">
                 <iconify-icon icon="ep:location"></iconify-icon>
                 <h4>Tanggul, Jember</h4>
             </div>

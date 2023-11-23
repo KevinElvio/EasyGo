@@ -14,6 +14,7 @@
   <?php
   // include "navbaruser.php";
   ?>
+
   <div class="container1">
     <button class="mobil" onclick="pg('mobil')">Mobil</button>
     <button class="motor" onclick="pg('motor')">Motor</button>
