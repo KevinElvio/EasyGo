@@ -11,7 +11,7 @@
 
 <body>
     <div class="login">
-        <img src="<?= BASEURL; ?>/img/background-login.png" alt="">
+        <!-- <img src="<?= BASEURL; ?>/img/background-login.png" alt=""> -->
         <div class="box">
             <form> 
                 <H1>LOGIN</H1>

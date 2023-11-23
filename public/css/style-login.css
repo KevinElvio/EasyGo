@@ -3,27 +3,22 @@ html, body{
     padding: 0;
     margin: 0;
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
-}
-.login img{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    margin-top: -8%;
 }
+
+body{
+    background-color: #BBD8FF;
+}
+
 .box{
+    width: 20rem;
+    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding-bottom: 8%;
-    padding-left: 8%;
-    padding-right: 8%;
-    margin-top: 8%;
+    margin: 0 auto;
+    margin-top: 10%;
     background-color: white;
     border-radius: 3%;
     box-shadow: 14px 15px 72px -12px rgba(0,0,0,0.48);
@@ -31,13 +26,16 @@ html, body{
     -moz-box-shadow: 14px 15px 72px -12px rgba(0,0,0,0.48);
 }
 
-.box form h1{
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .box form{
     justify-content: center;
-    margin-top: 35%;
+    /* margin-top: 35%; */
 }
 
 .username-login{

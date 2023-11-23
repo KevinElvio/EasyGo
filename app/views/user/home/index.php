@@ -20,7 +20,7 @@
             <a href="#">Profil</a>
         </div>
         <div class="login-awal">
-            <button><a href="login.php">Login</a></button>
+            <button><a href="<?= BASEURL; ?>/login">Login</a></button>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="daftar-tengah">
-                <button class="btn-daftar">Daftar Sekarang</button>
+                <button class="btn-daftar"><a href="<?= BASEURL; ?>/login/register">Daftar Sekarang</a></button>
             </div>
             <div class="icon-tengah">
                 <iconify-icon icon="pepicons-pencil:car"></iconify-icon>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="daftar-kotak">
-                <button class="btn-kotak">Coba Gratis!</button>
+                <button class="btn-kotak"><a href="<?= BASEURL; ?>/login">Coba Gratis!</a></button>
             </div>
         </div>
     </div>

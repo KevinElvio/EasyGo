@@ -15,9 +15,11 @@
     ?>
 
     <h2 class="judul">Detail History</h2>
-    <div class="back">
-        <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
-    </div>
+    <a href="<?= BASEURL; ?>/produk">
+        <div class="back">
+            <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+        </div>
+    </a>
     <div class="pembungkus">
         <div class="gambar"><img src="<?= BASEURL; ?>/img/avanza.jpg" alt=""></div>
 

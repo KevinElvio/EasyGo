@@ -16,6 +16,16 @@ body{
     background-color: #BBD8FF;
 }
 
+.login-awal a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-daftar a, .btn-kotak a{
+    color: white;
+    text-decoration: none;
+}
+
 .atas{
     display: flex;
 }
