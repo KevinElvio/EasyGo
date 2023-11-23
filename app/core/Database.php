@@ -27,7 +27,7 @@ class Database{
         }
         catch (PDOException $e)
         {
-            die($e->getMessage('ERROR BRO'));
+            die($e->getMessage());
         }
     }
 

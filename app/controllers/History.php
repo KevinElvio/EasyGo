@@ -8,7 +8,7 @@ class History extends Controller {
         $this->view('user/history/historyuser', $data);
     }
 
-    public function detail(){
+    public function detail($id_order){
         $data['historyUser'] = $this->model('historyUser_model')->getHistoryUserById($id_order);
         $this->view("template/navbaruser");
         $this->view('user/history/detailhistoryuser',$data);

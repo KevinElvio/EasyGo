@@ -14,22 +14,22 @@
     <div class="login">
         <img src="<?= BASEURL; ?>/img/background-login.png" alt="">
         <div class="box">
-            <form>
+            <form action="" method="">
                 <H1>Register</H1>
                 <div class="register">
-                    <input type="text" placeholder="Nama">
+                    <input type="text" placeholder="Nama" id="nama" name="nama">
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" id="username" name="username">
                 </div>
                 <div class="register">
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" id="email" name="email">
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" id="password" name="password">
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Re-Password">
+                    <input type="password" placeholder="Re-Password" id="re-password" name="re-password">
                 </div>
                 <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox">
@@ -49,7 +49,7 @@
                         <input type="text" placeholder="Kota">
                     </div>
                 </div>
-                <input class="button-login" type="button" value="Register">
+                <input class="button-login" type="submit" value="Register">
             </form>
         </div>
     </div>

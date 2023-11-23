@@ -15,6 +15,11 @@ class Login extends Controller{
         $this->view('user/login/logout');
     }
 
+    public function tambah()
+    {
+        var_dump($_POST);
+    }
+
 
     
 }
