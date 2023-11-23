@@ -13,16 +13,16 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="" method="">
+            <form action="<?=BASEURL; ?>/login/tambah" method="post">
                 <H1>Register</H1>
                 <div class="register">
-                    <input type="text" placeholder="Nama" id="nama" name="nama">
+                    <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap">
                 </div>
                 <div class="register">
                     <input type="text" placeholder="Username" id="username" name="username">
                 </div>
                 <div class="register">
-                    <input type="email" placeholder="Email" id="email" name="email">
+                    <input type="email" placeholder="Email" id="email_user" name="email_user">
                 </div>
                 <div class="register">
                     <input type="password" placeholder="Password" id="password" name="password">
