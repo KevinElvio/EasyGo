@@ -12,7 +12,6 @@ html, body{
     font-weight: 400;
 }
 
-
 .judul{
     font-size: 30px;
     font-weight: 600;
@@ -181,7 +180,7 @@ button iconify-icon{
     .box2 button {
         width: 6rem;
         height: 2rem;
-        margin-left: 15rem;
+        margin-left: 70%;
         border: #004AAD;
         color: white;
         background-color: #004AAD;
@@ -235,5 +234,114 @@ button iconify-icon{
     }
 }
 @media (max-width: 480px){
-
+    .judul{
+        font-size: 20px;
+        font-weight: 600;
+        color: #004AAD;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .back{
+        width: 1.5rem;
+        height: 1rem;
+        background-color: #004AAD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.1rem;
+        margin-left: 2rem;
+    }
+    
+    .back iconify-icon{
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        width: 100%;
+    }
+    
+    .box1 img {
+        width: 10rem;
+        height: 7.5rem;
+        margin-left: 2rem;
+        margin-top: 1%;
+    }
+    
+    
+    .box2 {
+        width: 10rem;
+        height: 7.5rem;
+        margin-left: 2rem;
+        margin-top: -2rem;
+    }
+    
+    .box2 div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.5rem;
+    }
+    
+    .box2 button {
+        width: 4rem;
+        height: 1rem;
+        margin-left: 70%;
+        border: #004AAD;
+        color: white;
+        background-color: #004AAD;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 0.4rem;
+    }
+    
+    h1{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 1%;
+        letter-spacing: 0.5px;
+    }
+    
+    h2{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 1%;
+        letter-spacing: 0.5px;
+    }
+    
+    
+    h4{
+        padding-left: 0.5rem;
+        font-size: 0.4rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+    
+    h5 {
+        color: gray;
+        margin-bottom: 5%;
+        font-size: 0.6rem;
+    }
+    
+    div iconify-icon{
+        color: #004AAD;
+        margin-left: 3%;
+        width: 15;
+        height: 15;
+    }
+    
+    button iconify-icon{
+        color: #ffffff;
+        font-size: 1rem;
+        margin-left: 3%;
+    }
+    
+    .box2 button:hover{
+        background-color: #3266aa;
+    }
 }
