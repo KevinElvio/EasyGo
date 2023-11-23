@@ -5,6 +5,7 @@ class Destinasi extends Controller{
     {
         $this->view("template/navbaruser");
         $this->view('user/destinasi/homepageuser');
+        $this->view("template/footeruser");
     }
 
 }

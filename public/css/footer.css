@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: #00113a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.footer-section div {
+    flex: 1;
+}
+
+.footer-section .left-section {
+    text-align: left;
+}
+
+.footer-section .right-section {
+    text-align: left;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.left-section h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.left-section p{
+    font-size: 1rem;
+}
+
+.right-section {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.lokasi {
+    display: flex;
+}
+
+.transport ul, .lokasi ul{
+    list-style: none;
+    margin-top: 7%;
+}
+
+.transport ul li, .lokasi ul li{
+    font-size: 0.68rem;
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+}
+
+.transport p, .lokasi p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-section .right-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lokasi button{
+    margin: auto 0;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0.4rem;
+    border: 1px solid #fff;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    background-color: #00113a;
+    color: #fff;
+    margin-right: 15%;
+}
+
+.credit{
+    margin-top: 3%;
+    font-size: 0.7rem;
+    color: #aaaaaa;
+}

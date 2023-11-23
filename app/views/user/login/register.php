@@ -12,7 +12,6 @@
 
 <body>
     <div class="login">
-        <img src="<?= BASEURL; ?>/img/background-login.png" alt="">
         <div class="box">
             <form action="" method="">
                 <H1>Register</H1>
@@ -33,7 +32,7 @@
                 </div>
                 <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox">
-                    Daftar sebagai penyewa
+                    Daftar sebagai penyewa <br>
                 </label>
                 <div class="form-penyewa">
                     <div class="register">
@@ -41,6 +40,9 @@
                     </div>
                     <div class="register">
                         <input type="text" placeholder="No Telepon">
+                    </div>
+                    <div class="register">
+                        <input type="text" placeholder="Link Maps">
                     </div>
                     <div class="register">
                         <input type="text" placeholder="Provinsi">

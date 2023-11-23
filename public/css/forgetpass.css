@@ -32,25 +32,15 @@ form {
     align-items: center;
 }
 
-form p{
-    margin-left: auto;
-    text-align: right;
-    font-size: 0.68rem;
-}
-
-p a{
-    text-decoration: none;
-    color: #03008F;
-}
 
 .box form{
     justify-content: center;
     /* margin-top: 35%; */
 }
 
-form h1{
+form h2{
     color: #03008F;
-    margin-top: -10%;
+    margin-top: -2%;
 }
 
 .username-login{
@@ -109,7 +99,7 @@ form h1{
 }
 
 .button-login{
-    margin-top: 20%;
+    margin-top: 10%;
     background-color: #004AAD;
     color: white;
     border-radius: 0.3rem;
@@ -117,6 +107,7 @@ form h1{
     width: 6rem;
     border-color: transparent;
     font-size: 0.9rem;
+    letter-spacing: 0.2px;
     font-weight: 500;
     transition-property: transform;
     transition-duration: 0.3s;
