@@ -25,20 +25,6 @@
             <iconify-icon icon="iconamoon:profile-circle-light"></iconify-icon>
         </div>
     </div>
-    <script>
-        function home() {
-        window.location.href = "homepagerental.php";
-        }
-        function product() {
-        window.location.href = "rentalmobil.php";
-        }
-        function history() {
-        window.location.href = "historyrental.php";
-        }
-        function profil() {
-        window.location.href = "profil-rental.php";
-        }
-    </script>
 </body>
 
 </html>

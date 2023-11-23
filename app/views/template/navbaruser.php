@@ -15,26 +15,15 @@
     <div class="atas">
         <img src="<?= BASEURL;?>/img/logo.png" alt="">
         <div class="tombol">
-            <a href="<?= BASEURL;?>/Destinasi" onclick="home()">Home</a>
-            <a href="<?= BASEURL;?>/History" onclick="history()">History</a>
-            <a href="<?= BASEURL;?>/Profile" onclick="profil()">Profil</a>
+            <a href="<?= BASEURL;?>/Destinasi" >Home</a>
+            <a href="<?= BASEURL;?>/History" >History</a>
+            <a href="<?= BASEURL;?>/Profile" >Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>
             <iconify-icon icon="iconamoon:profile-circle-light"></iconify-icon>
         </div>
     </div>
-    <script>
-        function home() {
-        window.location.href = "homepageuser.php";
-        }
-        function history() {
-        window.location.href = "historyuser.php";
-        }
-        function profil() {
-        window.location.href = "profil-user.php";
-        }
-    </script>
 </body>
 
 </html>

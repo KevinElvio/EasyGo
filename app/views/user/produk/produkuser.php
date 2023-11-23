@@ -43,8 +43,8 @@
       <div class="car" onclick="myfungsi()">
         <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
         <div class="tulisan">
-          <p> pagani zonda</p>
-          <p> deskripsi</p>
+          <p>pagani zonda</p>
+          <p>deskripsi</p>
           <p>1200k/jam</p>
         </div>
       </div>
