@@ -65,4 +65,136 @@ html, body{
     font-size: 2.1rem;
     color: #0041E8;
     padding: 0 5%;
+    margin-right: 0.2rem;
+}
+
+@media (max-width: 768px){
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        Font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    
+    .atas{
+        display: flex;
+        box-shadow: 20px 10px 25px #e4e4e4;
+        overflow: hidden;
+        border:0.3px #e4e4e4;
+        width: 100%;
+        height: 3rem;
+    }
+    
+    .atas img{
+        width: 5%;
+        margin-left: 3%;
+    }
+    
+    .tombol{
+        display: flex;
+        margin-left: 48%;
+        margin-top: 1rem;
+    }
+    
+    .tombol a{
+        font-size: 0.5rem;
+        margin: 0 auto; 
+        display: block;
+        padding: 0 25%; 
+        text-decoration: none;
+        color: black;
+    }
+    
+    .tombol a:hover{
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: #0035ba;
+        text-shadow: 1px 2px 3px #A7ABB6;
+        transform: translateX(0.15em);
+    }
+    
+    .profil{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 0.6rem;
+        font-size: 0.5rem;
+    }
+    
+    .profil p{
+        margin-top: 9%;
+        margin-right: 15%;
+    }
+    
+    .profil iconify-icon{
+        font-size: 1.75rem;
+        color: #0041E8;
+        padding: 0 5%;
+        margin-right: 0.2rem;
+    }
+}
+@media (max-width: 480px){
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        Font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    
+    .atas{
+        display: flex;
+        box-shadow: 20px 10px 25px #e4e4e4;
+        overflow: hidden;
+        border:0.3px #e4e4e4;
+        width: 100%;
+        height: 3rem;
+    }
+    
+    .atas img{
+        width: 5%;
+        margin-left: 3%;
+    }
+    
+    .tombol{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 1rem;
+    }
+    
+    .tombol a{
+        font-size: 0.5rem;
+        margin: 0 auto; 
+        display: block;
+        padding: 0 25%; 
+        text-decoration: none;
+        color: black;
+    }
+    
+    .tombol a:hover{
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: #0035ba;
+        text-shadow: 1px 2px 3px #A7ABB6;
+        transform: translateX(0.15em);
+    }
+    
+    .profil{
+        display: flex;
+        margin-left: 30%;
+        margin-top: 0.6rem;
+        font-size: 0.5rem;
+    }
+    
+    .profil p{
+        margin-top: 9%;
+        margin-right: 15%;
+    }
+    
+    .profil iconify-icon{
+        font-size: 1.75rem;
+        color: #0041E8;
+        padding: 0 5%;
+        margin-right: 0.2rem;
+    }
 }

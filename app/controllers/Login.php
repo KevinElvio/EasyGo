@@ -5,22 +5,22 @@ class Login extends Controller
 
     public function index()
     {
-        $this->view('user/login/login');
+        $this->view('login/login');
     }
 
     public function register()
     {
-        $this->view('user/login/register');
+        $this->view('login/register');
     }
 
     public function logout()
     {
-        $this->view('user/login/logout');
+        $this->view('login/logout');
     }
 
     public function forgetpassword()
     {
-        $this->view('user/login/forgetpass');
+        $this->view('login/forgetpass');
     }
 
     public function tambah()

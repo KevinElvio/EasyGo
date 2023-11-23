@@ -24,7 +24,8 @@ html, body{
 a{
     display: flex;
     align-items: center;
-    width: 89rem;
+    width: 70%;
+    height: fit-content;
     text-decoration: none;
     color: black;
 }
@@ -73,14 +74,13 @@ a{
 }
 .car {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 10vh;
     align-items: center;
     justify-items: center; 
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
     cursor: pointer;
     margin-bottom: 2rem;
-    margin-left: 5rem;
 }
 
 .car .tulisan {
@@ -93,8 +93,8 @@ a{
 .tulisan p{
     font-size: 0.9rem;
     font-weight: 400;
-    margin: auto 25%;
-    padding: 0 10%;
+    margin-right: 40%;
+    margin-left: 10%;
 }
 
 .car img {
@@ -106,22 +106,140 @@ a{
 
 .sepedah {
     display: none;
-    width: 90%;
+    width: 100%;
     height: 10vh;
     align-items: center;
     justify-items: center; 
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
     cursor: pointer;
     margin-bottom: 2rem;
-    margin-left: 5rem;
 }
 
 .sepedah div {
-    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
 }
 
 .sepedah img {
     width: 15vh;
     height: 9vh;
     margin-left: 10%;
+    border-radius: 5px
+}
+@media (max-width: 768px){
+    .container1 {
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        }
+        
+    a{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .mobil, .motor{
+        width: 9rem;
+        height: 2.7rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        border-style: none;
+        border-radius: 5px;
+        background-color: white;
+    }
+    
+    .mobil.active{
+        background-color: #004AAD;
+        color: white;
+        cursor: pointer;
+    }
+    .motor.active{
+        background-color: #004AAD;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .mobil{
+        border: 1px solid #004AAD;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .motor{
+        border: 1px solid #004AAD;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    
+    
+    .container2{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .car {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        justify-items: center; 
+        box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+    }
+    
+    .car .tulisan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    }
+    
+    .tulisan p{
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-right: 3rem;
+    }
+    
+    .car img {
+        width: 15vh;
+        height: 9vh;
+        margin-left: 10%;
+        border-radius: 5px;
+    }
+    
+    .sepedah {
+        display: none;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        justify-items: center; 
+        box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+    }
+    
+    .sepedah div {
+        margin-left: 3rem;
+    }
+    
+    .sepedah img {
+        width: 15vh;
+        height: 9vh;
+    }
+}
+@media (max-width: 480px){
+
 }
