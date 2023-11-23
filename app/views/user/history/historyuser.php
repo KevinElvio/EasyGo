@@ -37,7 +37,7 @@
                         <td><p><?= $historyUser['id_order'] ?></p></td>
                         <td><p><?= $historyUser['total'] ?></p></td>
                         <td><p class="status"><?= $historyUser['jenis_status'] ?></p></td>
-                        <td><p class="detail"><a href="<?= BASEURL;?>/history/detail/ <?= $historyUser['id_order'];?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
+                        <td><p class="detail"><a href="<?= BASEURL;?>/history/detail/<?= $historyUser['id_order'];?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p></td>
                     </tr>
                 <?php endforeach;?>
 
