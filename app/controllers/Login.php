@@ -55,7 +55,20 @@ class Login extends Controller
         $password = $_POST['password'];
 
         $data['validasi'] = $this->model('dataUser')->login_user($username, $password);
-        var_dump($data['validasi']);
+        session_start();
+
+        if ($data['validasi'] == NULL)
+        {
+            header("Location:".BASEURL."login");
+        }
+        else
+        {
+            foreach($data['validasi'] as $login):
+                $_SESSION['nama_lengkap'] = $login['nama_lengkap'];
+                header("Location:".BASEURL."login");
+            endforeach;
+        }
+
 
 
 
@@ -67,6 +80,21 @@ class Login extends Controller
         // {
         //     header('Location:'.BASEURL.'/produk');
         // }
+    }
+
+    public function forgetpw()
+    {
+        
+
+        if ($_POST['password'] == $_POST['re-password'])
+        {
+            if($this->model('dataUser')->RegisterUser($_POST) > 0 )
+            {
+                header('Location: ' . BASEURL . '/produk');
+                exit;
+            }
+
+        }
     }
 
 }

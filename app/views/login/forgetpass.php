@@ -13,21 +13,21 @@
     <div class="login">
         <!-- <img src="<?= BASEURL; ?>/img/background-login.png" alt=""> -->
         <div class="box">
-            <form> 
+            <form action="<?= BASEURL; ?>/login/forgetpw" method="post"> 
                 <H2>Forget Password</H2>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" name="username">
                 </div>
                 <div class="password-login">
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
-                    <input type="password" placeholder="Password Baru">
+                    <input type="password" placeholder="Password Baru" name="password">
                 </div>
                 <div class="password-login">
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
-                    <input type="password" placeholder="Konfirmasi Password">
+                    <input type="password" placeholder="Konfirmasi Password" name="re-password">
                 </div>
-                <input class="button-login" type="button" value="Submit">
+                <button class="button-login" type="submit">Submit</button>
             </form>
         </div>
     </div>
