@@ -39,18 +39,25 @@ class Login extends Controller
 
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $passRent = $_POST['password'];
 
         $data['validasi'] = $this->model('READ')->login_user($username, $password);
+        $data['validasiAdmin'] = $this->model('READ')->login_admin($username, $passRent);
 
-
-
-        if ($data['validasi'] == NULL) {
-            header("Location:" . BASEURL . "/login");
-        } else {
+        if ($data['validasi'] != NULL) {
             header("Location:" . BASEURL . "/destinasi");
+            exit(); 
+        } elseif ($data['validasiAdmin'] != NULL) {
+            header("Location:" . BASEURL . "/homeadmin");
+            exit();
+        } elseif ($data['validasi'] == NULL) {
+            
+            header("Location:" . BASEURL . "/login");
+            exit(); 
         }
 
-
+        
+        
     }
 
     // public function forgetpw()

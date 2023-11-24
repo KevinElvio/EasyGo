@@ -74,4 +74,15 @@ class READ{
 
     }
 
+    public function login_admin($username, $passRent)
+    {
+        $this->db->query('SELECT * FROM tbl_rental where username= :username AND pass_rental= :passRent');
+        $this->db->bind('username', $username);
+        $this->db->bind('passRent', $passRent);
+        
+        return $this->db->resultSet();
+
+
+    }
+
 }
