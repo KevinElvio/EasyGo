@@ -17,15 +17,15 @@
                 <H2>Forget Password</H2>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
-                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Username" name="username" required>
                 </div>
                 <div class="password-login">
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
-                    <input type="password" placeholder="Password Baru" name="password">
+                    <input type="password" placeholder="Password Baru" name="password" required>
                 </div>
                 <div class="password-login">
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
-                    <input type="password" placeholder="Konfirmasi Password" name="re-password">
+                    <input type="password" placeholder="Konfirmasi Password" name="re-password" required>
                 </div>
                 <button class="button-login" type="submit">Submit</button>
             </form>
