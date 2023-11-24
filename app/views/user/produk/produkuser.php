@@ -20,16 +20,21 @@
     <button class="motor" onclick="pg('motor')">Motor</button>
   </div>
   <div class="container2">
-    <a href="<?= BASEURL; ?>/produk/detail">
-      <div class="car" onclick="myfungsi()">
-        <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-        <div class="tulisan">
-          <p> pagani zonda</p>
-          <p> deskripsi</p>
-          <p>1200k/jam</p>
+    <?php foreach ($data['ProdukUserMobil'] as $ProdukUserMobil) : ?>
+      <a href="<?= BASEURL; ?>/produk/detail">
+        <div class="car" onclick="myfungsi()">
+          <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
+          <div class="tulisan">
+            <p> <?= $ProdukUserMobil['nama_transport']?></p>
+            <p> <?= $ProdukUserMobil['deskripsi_produk']?></p>
+            <p><?= $ProdukUserMobil['harga_sewa']?>/jam</p>
+          </div>
         </div>
-      </div>
-    </a>
+      <?php endforeach ?>
+
+
+
+      <!-- </a>
     <a href="<?= BASEURL; ?>/produk/detail">
       <div class="car" onclick="myfungsi()">
         <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
@@ -49,8 +54,18 @@
           <p>1200k/jam</p>
         </div>
       </div>
-    </a>
-    <a href="<?= BASEURL; ?>/produk/detail">
+    </a> -->
+      <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
+        <a href="<?= BASEURL; ?>/produk/detail">
+          <div class="sepedah" onclick="myfungsi()">
+            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
+            <div class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></div>
+            <div class="deskripsi"> <?= $ProdukUserMotor['deskripsi_produk'] ?></div>
+            <div class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</div>
+          </div>
+        </a>
+      <?php endforeach ?>
+      <!-- <a href="<?= BASEURL; ?>/produk/detail">
         <div class="sepedah" onclick="myfungsi()">    
             <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
             <div class="nama"> SUpraman</div>
@@ -65,15 +80,7 @@
             <div class="deskripsi"> deskripsi</div>
             <div class="harga" >!M/JAm</div>
         </div>
-      </a>
-      <a href="<?= BASEURL; ?>/produk/detail">
-        <div class="sepedah" onclick="myfungsi()">    
-            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-            <div class="nama"> SUpraman</div>
-            <div class="deskripsi"> deskripsi</div>
-            <div class="harga" >!M/JAm</div>
-        </div>
-      </a>
+      </a> -->
   </div>
 
 

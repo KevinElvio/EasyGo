@@ -12,7 +12,7 @@
 
     <div class="box-profile">
         <h2>Kevin Elvio</h2>
-        <h1>Seller</h1>
+        <!-- <h1>Seller</h1> -->
         <div class="keterangan">
             <div class="konten-profil">
                 <img src="<?= BASEURL; ?>/img/profil.JPG" alt="">

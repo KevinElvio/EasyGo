@@ -1,6 +1,7 @@
 <?php
 
-class READ{
+class READ
+{
 
 
     private $db;
@@ -19,7 +20,6 @@ class READ{
         ");
 
         return $this->db->resultSet();
-        
     }
 
     public function getHistoryUserById($id_order)
@@ -36,7 +36,7 @@ class READ{
         return $this->db->single();
     }
 
-    public function getAllhistory() 
+    public function getAllhistory()
     {
         $this->db->query("select foto_transport, nama_transport, tgl_order, id_order, DATEDIFF(tgl_pengembalian, tgl_peminjaman) * harga_sewa AS total, jenis_status
         from tbl_order o
@@ -70,8 +70,7 @@ class READ{
         $this->db->bind('username', $username);
         $this->db->bind('password', $password);
 
-       return $this->db->resultSet();
-
+        return $this->db->resultSet();
     }
 
     public function login_admin($username, $passRent)
@@ -81,8 +80,6 @@ class READ{
         $this->db->bind('passRent', $passRent);
 
         return $this->db->resultSet();
-
-
     }
 
     public function listDestinasi()
@@ -91,9 +88,29 @@ class READ{
         return $this->db->resultSet();
     }
 
-    public function ListProdukUser()
+    public function ListProdukMotor()
     {
-        $this->db->query('');
+        $this->db->query('select foto_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        from tbl_transport
+        where id_jenistransport = 2');
+
+        return $this->db->resultSet();
+
     }
 
+    public function ListProdukMobil()
+    {
+        $this->db->query('select foto_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        from tbl_transport
+        where id_jenistransport = 1');
+
+        return $this->db->resultSet();
+    }
+
+
+    // public function DataProfile()
+    // {
+    //     $this->db->query('select foto, nama_lengkap, no_telp, email_user, alamat
+    //     from tbl_user WHERE foto = :foto');
+    // }
 }
