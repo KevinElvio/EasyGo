@@ -30,8 +30,8 @@
                 <div class="register">
                     <input type="password" placeholder="Re-Password" id="re-password" name="re-password">
                 </div>
-                <label>
-                    <input class="ketentuan" id="checkPenyewa" type="checkbox">
+                <!-- <label>
+                    <input class="ketentuan" id="checkPenyewa" type="checkbox" name="admin">
                     Daftar sebagai penyewa <br>
                 </label>
                 <div class="form-penyewa">
@@ -50,8 +50,8 @@
                     <div class="register">
                         <input type="text" placeholder="Kota">
                     </div>
-                </div>
-                <input class="button-login" type="submit" value="Register">
+                </div> -->
+                <button class="button-login" type="submit">Register</button>
             </form>
         </div>
     </div>
