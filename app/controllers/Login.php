@@ -20,7 +20,7 @@ class Login extends Controller
     {
         if ($_POST['password'] == $_POST['re-password'])
         {
-            if($this->model('dataUser')->RegisterUser($_POST) > 0 )
+            if($this->model('CREATE')->RegisterUser($_POST) > 0 )
             {
                 header('Location: ' . BASEURL . '/produk');
                 exit;
@@ -54,7 +54,7 @@ class Login extends Controller
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $data['validasi'] = $this->model('dataUser')->login_user($username, $password);
+        $data['validasi'] = $this->model('READ')->login_user($username, $password);
         session_start();
 
         if ($data['validasi'] == NULL)

@@ -62,4 +62,16 @@ class READ{
         return $this->db->single();
     }
 
+    public function login_user($username, $password)
+    {
+        // $query= ;
+
+        $this->db->query('select username, password form tbl_user where username= :username AND password= :password');
+        $this->db->bind('username', $username);
+        $this->db->bind('password', $password);
+
+        $this->db->execute();
+
+    }
+
 }
