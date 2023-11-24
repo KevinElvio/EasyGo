@@ -107,3 +107,71 @@ footer {
     font-size: 0.7rem;
     color: #aaaaaa;
 }
+
+
+
+@media (max-width: 768px) {
+    .left-section .judul-footer{
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .left-section p{
+        font-size: 0.8rem;
+    }
+
+    .lokasi {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .left-section .judul-footer{
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .left-section p{
+        font-size: 0.7rem;
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transport ul li, .lokasi ul li{
+        font-size: 0.69rem;
+        padding-bottom: 3%;
+    }
+    
+    .transport p, .lokasi p{
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .lokasi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lokasi button{
+        width: 4rem;
+        height: 2rem;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .credit{
+        margin-top: 8%;
+        font-size: 0.7rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
