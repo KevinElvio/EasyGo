@@ -11,6 +11,7 @@
 <body>
 
     <div class="box-profile">
+        <h1>Seller</h1>
         <h2>Kevin Elvio</h2>
         <h1>Seller</h1>
         <div class="keterangan">

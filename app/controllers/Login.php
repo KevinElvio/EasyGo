@@ -19,10 +19,12 @@ class Login extends Controller
     {
         if ($_POST['password'] == $_POST['re-password']) {
             if ($this->model('CREATE')->RegisterUser($_POST) > 0) {
-                header('Location: ' . BASEURL . '/produk');
+                header('Location: ' . BASEURL . '/login');
                 exit;
             }
-        } else {
+        }
+        else 
+        {
             header('Location:' . BASEURL . '/login/register');
         }
 
@@ -37,29 +39,43 @@ class Login extends Controller
 
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $passRent = $_POST['password'];
 
         $data['validasi'] = $this->model('READ')->login_user($username, $password);
+        $data['validasiAdmin'] = $this->model('READ')->login_admin($username, $passRent);
 
-
-
-        if ($data['validasi'] == NULL) {
+        if ($data['validasi'] != NULL) {
+            header("Location:" . BASEURL . "/destinasi");
+            exit(); 
+        } elseif ($data['validasiAdmin'] != NULL) {
+            header("Location:" . BASEURL . "/homeadmin");
+            exit();
+        } elseif ($data['validasi'] == NULL) {
+            
             header("Location:" . BASEURL . "/login");
-        } else {
-            header("Location:" . BASEURL . "/produk");
+            exit(); 
         }
 
-
+        
+        
     }
 
-    public function forgetpw()
-    {
+    // public function forgetpw()
+    // {
 
+    //     $username = $_POST['username'];
+    //     $password = $_POST['password'];
+    //     $Repass = $_POST['re-password'];
 
-        if ($_POST['password'] == $_POST['re-password']) {
-            if ($this->model('dataUser')->RegisterUser($_POST) > 0) {
-                header('Location: ' . BASEURL . '/produk');
-                exit;
-            }
-        }
-    }
+    //     $data['lupaPW'] = $this->model('UPDATE')->lupaPassword($username,$password);
+
+    //     if($data['lupaPW'] == )
+
+    //     if ($_POST['password'] == $_POST['re-password']) {
+    //         if ($this->model('dataUser')->RegisterUser($_POST) > 0) {
+    //             header('Location: ' . BASEURL . '/produk');
+    //             exit;
+    //         }
+    //     }
+    // }
 }

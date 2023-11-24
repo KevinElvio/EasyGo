@@ -16,19 +16,19 @@
             <form action="<?=BASEURL; ?>/login/tambah" method="post">
                 <H1>Register</H1>
                 <div class="register">
-                    <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap">
+                    <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap" required>
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Username" id="username" name="username">
+                    <input type="text" placeholder="Username" id="username" name="username" required>
                 </div>
                 <div class="register">
-                    <input type="email" placeholder="Email" id="email_user" name="email_user">
+                    <input type="email" placeholder="Email" id="email_user" name="email_user" required>
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Password" id="password" name="password">
+                    <input type="password" placeholder="Password" id="password" name="password" required>
                 </div>
                 <div class="register">
-                    <input type="password" placeholder="Re-Password" id="re-password" name="re-password">
+                    <input type="password" placeholder="Re-Password" id="re-password" name="re-password" required>
                 </div>
                 <!-- <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox" name="admin">

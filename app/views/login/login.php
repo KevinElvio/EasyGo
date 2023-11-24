@@ -16,11 +16,11 @@
                 <H1>LOGIN</H1>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
-                    <input type="text" placeholder="Username" name="username" id="username">
+                    <input type="text" placeholder="Username" name="username" id="username" required>
                 </div>
                 <div class="password-login">
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
-                    <input type="password" placeholder="Password" name="password" id="password">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
                 </div>
                 <p><a href="<?= BASEURL; ?>/login/forgetpassword">Forget password?</a></p>
                 <button class="button-login" type="submit">Login</button>
