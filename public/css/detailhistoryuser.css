@@ -86,7 +86,7 @@ h1{
     height: 2.1rem;
     width: 2.1rem;
     padding: 0.3; 
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 3%;
 }
 
@@ -106,4 +106,122 @@ h1{
     border-radius: 0.4rem;
     font-weight: 600;
     transform: scale(1.02) translateY(3px)
+}
+
+@media (max-width: 768px){
+    .pembungkus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gambar img{
+        width: 20rem;
+        height: 15rem;
+        margin-top: 4%;
+    }
+
+    
+    h1{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+        letter-spacing: 0.5px;
+    }
+
+    .isi{
+        padding-top: 2%;
+    }
+
+
+    .isi iconify-icon{
+        height: 2rem;
+        width: 2rem;
+        padding: 0.3; 
+        font-size: 1.7rem;
+    }
+
+    .isi span{
+        margin-left: 15%;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+
+    .back{
+        width: 2.3rem;
+        height: 2rem;
+        border-radius: 0.4rem;
+    }
+    
+    .back iconify-icon{
+        font-size: 1.2rem;
+    }
+
+    .back:hover{
+        width: 2.3rem;
+        height: 2rem;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        transform: scale(1.02) translateY(1px)
+    }
+}
+
+
+@media (max-width: 480px){
+    .pembungkus{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gambar img{
+        width: 18rem;
+        height: 13rem;
+        margin-top: 4%;
+    }
+
+    
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+        letter-spacing: 0.5px;
+    }
+
+    .isi{
+        padding-top: 2%;
+    }
+
+
+    .isi iconify-icon{
+        height: 2rem;
+        width: 2rem;
+        padding: 0.3; 
+        font-size: 1.7rem;
+    }
+
+    .isi span{
+        margin-left: 15%;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+
+    .back{
+        width: 2rem;
+        height: 1.7rem;
+        border-radius: 0.4rem;
+    }
+    
+    .back iconify-icon{
+        font-size: 1rem;
+    }
+
+    .back:hover{
+        width: 2.1rem;
+        height: 1.71rem;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        transform: scale(1.02) translateY(1px)
+    }
 }

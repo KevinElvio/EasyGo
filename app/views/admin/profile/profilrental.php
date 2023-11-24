@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?= BASEURL;?>/css/profilrental.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/profilrental.css">
 </head>
 
 <body>
 
     <div class="box-profile">
-        <h1>Seller</h1>
         <h2>Kevin Elvio</h2>
+        <h1>Seller</h1>
         <div class="keterangan">
-            <img src="<?= BASEURL;?>/img/profil.JPG" alt="">
-            <div class="telepon">
-                <iconify-icon icon="lets-icons:phone-light"></iconify-icon>
-                <h4>0853423458923</h4>
+            <div class="konten-profil">
+                <img src="<?= BASEURL; ?>/img/profil.JPG" alt="">
+                <div class="konten-profil2">
+                    <div class="telepon">
+                        <iconify-icon icon="lets-icons:phone-light"></iconify-icon>
+                        <h4>0853423458923</h4>
+                    </div>
+                    <div class="lokasi-profil">
+                        <iconify-icon icon="ep:location"></iconify-icon>
+                        <h4>Tanggul, Jember</h4>
+                    </div>
+                    <div class="email">
+                        <iconify-icon icon="ep:message"></iconify-icon>
+                        <h4>Kevinelvio@gmail.com</h4>
+                    </div>
+                </div>
+
             </div>
-            <div class="lokasi-profil">
-                <iconify-icon icon="ep:location"></iconify-icon>
-                <h4>Tanggul, Jember</h4>
-            </div>
-            <div class="email">
-                <iconify-icon icon="ep:message"></iconify-icon>
-                <h4>Kevinelvio@gmail.com</h4>
-            </div>
+
             <div class="edit">
                 <div class="hapus-akun">
                     <h3><a href="">Hapus Akun</a></h3>

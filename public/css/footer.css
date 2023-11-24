@@ -126,6 +126,16 @@ footer {
         flex-direction: column;
     }
 
+    .lokasi button{
+        width:4.7rem;
+        height: 2rem;
+        font-size: 0.65rem;
+    }
+
+    .credit{
+        margin-top: 6%;
+    }
+
 }
 
 @media (max-width: 540px) {

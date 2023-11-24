@@ -27,31 +27,31 @@
             <div class="list-isi">
                 <h1><?= $data['historyUser']['nama_transport']; ?></h1>
                 <div class="isi">
-                    <iconify-icon icon="ant-design:number-outlined" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="ant-design:number-outlined" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['id_order']; ?></span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="healthicons:ui-user-profile" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="healthicons:ui-user-profile" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['nama_rental']; ?></span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="fa6-solid:rupiah-sign" width="25" height="25" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="fa6-solid:rupiah-sign" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['harga_sewa']; ?> / hari</span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="material-symbols:deployed-code-update-outline-sharp" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="material-symbols:deployed-code-update-outline-sharp" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['tgl_peminjaman']; ?></span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="grommet-icons:validate" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="grommet-icons:validate" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['tgl_pengembalian']; ?></span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="ei:location" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="ei:location" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['nama_kota']; ?></span>
                 </div>
                 <div class="isi">
-                    <iconify-icon icon="fluent-mdl2:payment-card" width="30" height="30" style="vertical-align: middle;"></iconify-icon>
+                    <iconify-icon icon="fluent-mdl2:payment-card" style="vertical-align: middle;"></iconify-icon>
                     <span style="vertical-align: middle;"><?= $data['historyUser']['total']; ?></span>
                 </div>
             </div>

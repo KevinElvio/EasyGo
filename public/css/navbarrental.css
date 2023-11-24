@@ -28,7 +28,7 @@ html, body{
 
 .tombol{
     display: flex;
-    margin-left: 48%;
+    margin-left: 30%;
     margin-top: 1rem;
     margin-right: 1%;
 }
@@ -52,7 +52,7 @@ html, body{
 
 .profil{
     display: flex;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-top: 0.5rem;
     font-size: 0.75rem;
 }
