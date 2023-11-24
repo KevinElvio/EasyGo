@@ -12,10 +12,10 @@ class dataUser
     public function RegisterUser($data)
     {
         // $query = "insert into tbl_user (username, nama_lengkap, alamat, no_telp, email_user, tgl_lahir, password) VALUES (:username, :nama_lengkap, :alamat, :no_telp, :email_user, :tgl_lahir, :foto, :password )";
-        
+
         // $query = "insert into tbl_user (nama_lengkap, username, email_user, password) VALUES (:nama_lengkap, :username, :email_user, :password )";
         // (username, nama_lengkap, alamat, no_telp, email_user, tgl_lahir, password)         
-        
+
         $query = "insert into tbl_user (nama_lengkap, username, email_user, password) VALUES (:nama_lengkap, :username, :email_user,:password )";
 
         $this->db->query($query);
@@ -30,14 +30,14 @@ class dataUser
 
     public function login_user($username, $password)
     {
-        // $query= ;
 
-        $this->db->query('select username, password form tbl_user where username= :username, password= :password');
-        $this->db->bind('username', $username);
-        $this->db->bind('password', $password);
+        $query = 'SELECT username, password FROM tbl_user WHERE username = :username AND password = :password';
+
+        $this->db->query($query);
+
+        $this->db->bind(':username', $username);
+        $this->db->bind(':password', $password);
 
         $this->db->execute();
-
     }
 }
-
