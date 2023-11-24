@@ -17,38 +17,15 @@
         <div class="container1">
             <div class="judul">Pilih Kota Tujuan</div>
         </div>
-        <div class="container2">
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
-            <a href="<?= BASEURL; ?>/produk">
-                <div class="box">
-                    <div class="textbox">Surabaya</div>
-                </div>
-            </a>
 
+        <div class="container2">
+            <?php foreach ($data['destinasi'] as $destinasi) : ?>
+                <a href="<?= BASEURL; ?>/produk">
+                    <div class="box">
+                        <div class="textbox"><?= $destinasi['nama_kota'] ?></div>
+                    </div>
+                </a>
+            <?php endforeach ?>
         </div>
     </div>
 

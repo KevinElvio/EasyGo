@@ -79,10 +79,16 @@ class READ{
         $this->db->query('SELECT * FROM tbl_rental where username= :username AND pass_rental= :passRent');
         $this->db->bind('username', $username);
         $this->db->bind('passRent', $passRent);
-        
+
         return $this->db->resultSet();
 
 
+    }
+
+    public function listDestinasi()
+    {
+        $this->db->query('select foto_kota, nama_kota from tbl_kota');
+        return $this->db->resultSet();
     }
 
 }
