@@ -91,4 +91,9 @@ class READ{
         return $this->db->resultSet();
     }
 
+    public function ListProdukUser()
+    {
+        $this->db->query('');
+    }
+
 }
