@@ -30,13 +30,14 @@ class dataUser
 
     public function login_user($username, $password)
     {
-        // $query= ;
+        $query= "SELECT username, password FROM `tbl_user`  WHERE username=:username, password=:password";
 
-        $this->db->query('select username, password form tbl_user where username= :username, password= :password');
+        $this->db->query($query);
         $this->db->bind('username', $username);
         $this->db->bind('password', $password);
 
         $this->db->execute();
+        return $this->db->single();
 
     }
 }
