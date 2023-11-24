@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/profiluser.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/profilrental.css">
 </head>
 
 <body>
 
     <div class="box-profile">
-        <h1>Seller</h1>
         <h2>Kevin Elvio</h2>
         <h1>Seller</h1>
         <div class="keterangan">
