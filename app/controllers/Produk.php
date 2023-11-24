@@ -9,11 +9,12 @@ class Produk extends Controller{
         $this->view("user/produk/produkuser",$data);
         $this->view("template/footeruser");
         }
-        public function detail(){
+        public function detail($id_transport){
+        $data['DetailProduk'] = $this->model('READ')->GetDetailProduk($id_transport);
         $this->view("template/navbaruser");
-        $this->view("user/produk/produkdetail");
+        $this->view("user/produk/produkdetail", $data);
         $this->view("template/footeruser");
-    }
+        }
     public function pemesanan(){
         $this->view("template/navbaruser");
         $this->view("user/produk/formpemesanan");

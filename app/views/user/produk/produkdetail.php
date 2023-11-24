@@ -26,24 +26,25 @@
             <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
         </div>
         <div class="box2">
-            <h1>Avanza 0202</h1>
-            <h5>250.000/D</h5>
-            <h2>Deskripsi Mobil</h2>
+            
+            <h1><?= $data['DetailProduk']['nama_transport']; ?></h1>
+            <h5><?= $data['DetailProduk']['harga_sewa']; ?>/D</h5>
+            <h2><?= $data['DetailProduk']['deskripsi_produk']; ?></h2>
             <div>
                 <iconify-icon icon="ion:speedometer-outline" width="30" height="30"></iconify-icon>
-                <h4>2400km</h4>
+                <h4><?= $data['DetailProduk']['total_kilometer']; ?>km</h4>
             </div>
             <div>
                 <iconify-icon icon="ph:calendar-light" width="30" height="30"></iconify-icon>
-                <h4>2019</h4>
+                <h4><?= $data['DetailProduk']['tahun_keluar']; ?></h4>
             </div>
             <div>
                 <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
-                <h4>JL.mawar 8,Surabaya,Jawa Timur</h4>
+                <h4><?= $data['DetailProduk']['link_maps']; ?></h4>
             </div>
             <div>
                 <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
-                <h4>Mobil keluaran tahun 2019 ini tidak pernah mengalami kendala saat dijalan kecuali terkena jebakan paku</h4>
+                <h4><?= $data['DetailProduk']['deskripsi_produk']; ?></h4>
             </div>
             <a href="<?= BASEURL; ?>/produk/pemesanan">
                 <button>

@@ -4,3 +4,11 @@ DISINI MANIAH MELLOW, COBA DI KAMU LETAKIN FOLDERNYA DISINI
 
 
           <?php endforeach; ?>
+
+
+          <?= $data['DetailProduk']['nama_transport']; ?>
+          <?= $data['DetailProduk']['harga_sewa']; ?>
+          <?= $data['DetailProduk']['total_kilometer']; ?>
+          <?= $data['DetailProduk']['tahun_keluar']; ?>
+          <?= $data['DetailProduk']['merk']; ?>
+          <?= $data['DetailProduk']['deskripsi_produk']; ?>

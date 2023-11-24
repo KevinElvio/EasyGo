@@ -32,29 +32,6 @@
         </div>
       <?php endforeach ?>
 
-
-
-      <!-- </a>
-    <a href="<?= BASEURL; ?>/produk/detail">
-      <div class="car" onclick="myfungsi()">
-        <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-        <div class="tulisan">
-          <p> pagani zonda</p>
-          <p> deskripsi</p>
-          <p>1200k/jam</p>
-        </div>
-      </div>
-    </a>
-    <a href="<?= BASEURL; ?>/produk/detail">
-      <div class="car" onclick="myfungsi()">
-        <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-        <div class="tulisan">
-          <p>pagani zonda</p>
-          <p>deskripsi</p>
-          <p>1200k/jam</p>
-        </div>
-      </div>
-    </a> -->
       <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
         <a href="<?= BASEURL; ?>/produk/detail">
           <div class="sepedah" onclick="myfungsi()">
@@ -65,22 +42,7 @@
           </div>
         </a>
       <?php endforeach ?>
-      <!-- <a href="<?= BASEURL; ?>/produk/detail">
-        <div class="sepedah" onclick="myfungsi()">    
-            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-            <div class="nama"> SUpraman</div>
-            <div class="deskripsi"> deskripsi</div>
-            <div class="harga" >!M/JAm</div>
-        </div>
-      </a>
-      <a href="<?= BASEURL; ?>/produk/detail">
-        <div class="sepedah" onclick="myfungsi()">    
-            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-            <div class="nama"> SUpraman</div>
-            <div class="deskripsi"> deskripsi</div>
-            <div class="harga" >!M/JAm</div>
-        </div>
-      </a> -->
+
   </div>
 
 
