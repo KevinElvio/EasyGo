@@ -26,7 +26,7 @@
           <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
           <div class="tulisan">
             <p> <?= $ProdukUserMobil['nama_transport']?></p>
-            <p> <?= $ProdukUserMobil['deskripsi_produk']?></p>
+            <p> <?= $ProdukUserMobil['tahun_keluar']?></p>
             <p><?= $ProdukUserMobil['harga_sewa']?>/jam</p>
           </div>
         </div>
@@ -60,7 +60,7 @@
           <div class="sepedah" onclick="myfungsi()">
             <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
             <div class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></div>
-            <div class="deskripsi"> <?= $ProdukUserMotor['deskripsi_produk'] ?></div>
+            <div class="deskripsi"> <?= $ProdukUserMotor['tahun_keluar'] ?></div>
             <div class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</div>
           </div>
         </a>
