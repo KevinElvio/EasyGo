@@ -66,11 +66,11 @@ class READ{
     {
         // $query= ;
 
-        $this->db->query('select username, password from tbl_user where username= :username AND password= :password');
+        $this->db->query('select * from tbl_user where username= :username AND password= :password');
         $this->db->bind('username', $username);
         $this->db->bind('password', $password);
 
-        $this->db->execute();
+       return $this->db->resultSet();
 
     }
 

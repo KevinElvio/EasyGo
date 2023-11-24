@@ -34,22 +34,12 @@ class Login extends Controller
 
     public function validasi()
     {
-        // $username = $this->model('dataUser')->login_user($data['username']);
-        // $password = $this->model('dataUser')->login_user($data['password']);
-
-        // if($_POST['username'] != $username && $_POST['password'] != $password)
-        // {
-        //     header('Location:'.BASEURL.'/login');
-        // }
-        // else
-        // {
-        //     header('Location:'.BASEURL.'/produk');
-        // }
 
         $username = $_POST['username'];
         $password = $_POST['password'];
 
         $data['validasi'] = $this->model('READ')->login_user($username, $password);
+
 
 
         if ($data['validasi'] == NULL) {
@@ -59,21 +49,6 @@ class Login extends Controller
         }
 
 
-
-        // if ($data['validasi']['username'] == $username && $data['validasi']['password'] == $password) {
-        //     header("Location:" . BASEURL . "/produk");
-        // } else {
-        //     header("Location:" . BASEURL . "/login");
-        // }
-
-
-
-
-        // if ($data['validasi'] == $username && $data['validasi'] == $password) {
-        //     header("Location:" . BASEURL . "/produk");
-        // } elseif ($data['validasi'] != $username || $data['validasi'] != $password) {
-        //     header("Location:" . BASEURL . "/login");
-        // }
     }
 
     public function forgetpw()
