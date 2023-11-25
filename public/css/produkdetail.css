@@ -12,6 +12,10 @@ html, body{
     font-weight: 400;
 }
 
+.dalamnya{
+    margin-bottom: 20%;
+}
+
 .judul{
     font-size: 30px;
     font-weight: 600;
@@ -112,10 +116,9 @@ div iconify-icon{
     height: 30;
 }
 
-
 .maps {
     text-decoration: none;
-    color: black;
+    color: #004AAD;
     font-size: 1rem;
 }
 

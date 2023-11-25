@@ -13,20 +13,20 @@
     <?php
     // include "navbaruser.php";
     ?>
-        
+    <div class="dalamnya">
         <h2 class="judul">Detail Kendaraan</h2>
-        
+
         <div class="back">
-        <a href="<?= BASEURL;?>/produk">
-            <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
-        </a>
+            <a href="<?= BASEURL; ?>/produk">
+                <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+            </a>
         </div>
         <div class="container1">
             <div class="box1">
                 <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
             </div>
             <div class="box2">
-                
+
                 <h1>AVANZA</h1>
                 <h5>2O0.000/D</h5>
                 <h2>Deskripsi Produk</h2>
@@ -40,7 +40,7 @@
                 </div>
                 <div>
                     <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
-                    <h4><a href="https://maps.app.goo.gl/ApEeUMCpKHEbY5AA8" class="maps"></a></h4>
+                    <h4><a href="https://maps.app.goo.gl/ApEeUMCpKHEbY5AA8" class="maps">maps.app.goo.gl</a></h4>
                 </div>
                 <div>
                     <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
@@ -51,14 +51,17 @@
                         Rent Now <iconify-icon icon="ph:arrow-up-thin" rotate="90deg" style="vertical-align: middle;"></iconify-icon>
                     </button>
                 </a>
-    
-                </div>
+
             </div>
+        </div>
+
+
+    </div>
 
 
 
 
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
