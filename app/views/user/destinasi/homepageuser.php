@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <?php
-    // include "navbaruser.php";
-    ?>
     <div class="dalamnya">
         <div class="container1">
             <div class="judul">Pilih Kota Tujuan</div>
@@ -20,7 +17,7 @@
 
         <div class="container2">
             <?php foreach ($data['destinasi'] as $destinasi) : ?>
-                <a href="<?= BASEURL; ?>/produk">
+                <a href="<?= BASEURL; ?>/produk" <?= $destinasi['id_kota']; ?>>
                     <div class="box">
                         <div class="textbox"><?= $destinasi['nama_kota'] ?></div>
                     </div>
