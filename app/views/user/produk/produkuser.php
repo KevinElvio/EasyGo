@@ -21,7 +21,7 @@
   </div>
   <div class="container2">
     <?php foreach ($data['ProdukUserMobil'] as $ProdukUserMobil) : ?>
-      <a href="<?= BASEURL; ?>/produk/detail <?= $ProdukUserMobil['id_transport']; ?>">
+      <a href="<?= BASEURL; ?>/produk/detail/<?=$ProdukUserMobil['id_transport'];?>">
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
           <div class="tulisan">
@@ -33,7 +33,7 @@
       <?php endforeach ?>
 
       <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
-        <a href="<?= BASEURL; ?>/produk/detail" <?= $ProdukUserMotor['id_transport']; ?>>
+        <a href="<?= BASEURL; ?>/produk/detail/"<?=$ProdukUserMotor['id_transport'];?>>
           <div class="sepedah" onclick="myfungsi()">
             <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
             <div class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></div>
