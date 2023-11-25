@@ -33,12 +33,12 @@ html, body{
 
 .tombol{
     display: flex;
-    margin-left: 48%;
+    margin-left: 50%;
     margin-top: 1.5%;
 }
 
 .tombol a{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 0 auto; 
     display: block;
     padding: 0 25%; 
@@ -47,7 +47,7 @@ html, body{
 }
 
 .tombol a:hover{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #0035ba;
     text-shadow: 1px 2px 3px #A7ABB6;
@@ -56,10 +56,10 @@ html, body{
 
 .profil{
     display: flex;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 0.8%;
-    font-size: 0.75rem;
-    margin-right: 10%;
+    font-size: 0.8rem;
+    margin-right: 5%;
 }
 
 .profil p{
@@ -74,7 +74,7 @@ html, body{
     margin-right: 0.2rem;
 }
 
-@media (max-width: 768px){
+@media (max-width: 850px){
 
     * {
         margin: 0px;
@@ -99,12 +99,12 @@ html, body{
     
     .tombol{
         display: flex;
-        margin-left: 48%;
+        margin-left: 30%;
         margin-top: 1rem;
     }
     
     .tombol a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         margin: 0 auto; 
         display: block;
         padding: 0 25%; 
@@ -113,7 +113,7 @@ html, body{
     }
     
     .tombol a:hover{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         font-weight: 500;
         color: #0035ba;
         text-shadow: 1px 2px 3px #A7ABB6;
@@ -124,7 +124,7 @@ html, body{
         display: flex;
         margin-left: 20%;
         margin-top: 0.6rem;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     
     .profil p{
@@ -139,7 +139,7 @@ html, body{
         margin-right: 0.2rem;
     }
 }
-@media (max-width: 480px){
+@media (max-width: 600px){
     
     * {
         margin: 0px;
