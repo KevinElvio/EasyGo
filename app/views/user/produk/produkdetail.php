@@ -40,7 +40,7 @@
                 </div>
                 <div>
                     <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
-                    <h4><?= $data['DetailProduk']['link_maps']; ?></h4>
+                    <h4><a href="<?= $data['DetailProduk']['link_maps']; ?>"><?= $data['DetailProduk']['link_maps'];?>  </a></h4>
                 </div>
                 <div>
                     <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
