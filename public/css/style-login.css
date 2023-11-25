@@ -32,7 +32,7 @@ form {
     align-items: center;
 }
 
-form p{
+form .lupapass{
     margin-left: auto;
     text-align: right;
     font-size: 0.68rem;
@@ -43,6 +43,13 @@ p a{
     color: #03008F;
 }
 
+.daftarskrg{
+    text-align: center;
+    font-size: 0.68rem;
+    margin-top: 12%;
+    margin-bottom: -12%;
+}
+
 .box form{
     justify-content: center;
     /* margin-top: 35%; */
@@ -50,7 +57,7 @@ p a{
 
 form h1{
     color: #03008F;
-    margin-top: -10%;
+    margin-top: 1%;
 }
 
 .username-login{
@@ -109,7 +116,7 @@ form h1{
 }
 
 .button-login{
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: #004AAD;
     color: white;
     border-radius: 0.3rem;
@@ -129,3 +136,4 @@ form h1{
     background-color: #002861;
     transform: translateY(-5px);
 }
+

@@ -30,6 +30,7 @@
                 <div class="register">
                     <input type="password" placeholder="Re-Password" id="re-password" name="re-password" required>
                 </div>
+                <p class="daftarrental" style="text-align: right;"><a href="<?= BASEURL; ?>/login/registeradmin">Register as Rental</a></p>
                 <!-- <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox" name="admin">
                     Daftar sebagai penyewa <br>

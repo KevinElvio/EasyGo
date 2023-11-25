@@ -10,6 +10,10 @@ class Login extends Controller
     {
         $this->view('login/register');
     }
+    public function registeradmin()
+    {
+        $this->view('login/registeradmin');
+    }
     public function forgetpassword()
     {
         $this->view('login/forgetpass');
