@@ -25,15 +25,15 @@
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
           <div class="tulisan">
-            <p> <?= $ProdukUserMobil['nama_transport'] ?></p>
-            <p> <?= $ProdukUserMobil['tahun_keluar'] ?></p>
-            <p><?= $ProdukUserMobil['harga_sewa'] ?>/jam</p>
+            <p> <?= $ProdukUserMobil['nama_transport']?></p>
+            <p> <?= $ProdukUserMobil['tahun_keluar']?></p>
+            <p><?= $ProdukUserMobil['harga_sewa']?>/jam</p>
           </div>
         </div>
-    <?php endforeach ?>
+      <?php endforeach ?>
 
       <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
-        <a href="<?= BASEURL; ?>/produk/detail <?= $ProdukUserMotor['id_transport']; ?>">
+        <a href="<?= BASEURL; ?>/produk/detail" <?= $ProdukUserMotor['id_transport']; ?>>
           <div class="sepedah" onclick="myfungsi()">
             <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
             <div class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></div>

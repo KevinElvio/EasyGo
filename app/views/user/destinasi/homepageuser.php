@@ -17,7 +17,7 @@
 
         <div class="container2">
             <?php foreach ($data['destinasi'] as $destinasi) : ?>
-                <a href="<?= BASEURL; ?>/produk" <?= $destinasi['id_kota']; ?>>
+                <a href="<?= BASEURL; ?>/produk">
                     <div class="box">
                         <div class="textbox"><?= $destinasi['nama_kota'] ?></div>
                     </div>
