@@ -21,9 +21,14 @@ html, body{
     height: 3.4rem;
 }
 
-.atas img{
-    width: 5%;
-    margin-left: 3%;
+.atas a img{
+    margin: auto 0;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
 }
 
 .tombol{
@@ -51,9 +56,10 @@ html, body{
 
 .profil{
     display: flex;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 0.8%;
     font-size: 0.75rem;
+    margin-right: 10%;
 }
 
 .profil p{

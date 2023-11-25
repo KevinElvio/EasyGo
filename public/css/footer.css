@@ -164,18 +164,18 @@ footer {
         font-weight: 600;
     }
 
-    .lokasi {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lokasi button{
+    .lokasi .btn-lokasi{
         width: 4rem;
         height: 2rem;
         padding-left: 4%;
         padding-right: 4%;
         font-size: 0.6rem;
         font-weight: 600;
+    }
+
+    .lokasi .btn-lokasi a{
+        align-items: center;
+        text-align: center;
     }
 
     .credit{

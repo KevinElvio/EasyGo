@@ -13,7 +13,7 @@
 
 <body>
     <div class="atas">
-        <img src="<?= BASEURL;?>/img/logo.png" alt="">
+        <a href="<?= BASEURL;?>/homeadmin"><img src="<?= BASEURL;?>/img/logo.png" alt=""></a>
         <div class="tombol">
             <a href="<?= BASEURL;?>/HomeAdmin">Home</a>
             <a href="<?= BASEURL;?>/ProdukAdmin">Produk</a>

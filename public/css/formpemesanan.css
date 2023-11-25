@@ -11,9 +11,13 @@ html, body{
     Font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-conify-icon{
+iconify-icon{
     width: 35;
     height: 35;
+}
+
+.dalamnya{
+    margin-bottom: 11%;
 }
 
 .container1{
