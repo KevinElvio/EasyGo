@@ -112,6 +112,13 @@ div iconify-icon{
     height: 30;
 }
 
+
+.maps {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
 button iconify-icon{
     color: #ffffff;
     font-size: 1rem;

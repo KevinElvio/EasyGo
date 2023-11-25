@@ -109,7 +109,7 @@ class READ
 
     public function GetDetailProduk($id_transport)
     {
-        $this->db->query('select foto_transport, nama_transport, harga_sewa, total_kilometer, tahun_keluar, link_maps, deskripsi_produk
+        $this->db->query('select foto_transport, id_transport, nama_transport, harga_sewa, total_kilometer, tahun_keluar, link_maps, deskripsi_produk
         from tbl_transport t
         join tbl_rental r 
         on t.id_rental = r.id_rental WHERE id_transport = :id_transport ');

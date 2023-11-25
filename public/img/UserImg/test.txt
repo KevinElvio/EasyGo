@@ -1,14 +1,44 @@
 DISINI MANIAH MELLOW, COBA DI KAMU LETAKIN FOLDERNYA DISINI 
 
-    <?php foreach ($data['ProdukUserMobil'] as $ProdukUserMobil) : ?>
+DETAIL PRODUK
 
+    <h2 class="judul">Detail Kendaraan</h2>
+    
+    <div class="back">
+    <a href="<?= BASEURL;?>/produk">
+        <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+    </a>
+    </div>
+    <div class="container1">
+        <div class="box1">
+            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
+        </div>
+        <div class="box2">
+            
+            <h1><?= $data['DetailProduk']['nama_transport']; ?></h1>
+            <h5><?= $data['DetailProduk']['harga_sewa']; ?>/D</h5>
+            <h2><?= $data['DetailProduk']['deskripsi_produk']; ?></h2>
+            <div>
+                <iconify-icon icon="ion:speedometer-outline" width="30" height="30"></iconify-icon>
+                <h4><?= $data['DetailProduk']['total_kilometer']; ?>km</h4>
+            </div>
+            <div>
+                <iconify-icon icon="ph:calendar-light" width="30" height="30"></iconify-icon>
+                <h4><?= $data['DetailProduk']['tahun_keluar']; ?></h4>
+            </div>
+            <div>
+                <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
+                <h4><?= $data['DetailProduk']['link_maps']; ?></h4>
+            </div>
+            <div>
+                <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
+                <h4><?= $data['DetailProduk']['deskripsi_produk']; ?></h4>
+            </div>
+            <a href="<?= BASEURL; ?>/produk/pemesanan">
+                <button>
+                    Rent Now <iconify-icon icon="ph:arrow-up-thin" rotate="90deg" style="vertical-align: middle;"></iconify-icon>
+                </button>
+            </a>
 
-          <?php endforeach; ?>
-
-
-          <?= $data['DetailProduk']['nama_transport']; ?>
-          <?= $data['DetailProduk']['harga_sewa']; ?>
-          <?= $data['DetailProduk']['total_kilometer']; ?>
-          <?= $data['DetailProduk']['tahun_keluar']; ?>
-          <?= $data['DetailProduk']['merk']; ?>
-          <?= $data['DetailProduk']['deskripsi_produk']; ?>
+            </div>
+        </div>
