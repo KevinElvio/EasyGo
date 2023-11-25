@@ -27,24 +27,24 @@
             </div>
             <div class="box2">
 
-                <h1>AVANZA</h1>
-                <h5>2O0.000/D</h5>
-                <h2>Deskripsi Produk</h2>
+                <h1><?= $data['DetailProduk']['nama_transport']; ?></h1>
+                <h5><?= $data['DetailProduk']['harga_sewa']; ?>/D</h5>
+                <h2>Deskripsi Produk></h2>
                 <div>
                     <iconify-icon icon="ion:speedometer-outline" width="30" height="30"></iconify-icon>
-                    <h4>2400km</h4>
+                    <h4><?= $data['DetailProduk']['total_kilometer']; ?>km</h4>
                 </div>
                 <div>
                     <iconify-icon icon="ph:calendar-light" width="30" height="30"></iconify-icon>
-                    <h4>2019</h4>
+                    <h4><?= $data['DetailProduk']['tahun_keluar']; ?></h4>
                 </div>
                 <div>
                     <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
-                    <h4><a href="https://maps.app.goo.gl/ApEeUMCpKHEbY5AA8" class="maps">maps.app.goo.gl</a></h4>
+                    <h4><?= $data['DetailProduk']['link_maps']; ?></h4>
                 </div>
                 <div>
                     <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
-                    <h4>Alphard adalah mobil minivan premium yang menawarkan kenyamanan dan kemewahan tingkat tinggi. Dengan desain yang elegan, interior yang mewah, dan fitur-fitur hiburan yang canggih, Alphard menjadi pilihan untuk perjalanan bisnis atau pribadi yang eksklusif. Mesin bertenaga dan teknologi terkini membuatnya menjadi simbol kemewahan di jalan.</h4>
+                    <h4><?= $data['DetailProduk']['deskripsi_produk']; ?></h4>
                 </div>
                 <a href="<?= BASEURL; ?>/produk/pemesanan">
                     <button>

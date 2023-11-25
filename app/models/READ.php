@@ -90,7 +90,7 @@ class READ
 
     public function ListProdukMotor()
     {
-        $this->db->query('select foto_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        $this->db->query('select foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
         from tbl_transport
         where id_jenistransport = 2');
 
@@ -100,7 +100,7 @@ class READ
 
     public function ListProdukMobil()
     {
-        $this->db->query('select foto_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        $this->db->query('select foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
         from tbl_transport
         where id_jenistransport = 1');
 
