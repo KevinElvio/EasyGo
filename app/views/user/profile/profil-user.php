@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="icon" href="<?= BASEURL; ?>/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/profilrental.css">
 </head>
 
@@ -38,8 +41,8 @@
                     <h3><a href="">Hapus Akun</a></h3>
                 </div>
                 <div class="edit-profile">
-                    <h3><a href="">Edit Profile</a></h3>
-                    <a href=""><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
+                    <h3><a href="<?= BASEURL; ?>/profile/editprofil">Edit Profile</a></h3>
+                    <a href="<?= BASEURL; ?>/profile/editprofil"><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
                 </div>
             </div>
             <a class="logout" href=""><iconify-icon icon="tabler:logout" style="color: #004aad;"></iconify-icon></a>

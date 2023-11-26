@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.judulnya{
+    font-size: 30px;
+    font-weight: 600;
+    color: #004AAD;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.box-profile{
+    width: 23rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: #F0F0F0;
+    border-radius: 3%;
+    margin-bottom: 8%;
+}
+
+.nama{
+    margin-top: 8%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.box-profile img{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-top: 8%;
+}
+
+.isi-pass{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}

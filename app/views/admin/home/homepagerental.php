@@ -18,9 +18,8 @@
     ?>
 
     <div class="home">
-
+        <h2 class="judul">Konfirmasi Peminjaman</h2>
         <?php foreach ($data['Konfirmasi'] as $Konfirmasi) :  ?>
-            <h2 class="judul">Konfirmasi Peminjaman</h2>
             <div class="list-home">
                 <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
                 <p><?= $Konfirmasi['nama_transport']; ?></p>

@@ -7,4 +7,11 @@ class Profile extends Controller{
         $this->view("user/profile/profil-user");
         $this->view("template/footeruser");
     }
+
+    public function editprofil(){
+        $this->view("template/navbaruser");
+        $this->view("user/profile/edit_profil");
+        $this->view("template/footeruser");
+    }
+
 }
