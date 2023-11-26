@@ -19,63 +19,69 @@
 
     <div class="luar">
         <h2 class="judul">Tambah Kendaraan</h2>
-        
+
         <div class="back">
-        <a href="<?= BASEURL; ?>/Produkadmin">
-            <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
-        </a>
+            <a href="<?= BASEURL; ?>/Produkadmin">
+                <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+            </a>
         </div>
-        
 
-        <div class="pembungkus">
-            <div class="gambar">
-                <h2>Upload Image</h2>
-                <div class="inputan">
-                    <input type="file" name="choose file" id="">
+
+        <form action="<?= BASEURL; ?>/Produkadmin/tambah" method="post">
+            <div class="pembungkus">
+                <div class="gambar">
+                    <h2>Upload Image</h2>
+                    <div class="inputan">
+                        <input type="file" name="file" id="" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="form-1">
+                        <label for="MerkMobil">Merk Mobil</label>
+                        <div class="input-with-icon">
+                            <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
+                            <input type="text" name="MerkMobil" id="" required>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <label for="HargaSewa">Harga Sewa</label>
+                        <div class="input-with-icon">
+                            <iconify-icon icon="fa6-solid:rupiah-sign" width="30" height="30"></iconify-icon>
+                            <input type="number" name="HargaSewa" id="" required>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <label for="TotalKilo">Total Kilometer</label>
+                        <div class="input-with-icon">
+                            <iconify-icon icon="material-symbols-light:speed-outline" width="30" height="30"></iconify-icon>
+                            <input type="number" name="TotalKilometer" id="" required>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <label for="TahunKeluar">Tahun Keluaran</label>
+                        <div class="input-with-icon">
+                            <iconify-icon icon="ph:calendar-thin" width="30" height="30"></iconify-icon>
+                            <input type="number" name="TahunKeluar" id="" required>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <label for="Deskripsi">Deskripsi Singkat</label>
+                        <div class="input-with-icon">
+                            <iconify-icon icon="material-symbols-light:text-ad-outline" width="30" height="30"></iconify-icon>
+                            <input type="text" name="Deskripsi" id="" required>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="form">
-                <div class="form-1">
-                    <label for="MerkMobil">Merk Mobil</label>
-                    <div class="input-with-icon">
-                        <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="">
-                    </div>
-                </div>
-                <div class="form-1">
-                    <label for="HargaSewa">Harga Sewa</label>
-                    <div class="input-with-icon">
-                        <iconify-icon icon="fa6-solid:rupiah-sign" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="">
-                    </div>
-                </div>
-                <div class="form-1">
-                    <label for="TotalKilo">Total Kilometer</label>
-                    <div class="input-with-icon">
-                        <iconify-icon icon="material-symbols-light:speed-outline" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="">
-                    </div>
-                </div>
-                <div class="form-1">
-                    <label for="TahunKeluar">Tahun Keluaran</label>
-                    <div class="input-with-icon">
-                        <iconify-icon icon="ph:calendar-thin" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="">
-                    </div>
-                </div>
-                <div class="form-1">
-                    <label for="Deskripsi">Deskripsi Singkat</label>
-                    <div class="input-with-icon">
-                        <iconify-icon icon="material-symbols-light:text-ad-outline" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="">
-                    </div>
-                </div>
+            <div class="button-kirim">
+                <button type="submit">Kirim</button>
             </div>
-        </div>
-        <div class="button-kirim">
-            <button>Kirim</button>
-        </div>
+
+        </form>
+
+
+
     </div>
 </body>
 

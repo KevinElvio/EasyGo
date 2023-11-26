@@ -23,57 +23,27 @@
             <button class="motor" onclick="page('motor')">Motor</button>
         </div>
 
+
+
+
+
         <div class="list-mobil">
+            <?php foreach ($data['MobilAdmin'] as $MobilAdmin) : ?>
+                <div class="produk-mobil">
+                    <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
+                    <div class="layer">
+                        <div class="button-icon">
+                            <a href="<?= BASEURL; ?>/Produkadmin/update">
+                                <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
+                            </a>
+                            <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                        </div>
+                        <p><?= $MobilAdmin['nama_transport']; ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
 
-            <div class="produk-mobil">
-                <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Avanza Cth</p>
-                </div>
-            </div>
-            <div class="produk-mobil">
-                <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Avanza Cth</p>
-                </div>
-            </div>
 
-            <div class="produk-mobil">
-                <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Avanza Cth</p>
-                </div>
-            </div>
-            <div class="produk-mobil">
-                <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Avanza Cth</p>
-                </div>
-            </div>
 
             <div class="tambah-mobil">
                 <a href="<?= BASEURL; ?>/Produkadmin/tambah">
@@ -82,55 +52,25 @@
             </div>
 
         </div>
+
+
+
         <div class="list-motor">
-            <div class="produk-motor">
-                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+            <?php foreach ($data['MotorAdmin'] as $MotorAdmin) : ?>
+                <div class="produk-motor">
+                    <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
+                    <div class="layer">
+                        <div class="button-icon">
+                            <a href="<?= BASEURL; ?>/Produkadmin/update">
+                                <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
+                            </a>
+                            <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                        </div>
+                        <p><?= $MotorAdmin['nama_transport']; ?></p>
                     </div>
-                    <p>Vespa Matic</p>
                 </div>
-            </div>
-            <div class="produk-motor">
-                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Vespa Matic</p>
-                </div>
-            </div>
-            <div class="produk-motor">
-                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Vespa Matic</p>
-                </div>
-            </div>
-            <div class="produk-motor">
-                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
-                <div class="layer">
-                    <div class="button-icon">
-                        <a href="<?= BASEURL; ?>/Produkadmin/update">
-                            <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                        </a>
-                        <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                    </div>
-                    <p>Vespa Matic</p>
-                </div>
-            </div>
+            <?php endforeach; ?>
+
 
             <div class="tambah-motor">
                 <a href="<?= BASEURL; ?>/Produkadmin/tambah">
@@ -139,6 +79,8 @@
             </div>
 
         </div>
+
+
     </div>
 
 
