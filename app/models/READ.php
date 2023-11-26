@@ -118,6 +118,18 @@ class READ
         return $this->db->single();
     }
 
+    public function GetListKonfirmasi()
+    {
+        $this->db->query('select foto_transport, nama_transport, username, tgl_order
+        from tbl_order o
+        join tbl_transport t on t.id_transport = o.id_transport
+        JOIN tbl_user u on u.id_user = o.id_user
+        JOIN tbl_statusorder s on s.id_statusorder = o.id_statusorder
+        where s.id_statusorder = 1
+        ');
+        return $this->db->resultSet();
+    }
+
 
     // public function DataProfile()
     // {

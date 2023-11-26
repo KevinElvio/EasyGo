@@ -18,8 +18,23 @@
     ?>
 
     <div class="home">
-        <h2 class="judul">Konfirmasi Peminjaman</h2>
-        <div class="list-home">
+
+        <?php foreach ($data['Konfirmasi'] as $Konfirmasi) :  ?>
+            <h2 class="judul">Konfirmasi Peminjaman</h2>
+            <div class="list-home">
+                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
+                <p><?= $Konfirmasi['nama_transport']; ?></p>
+                <p><?= $Konfirmasi['username']; ?></p>
+                <p><?= $Konfirmasi['tgl_order']; ?></p>
+                <div class="btn-home">
+                    <button class="setuju">Setuju</button>
+                    <button class="tolak">Tolak</button>
+                </div>
+            </div>
+        <?php endforeach ?>
+
+
+        <!-- <div class="list-home">
             <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
             <p>Jenis Mobil</p>
             <p>Nama Penyewa</p>
@@ -28,17 +43,7 @@
                 <button class="setuju">Setuju</button>
                 <button class="tolak">Tolak</button>
             </div>
-        </div>
-        <div class="list-home">
-            <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
-            <p>Jenis Mobil</p>
-            <p>Nama Penyewa</p>
-            <p>Tanggal Sewa</p>
-            <div class="btn-home">
-                <button class="setuju">Setuju</button>
-                <button class="tolak">Tolak</button>
-            </div>
-        </div>
+        </div> -->
     </div>
 </body>
 
