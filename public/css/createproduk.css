@@ -74,6 +74,18 @@ html, body{
     margin-left: 20%;
 }
 
+.input-with-icon select{
+    border:1px solid #bababa;
+    border-radius: 3px;
+    height: 2rem;
+    width: 15.6rem;
+    font-size: 0.8rem;
+}
+
+option{
+    font-size: 0.8rem;
+}
+
 .form-1{
     margin-bottom: 3%;
 }
