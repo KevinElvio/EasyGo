@@ -25,8 +25,8 @@
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
           <div class="tulisan">
-            <p> <?= $ProdukUserMobil['nama_transport']?></p>
-            <p> <?= $ProdukUserMobil['tahun_keluar']?></p>
+            <p><?= $ProdukUserMobil['nama_transport']?></p>
+            <p><?= $ProdukUserMobil['tahun_keluar']?></p>
             <p><?= $ProdukUserMobil['harga_sewa']?>/jam</p>
           </div>
         </div>
