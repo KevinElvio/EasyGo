@@ -18,11 +18,11 @@
         <img src="<?= BASEURL; ?>/img/profil.JPG" alt="">
 
         <div class="isi-pass">
-            <input type="text" placeholder="Password Baru">
-            <input type="text" placeholder="Konfirmasi Password">
+            <input type="password" placeholder="Password Baru">
+            <input type="password" placeholder="Konfirmasi Password">
         </div>
 
-        <button>Simpan</button>
+        <button class="ubahpass">Simpan <iconify-icon icon="prime:save"></iconify-icon></button>
     </div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
