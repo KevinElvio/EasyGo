@@ -12,8 +12,7 @@ html, body{
     font-weight: 400;
 }
 iconify-icon{
-    width: 35;
-    height: 35;
+    font-size: 1.3rem;
 }
 
 .dalamnya{
@@ -120,6 +119,7 @@ table {
 .logo{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 2%;
 }
 

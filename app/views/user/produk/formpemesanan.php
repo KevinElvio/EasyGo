@@ -30,7 +30,7 @@
                 <div class="input">
                     <h3> Nama Penyewa</h3>
                     <div class="logo">
-                        <iconify-icon icon="iconamoon:profile-circle-thin"></iconify-icon></iconify-icon>
+                        <iconify-icon icon="iconamoon:profile-circle-thin" style="vertical-align: middle;"></iconify-icon></iconify-icon>
                         <input type="text" placeholder="Nama">
                     </div>
                 </div>
