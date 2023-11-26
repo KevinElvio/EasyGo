@@ -7,4 +7,11 @@ class Profiladmin extends Controller{
         $this->view('admin/profile/profilrental');
         $this->view("template/footeradmin");
     }
+
+    public function editprofil()
+    {
+        $this->view("template/navbarrental");
+        $this->view('admin/profile/edit_profilrental');
+        $this->view("template/footeradmin");
+    }
 }
