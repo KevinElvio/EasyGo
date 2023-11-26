@@ -50,11 +50,10 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: rgb(174, 174, 174);
     margin-top: 5%;
     background-image:  
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("<?= BASEURL;?>/img/surabaya.jpg");
+    linear-gradient(rgba(43, 43, 43, 0.8), rgba(48, 48, 48, 0.8)), 
+    url("<?= BASEURL; ?>/img/UserImg/<?= $destinasi['foto_kota']; ?>");
     }
 
 
