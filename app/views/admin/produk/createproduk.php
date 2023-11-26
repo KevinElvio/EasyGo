@@ -38,6 +38,24 @@
 
             <div class="form">
                 <div class="form-1">
+                    <label for="JenisKendaraan">Jenis Kendaraan</label>
+                    <div class="input-with-icon">
+                        <iconify-icon icon="fluent:arrow-eject-20-regular" rotate="90deg" width="30" height="30"></iconify-icon>
+                        <select name="JenisKendaraan" id="JenisKendaraan">
+                            <option value="" disabled selected>Pilih Merek Mobil</option>
+                            <option value="Mobil">Mobil</option>
+                            <option value="Motor">Motor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-1">
+                    <label for="NamaTransport">Nama Transport</label>
+                    <div class="input-with-icon">
+                    <iconify-icon icon="mdi-light:pencil" width="30" height="30"></iconify-icon>
+                        <input type="text" name="NamaTransport" id="">
+                    </div>
+                </div>
+                <div class="form-1">
                     <label for="MerkMobil">Merk Mobil</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
