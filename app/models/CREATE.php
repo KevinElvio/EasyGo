@@ -28,4 +28,18 @@ class CREATE
         return $this->db->rowCount();
     }
 
+    public function TambahKendaraan($data)
+    {
+        $this->db->query('insert into tbl_transport (nama_transport, harga_sewa, total_kilometer, tahun_keluar, deskripsi_singkat, foto_transport) VALUES (:nama_transport, :harga_sewa, :total_kilometer, :tahun_keluar, :deskripsi_singkat, :foto_transport)');
+
+        $this->db->bind('nama_transport', $data['nama_transport']);
+        $this->db->bind('harga_sewa', $data['harga_sewa']);
+        $this->db->bind('total_kilometer', $data['total_kilometer']);
+        $this->db->bind('tahun_keluar', $data['tahun_keluar']);
+        $this->db->bind('deskripsi_singkat', $data['deskripsi_singkat']);
+        $this->db->bind('foto_transport', $data['foto_transport']);
+        $this->db->execute();
+        return $this->db->rowCount();
+    }
+
 }

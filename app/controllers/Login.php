@@ -30,6 +30,7 @@ class Login extends Controller
         else 
         {
             header('Location:' . BASEURL . '/login/register');
+            exit;
         }
 
         // elseif ($_POST['admin'] == checked)

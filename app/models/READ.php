@@ -130,6 +130,25 @@ class READ
         return $this->db->resultSet();
     }
 
+    public function ListMobilAdmin()
+    {
+        $this->db->query('select foto_transport, nama_transport, tahun_keluar, harga_sewa
+        from tbl_transport
+        where id_jenistransport = 1');
+
+        return $this->db->resultSet();
+    }
+    
+    public function ListMotorAdmin()
+    {
+        $this->db->query('select foto_transport, nama_transport, tahun_keluar, harga_sewa
+        from tbl_transport
+        where id_jenistransport = 2');
+
+        return $this->db->resultSet();
+    }
+
+
 
     // public function DataProfile()
     // {
