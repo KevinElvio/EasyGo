@@ -89,7 +89,7 @@ a{
     border-radius: 0.2rem;
 }
 
-.car .tulisan {
+.car .tulisan, .sepedah .tulisan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,17 +125,11 @@ a{
     border-radius: 0.2rem;
 }
 
-.sepedah div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15%;
-}
 
 .sepedah img {
     width: 15vh;
     height: 9vh;
-    margin-left: 10%;
+    margin-left: 13%;
     border-radius: 0.2rem;
 }
 

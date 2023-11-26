@@ -21,24 +21,26 @@
   </div>
   <div class="container2">
     <?php foreach ($data['ProdukUserMobil'] as $ProdukUserMobil) : ?>
-      <a href="<?= BASEURL; ?>/produk/detail/<?=$ProdukUserMobil['id_transport'];?>">
+      <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMobil['id_transport']; ?>">
         <div class="car" onclick="myfungsi()">
-          <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
+          <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMobil['foto_transport']; ?>' alt="mobil">
           <div class="tulisan">
-            <p><?= $ProdukUserMobil['nama_transport']?></p>
-            <p><?= $ProdukUserMobil['tahun_keluar']?></p>
-            <p><?= $ProdukUserMobil['harga_sewa']?>/jam</p>
+            <p><?= $ProdukUserMobil['nama_transport'] ?></p>
+            <p><?= $ProdukUserMobil['tahun_keluar'] ?></p>
+            <p><?= $ProdukUserMobil['harga_sewa'] ?>/jam</p>
           </div>
         </div>
       <?php endforeach ?>
 
       <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
-        <a href="<?= BASEURL; ?>/produk/detail/<?=$ProdukUserMotor['id_transport'];?>">
+        <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMotor['id_transport']; ?>">
           <div class="sepedah" onclick="myfungsi()">
-            <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
-            <div class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></div>
-            <div class="deskripsi"> <?= $ProdukUserMotor['tahun_keluar'] ?></div>
-            <div class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</div>
+            <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMotor['foto_transport']; ?>' alt="mobil">
+            <div class="tulisan">
+              <p class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></p>
+              <p class="deskripsi"> <?= $ProdukUserMotor['tahun_keluar'] ?></p>
+              <p class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</p>
+            </div>
           </div>
         </a>
       <?php endforeach ?>
