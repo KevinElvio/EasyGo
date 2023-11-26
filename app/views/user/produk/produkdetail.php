@@ -28,23 +28,23 @@
             <div class="box2">
 
                 <h1><?= $data['DetailProduk']['nama_transport']; ?></h1>
-                <h5><?= $data['DetailProduk']['harga_sewa']; ?>/D</h5>
+                <h5><?= $data['DetailProduk']['harga_sewa'];?>/D</h5>
                 <h2>Deskripsi Produk></h2>
                 <div>
                     <iconify-icon icon="ion:speedometer-outline" width="30" height="30"></iconify-icon>
-                    <h4><?= $data['DetailProduk']['total_kilometer']; ?>km</h4>
+                    <h4><?= $data['DetailProduk']['total_kilometer'];?>km</h4>
                 </div>
                 <div>
                     <iconify-icon icon="ph:calendar-light" width="30" height="30"></iconify-icon>
-                    <h4><?= $data['DetailProduk']['tahun_keluar']; ?></h4>
+                    <h4><?= $data['DetailProduk']['tahun_keluar'];?></h4>
                 </div>
                 <div>
                     <iconify-icon icon="mynaui:location" width="30" height="30"></iconify-icon>
-                    <h4><a href="<?= $data['DetailProduk']['link_maps']; ?>"><?= $data['DetailProduk']['link_maps'];?>  </a></h4>
+                    <h4><a href="<?= $data['DetailProduk']['link_maps'];?>"><?= $data['DetailProduk']['link_maps'];?>  </a></h4>
                 </div>
                 <div>
                     <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
-                    <h4><?= $data['DetailProduk']['deskripsi_produk']; ?></h4>
+                    <h4><?= $data['DetailProduk']['deskripsi_produk'];?></h4>
                 </div>
                 <a href="<?= BASEURL; ?>/produk/pemesanan">
                     <button>
