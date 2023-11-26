@@ -23,7 +23,7 @@
         </div>
         <div class="container1">
             <div class="box1">
-                <img src='<?= BASEURL; ?>/img/surabaya.jpg' alt="mobil">
+                <img src='<?= BASEURL; ?>/img/UserImg/<?= $data['DetailProduk']['foto_transport']; ?>' alt="mobil">
             </div>
             <div class="box2">
 
