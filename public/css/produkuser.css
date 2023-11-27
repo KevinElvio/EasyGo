@@ -117,21 +117,13 @@ a{
     background-color: white;
 }
 
-.mobil.active{
-    background-color: #004AAD;
-    color: white;
-    cursor: pointer;
-}
-.motor.active{
-    background-color: #004AAD;
-    color: white;
-    cursor: pointer;
-}
+
+
 
 .mobil{
     border: 1px solid #004AAD;
-    background-color: white;
-    color: black;
+    background-color: #004AAD;
+    color:white;
     cursor: pointer;
 }
 

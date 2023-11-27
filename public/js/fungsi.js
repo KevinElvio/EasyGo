@@ -8,14 +8,12 @@ function pg(type) {
   var paginationMobil = document.getElementById('pagination-mobil');
   var paginationMotor = document.getElementById('pagination-motor');
 
-  // Reset kelas pada tombol
-  mobilBtn.classList.remove('active');
-  motorBtn.classList.remove('active');
-
   // Atur kelas yang aktif sesuai dengan tombol yang diklik
   if (type === 'mobil') {
-    mobilBtn.classList.add('active');
-    motorBtn.classList.remove('active');
+    mobilBtn.style.backgroundColor = '#004AAD' ;
+    mobilBtn.style.color = 'white' ;
+    motorBtn.style.backgroundColor = 'white' ;
+    motorBtn.style.color = 'black' ;
     paginationMobil.style.display = 'block';
     paginationMotor.style.display = 'none';
 
@@ -26,10 +24,13 @@ function pg(type) {
       carElement.style.display = 'flex';
     });
   } else if (type === 'motor') {
-    mobilBtn.classList.remove('active');
-    motorBtn.classList.add('active');
+    mobilBtn.style.backgroundColor = 'white';
+    mobilBtn.style.color = 'black';
+    motorBtn.style.backgroundColor = '#004AAD';
+    motorBtn.style.color = 'white';
     paginationMobil.style.display = 'none';
     paginationMotor.style.display = 'block';
+    
 
     carElements.forEach(function(carElement) {
       carElement.style.display = 'none';
@@ -55,8 +56,10 @@ function page(type) {
 
     // Atur kelas yang aktif sesuai dengan tombol yang diklik
     if (type === 'mobil') {
-      mobilBtn.classList.add('active');
-      motorBtn.classList.remove('active');
+      mobilBtn.style.backgroundColor = '#004AAD' ;
+    mobilBtn.style.color = 'white' ;
+    motorBtn.style.backgroundColor = 'white' ;
+    motorBtn.style.color = 'black' ;
       sepedahElements.forEach(function(sepedahElement) {
         sepedahElement.style.display = 'none';
       });
@@ -64,8 +67,10 @@ function page(type) {
         carElement.style.display = 'flex';
       });
     } else if (type === 'motor') {
-      mobilBtn.classList.remove('active');
-      motorBtn.classList.add('active');
+      mobilBtn.style.backgroundColor = 'white';
+    mobilBtn.style.color = 'black';
+    motorBtn.style.backgroundColor = '#004AAD';
+    motorBtn.style.color = 'white';
       carElements.forEach(function(carElement) {
         carElement.style.display = 'none';
       });

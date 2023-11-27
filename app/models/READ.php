@@ -149,18 +149,18 @@ class READ
 
     public function CountMobil()
     {
-        $this->db->query('SELECT COUNT(*) AS total FROM tbl_transport WHERE id_jenistransport = 1');
+        $this->db->query('SELECT COUNT(*) AS totalmobil FROM tbl_transport WHERE id_jenistransport = 1');
         $result = $this->db->single();
 
-        return $result['total'];
+        return $result['totalmobil'];
     }
 
     public function CountMotor()
     {
-        $this->db->query('SELECT COUNT(*) AS total FROM tbl_transport WHERE id_jenistransport = 2');
+        $this->db->query('SELECT COUNT(*) AS totalmotor FROM tbl_transport WHERE id_jenistransport = 2');
         $result = $this->db->single();
 
-        return $result['total'];
+        return $result['totalmotor'];
     }
 
 

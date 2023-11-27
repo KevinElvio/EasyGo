@@ -12,7 +12,7 @@
 
 <body>
   <?php
-  // include "navbaruser.php";
+  
   ?>
 
   <div class="container1">
@@ -22,7 +22,7 @@
 
   <div class="container2">
     <?php
-    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1; // Inisialisasi $currentPage
+    $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Inisialisasi $currentPage
 
     $startIndexMobil = ($currentPage - 1) * 10;
     $endIndexMobil = $startIndexMobil + 9;
@@ -60,7 +60,8 @@
 
   <div class="pagination" id="pagination-mobil">
     <?php
-    $totalPagesMobil = ceil($data['TotalMobil'] / 10);
+    $jumlahDataPerHalaman = 10;
+    $totalPagesMobil = ceil($data['totalmobil'] / $jumlahDataPerHalaman);
 
     for ($i = 1; $i <= $totalPagesMobil; $i++) {
       echo "<a href='?page=$i'>$i</a> ";
@@ -70,7 +71,8 @@
 
   <div class="pagination-motor" id="pagination-motor" style="display: none;">
     <?php
-    $totalPagesMotor = ceil($data['TotalMotor'] / 10);
+    $jumlahDataPerHalaman = 10;
+    $totalPagesMotor = ceil($data['TotalMotor'] / $jumlahDataPerHalaman);
 
     for ($i = 1; $i <= $totalPagesMotor; $i++) {
       echo "<a href='?page=$i'>$i</a> ";
