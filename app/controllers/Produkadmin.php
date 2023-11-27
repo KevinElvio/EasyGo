@@ -20,6 +20,17 @@ class Produkadmin extends Controller {
 
     }
 
+    public function hapus($id_transport)
+    {
+
+        if($this->model('DELETE')->HapusKendaraan($id_transport) > 0)
+        {
+            header('Location: ' . BASEURL . '/Produkadmin');
+            exit;
+        }
+        
+    }
+
     public function tambahprodukadmin()
     {
 

@@ -36,7 +36,12 @@
                             <a href="<?= BASEURL; ?>/Produkadmin/update">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
-                            <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+
+                            <form action="<?= BASEURL; ?>/Produkadmin/hapus" method="post">
+                                <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                            </form>
+
+
                         </div>
                         <p><?= $MobilAdmin['nama_transport']; ?></p>
                     </div>

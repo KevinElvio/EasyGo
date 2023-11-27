@@ -144,3 +144,7 @@ DETAIL PRODUK
 
 
 :id_transport ,:nama_transport, :merk, :tahun_keluar, :harga_sewa, :total_kilometer, :deskripsi_produk, :foto_transport , :id_jenistransport, :id_rental
+
+
+
+
