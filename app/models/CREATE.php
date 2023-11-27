@@ -30,31 +30,26 @@ class CREATE
 
     public function TambahKendaraan($data)
     {
-        $this->db->query('insert into tbl_transport (id_transport ,nama_transport, merk, tahun_keluar, harga_sewa, total_kilometer, deskripsi_produk, foto_transport, id_jenistransport, id_rental) VALUES (:?,:?,:?,:?,:?,:?,:?,:?,:?,:?)');
+        $this->db->query('insert into tbl_transport (nama_transport, merk, tahun_keluar, harga_sewa, total_kilometer, deskripsi_produk, foto_transport, id_jenistransport) VALUES (:nama_transport, :merk, :tahun_keluar, :harga_sewa, :total_kilometer, :deskripsi_produk, :foto_transport , :id_jenistransport)');
 
-        $this->db->bind('nama_transport', $data['?']);
-        $this->db->bind('merk', $data['?']);
-        $this->db->bind('tahun_keluar', $data['?']);
-        $this->db->bind('harga_sewa', $data['?']);
-        $this->db->bind('total_kilometer', $data['?']);
-        $this->db->bind('deskripsi_singkat', $data['?']);
-        $this->db->bind('foto_transport', $data['?']);
-        $this->db->bind('id_jenistransport', $data['?']);
+        // $this->db->bind('nama_transport', $data['?']);
+        // $this->db->bind('merk', $data['?']);
+        // $this->db->bind('tahun_keluar', $data['?']);
+        // $this->db->bind('harga_sewa', $data['?']);
+        // $this->db->bind('total_kilometer', $data['?']);
+        // $this->db->bind('deskripsi_singkat', $data['?']);
+        // $this->db->bind('foto_transport', $data['?']);
+        // $this->db->bind('id_jenistransport', $data['?']);
         
         
-        // $this->db->bind('nama_transport', $data['nama_transport']);
-        // $this->db->bind('merk', $data['merk']);
-        // $this->db->bind('tahun_keluar', $data['tahun_keluar']);
-        // $this->db->bind('harga_sewa', $data['harga_sewa']);
-        // $this->db->bind('total_kilometer', $data['total_kilometer']);
-        // $this->db->bind('deskripsi_singkat', $data['deskripsi_singkat']);
-        // $this->db->bind('foto_transport', $data['foto_transport']);
-        // $this->db->bind('id_jenistransport', $data['id_jenistransport']);
-
-
-
-
-
+        $this->db->bind('nama_transport', $data['NamaTransport']);
+        $this->db->bind('merk', $data['MerkMobil']);
+        $this->db->bind('tahun_keluar', $data['TahunKeluar']);
+        $this->db->bind('harga_sewa', $data['HargaSewa']);
+        $this->db->bind('total_kilometer', $data['TotalKilometer']);
+        $this->db->bind('deskripsi_produk', $data['Deskripsi']);
+        $this->db->bind('foto_transport', $data['file']);
+        $this->db->bind('id_jenistransport', $data['JenisKendaraan']);
 
 
         $this->db->execute();
