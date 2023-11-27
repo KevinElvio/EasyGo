@@ -13,11 +13,8 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="<?= BASEURL; ?>/login/tambah" method="post">
+            <form action="<?= BASEURL; ?>/login/tambahadmin" method="post">
                 <H1>Register</H1>
-                <div class="register">
-                    <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap" required>
-                </div>
                 <div class="register">
                     <input type="text" placeholder="Username" id="username" name="username" required>
                 </div>
@@ -32,19 +29,40 @@
                 </div>
 
                 <div class="register">
-                    <input type="text" placeholder="Nama Rental">
+                    <input type="text" name="nama_rental" placeholder="Nama Rental" required>
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="No Telepon">
+                    <input type="text" name="no_telp" placeholder="No Telepon" required>
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Link Maps">
+                    <input type="text" name="link_maps" placeholder="Link Maps" required>
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Provinsi">
+                    <select name="provinsi" id="provinsi">
+                        <option value="" disabled selected>Pilih Provinsi</option>
+                        <option value="1">Jawa Timur</option>
+                        <option value="2">Jawa Barat</option>
+                        <option value="3">Jawa Tengah</option>
+                        <option value="4">DKI Jakarta</option>
+                        <option value="5">DI Yogyakarta</option>
+                        <option value="6">Bali</option>
+                        <option value="7">Sumatera Utara</option>
+                    </select>
                 </div>
                 <div class="register">
-                    <input type="text" placeholder="Kota">
+                <select name="kota" id="kota">
+                        <option value="" disabled selected>Pilih Provinsi</option>
+                        <option value="1">Surabaya</option>
+                        <option value="2">Jakarta</option>
+                        <option value="3">Bandung</option>
+                        <option value="4">Malang</option>
+                        <option value="5">Semarang</option>
+                        <option value="6">Bekasi</option>
+                        <option value="7">Yogyakarta</option>
+                        <option value="8">Banyuwangi</option>
+                        <option value="9">Denpasar</option>
+                        <option value="10">Jember</option>
+                    </select>
                 </div>
 
                 <button class="button-login" type="submit">Register</button>

@@ -28,20 +28,29 @@ class CREATE
         return $this->db->rowCount();
     }
 
+    public function RegisterAdmin($data)
+    {
+        $this->db->query('insert into tbl_rental (nama_rental, username, email, no_telp, pass_rental, link_maps, id_provinsi, id_kota) VALUES (:nama_rental, :username, :email, :no_telp, :pass_rental, :link_maps, :id_provinsi, :id_kota)');
+
+
+        $this->db->bind('nama_rental', $data['nama_rental']);
+        $this->db->bind('username', $data['username']);
+        $this->db->bind('email', $data['email_user']);
+        $this->db->bind('no_telp', $data['no_telp']);
+        $this->db->bind('pass_rental', $data['password']);
+        $this->db->bind('link_maps', $data['link_maps']);
+        $this->db->bind('id_provinsi', $data['provinsi']);
+        $this->db->bind('id_kota', $data['kota']);
+
+        $this->db->execute();
+        return $this->db->rowCount();
+    }
+
+
     public function TambahKendaraan($data)
     {
         $this->db->query('insert into tbl_transport (nama_transport, merk, tahun_keluar, harga_sewa, total_kilometer, deskripsi_produk, foto_transport, id_jenistransport) VALUES (:nama_transport, :merk, :tahun_keluar, :harga_sewa, :total_kilometer, :deskripsi_produk, :foto_transport , :id_jenistransport)');
-
-        // $this->db->bind('nama_transport', $data['?']);
-        // $this->db->bind('merk', $data['?']);
-        // $this->db->bind('tahun_keluar', $data['?']);
-        // $this->db->bind('harga_sewa', $data['?']);
-        // $this->db->bind('total_kilometer', $data['?']);
-        // $this->db->bind('deskripsi_singkat', $data['?']);
-        // $this->db->bind('foto_transport', $data['?']);
-        // $this->db->bind('id_jenistransport', $data['?']);
-        
-        
+                
         $this->db->bind('nama_transport', $data['NamaTransport']);
         $this->db->bind('merk', $data['MerkMobil']);
         $this->db->bind('tahun_keluar', $data['TahunKeluar']);

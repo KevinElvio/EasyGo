@@ -32,11 +32,21 @@ class Login extends Controller
             header('Location:' . BASEURL . '/login/register');
             exit;
         }
+    }
 
-        // elseif ($_POST['admin'] == checked)
-        // {
-        //     $this
-        // };
+    public function tambahadmin()
+    {
+        if ($_POST['password'] == $_POST['re-password']) {
+            if ($this->model('CREATE')->RegisterAdmin($_POST) > 0) {
+                header('Location: ' . BASEURL . '/login');
+                exit;
+            }
+        }
+        else 
+        {
+            header('Location:' . BASEURL . '/login/registeradmin');
+            exit;
+        }
     }
 
     public function validasi()
