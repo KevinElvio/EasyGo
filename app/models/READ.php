@@ -95,7 +95,6 @@ class READ
         where id_jenistransport = 2');
 
         return $this->db->resultSet();
-
     }
 
     public function ListProdukMobil()
@@ -138,7 +137,7 @@ class READ
 
         return $this->db->resultSet();
     }
-    
+
     public function ListMotorAdmin()
     {
         $this->db->query('select foto_transport, nama_transport, tahun_keluar, harga_sewa
@@ -146,6 +145,22 @@ class READ
         where id_jenistransport = 2');
 
         return $this->db->resultSet();
+    }
+
+    public function CountMobil()
+    {
+        $this->db->query('SELECT COUNT(*) AS total FROM tbl_transport WHERE id_jenistransport = 1');
+        $result = $this->db->single();
+
+        return $result['total'];
+    }
+
+    public function CountMotor()
+    {
+        $this->db->query('SELECT COUNT(*) AS total FROM tbl_transport WHERE id_jenistransport = 2');
+        $result = $this->db->single();
+
+        return $result['total'];
     }
 
 

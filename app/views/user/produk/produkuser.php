@@ -19,8 +19,15 @@
     <button class="mobil" onclick="pg('mobil')">Mobil</button>
     <button class="motor" onclick="pg('motor')">Motor</button>
   </div>
+
   <div class="container2">
-    <?php foreach ($data['ProdukUserMobil'] as $ProdukUserMobil) : ?>
+    <?php
+    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1; // Inisialisasi $currentPage
+
+    $startIndexMobil = ($currentPage - 1) * 10;
+    $endIndexMobil = $startIndexMobil + 9;
+
+    foreach (array_slice($data['ProdukUserMobil'], $startIndexMobil, 10) as $ProdukUserMobil) : ?>
       <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMobil['id_transport']; ?>">
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMobil['foto_transport']; ?>' alt="mobil">
@@ -30,23 +37,46 @@
             <p><?= $ProdukUserMobil['harga_sewa'] ?>/jam</p>
           </div>
         </div>
-      <?php endforeach ?>
+      </a>
+    <?php endforeach; ?>
 
-      <?php foreach ($data['ProdukUserMotor'] as $ProdukUserMotor) : ?>
-        <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMotor['id_transport']; ?>">
-          <div class="sepedah" onclick="myfungsi()">
-            <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMotor['foto_transport']; ?>' alt="mobil">
-            <div class="tulisan">
-              <p class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></p>
-              <p class="deskripsi"> <?= $ProdukUserMotor['tahun_keluar'] ?></p>
-              <p class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</p>
-            </div>
+    <?php
+    $startIndexMotor = ($currentPage - 1) * 10;
+    $endIndexMotor = $startIndexMotor + 9;
+
+    foreach (array_slice($data['ProdukUserMotor'], $startIndexMotor, 10) as $ProdukUserMotor) : ?>
+      <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMotor['id_transport']; ?>">
+        <div class="sepedah" onclick="myfungsi()">
+          <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMotor['foto_transport']; ?>' alt="mobil">
+          <div class="tulisan">
+            <p class="nama"> <?= $ProdukUserMotor['nama_transport'] ?></p>
+            <p class="deskripsi"> <?= $ProdukUserMotor['tahun_keluar'] ?></p>
+            <p class="harga"><?= $ProdukUserMotor['harga_sewa'] ?>/Jam</p>
           </div>
-        </a>
-      <?php endforeach ?>
-
+        </div>
+      </a>
+    <?php endforeach; ?>
   </div>
 
+  <div class="pagination" id="pagination-mobil">
+    <?php
+    $totalPagesMobil = ceil($data['TotalMobil'] / 10);
+
+    for ($i = 1; $i <= $totalPagesMobil; $i++) {
+      echo "<a href='?page=$i'>$i</a> ";
+    }
+    ?>
+  </div>
+
+  <div class="pagination-motor" id="pagination-motor" style="display: none;">
+    <?php
+    $totalPagesMotor = ceil($data['TotalMotor'] / 10);
+
+    for ($i = 1; $i <= $totalPagesMotor; $i++) {
+      echo "<a href='?page=$i'>$i</a> ";
+    }
+    ?>
+  </div>
 
 </body>
 
