@@ -21,7 +21,7 @@
         <h2 class="judul">Konfirmasi Peminjaman</h2>
         <?php foreach ($data['Konfirmasi'] as $Konfirmasi) :  ?>
             <div class="list-home">
-                <img src="<?= BASEURL; ?>/img/vesmet.jpg" alt="">
+                <img src="<?= BASEURL; ?>/img/UserImg/<?= $Konfirmasi['foto_transport']; ?>" alt="">
                 <p><?= $Konfirmasi['nama_transport']; ?></p>
                 <p><?= $Konfirmasi['username']; ?></p>
                 <p><?= $Konfirmasi['tgl_order']; ?></p>
