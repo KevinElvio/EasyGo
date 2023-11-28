@@ -15,10 +15,10 @@
     <div class="atas">
         <a href="<?= BASEURL;?>/?controller=homeadmin"><img src="<?= BASEURL;?>/img/logo.png" alt=""></a>
         <div class="tombol">
-            <a href="<?= BASEURL;?>/HomeAdmin">Home</a>
-            <a href="<?= BASEURL;?>/ProdukAdmin">Produk</a>
-            <a href="<?= BASEURL;?>/HistoryAdmin">History</a>
-            <a href="<?= BASEURL;?>/ProfilAdmin">Profil</a>
+            <a href="<?= BASEURL;?>/?controller=Homeadmin">Home</a>
+            <a href="<?= BASEURL;?>/?controller=Produkadmin">Produk</a>
+            <a href="<?= BASEURL;?>/?controller=Historyadmin">History</a>
+            <a href="<?= BASEURL;?>/?controller=Profiladmin">Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>
