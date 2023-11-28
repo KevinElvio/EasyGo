@@ -27,7 +27,7 @@
         </div>
 
 
-        <form action="<?= BASEURL; ?>?controller=Produkadmin&method=tambahprodukadmin" method="post">
+        <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=tambahprodukadmin" method="post">
             <div class="pembungkus">
                 <div class="gambar">
                     <h2>Upload Image</h2>

@@ -18,7 +18,7 @@
         <h2 class="judul">Update Kendaraan</h2>
         
         <div class="back">
-        <a href="<?= BASEURL; ?>?controller=Produkadmin">
+        <a href="<?= BASEURL; ?>/?controller=Produkadmin">
             <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
         </a>
         </div>

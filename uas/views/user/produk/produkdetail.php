@@ -17,7 +17,7 @@
         <h2 class="judul">Detail Kendaraan</h2>
 
         <div class="back">
-            <a href="<?= BASEURL; ?>/produk">
+            <a href="<?= BASEURL; ?>/?controller=Produk">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </a>
         </div>
@@ -46,7 +46,7 @@
                     <iconify-icon icon="fluent:text-description-20-regular" width="30" height="30"></iconify-icon>
                     <h4><?= $data['DetailProduk']['deskripsi_produk'];?></h4>
                 </div>
-                <a href="<?= BASEURL; ?>/produk/pemesanan">
+                <a href="<?= BASEURL; ?>/?controller=Produk&method=pemesanan">
                     <button>
                         Rent Now <iconify-icon icon="ph:arrow-up-thin" rotate="90deg" style="vertical-align: middle;"></iconify-icon>
                     </button>

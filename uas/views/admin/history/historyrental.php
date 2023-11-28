@@ -52,7 +52,7 @@
                                 <p class="status"><?= $history['jenis_status'] ?></p>
                             </td>
                             <td>
-                                <p class="detail"><a href="<?= BASEURL; ?>?controller=Historyadmin&method=detail&id_order=<?= $history['id_order']; ?>">Detail</a>
+                                <p class="detail"><a href="<?= BASEURL; ?>/?controller=Historyadmin&method=detail&id_order=<?= $history['id_order']; ?>">Detail</a>
                                     <iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon>
                                 </p>
                             </td>

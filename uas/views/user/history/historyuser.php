@@ -32,7 +32,7 @@
                 <tbody>
                     <?php foreach ($data['historyUser'] as $historyUser) : ?>
                         <tr>
-                            <td><img src="<?= BASEURL; ?>/img/mobilcontoh.jpeg" alt=""></td>
+                            <td><img src="<?= BASEURL; ?>/img/UserImg/<?= $historyUser['foto_transport']; ?>" alt=""></td>
                             <td>
                                 <p><?= $historyUser['nama_transport'] ?></p>
                             </td>
@@ -49,7 +49,7 @@
                                 <p class="status"><?= $historyUser['jenis_status'] ?></p>
                             </td>
                             <td>
-                                <p class="detail"><a href="<?= BASEURL; ?>/history/detail/<?= $historyUser['id_order']; ?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
+                                <p class="detail"><a href="<?= BASEURL; ?>/?controller=History&method=detail&id_order=<?= $historyUser['id_order']; ?>">Detail</a><iconify-icon icon="system-uicons:arrow-up" rotate="90deg"></iconify-icon></p>
                             </td>
                         </tr>
                     <?php endforeach; ?>

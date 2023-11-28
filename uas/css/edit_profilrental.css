@@ -15,6 +15,33 @@ html, body{
     margin-top: 3%;
 }
 
+.back{
+    width: 2.5rem;
+    height: 2rem;
+    background-color: #004AAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 0.4rem;
+}
+
+.back iconify-icon{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.back:hover{
+    background-color: #104ea0;
+    width: 2.6rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    transform: scale(1.02) translateY(3px)
+}
+
 .box-profile{
     width: 23rem;
     height: 29rem;

@@ -33,11 +33,11 @@
                     <img src="<?= BASEURL; ?>/img/UserImg/<?= $MobilAdmin['foto_transport']; ?>" alt="">
                     <div class="layer">
                         <div class="button-icon">
-                            <a href="<?= BASEURL; ?>?controller=Produkadmin&method=update">
+                            <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
 
-                            <form action="<?= BASEURL; ?>?controller=Produkadmin&method=hapus" method="post">
+                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus" method="post">
                                 <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
                             </form>
 
@@ -51,7 +51,7 @@
 
 
             <div class="tambah-mobil">
-                <a href="<?= BASEURL; ?>?controller=Produkadmin&method=tambah">
+                <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=tambah">
                     <button class="plus-mobil" onclick="add()"><iconify-icon icon="mdi-light:plus"></iconify-icon></button>
                 </a>
             </div>
@@ -66,7 +66,7 @@
                     <img src="<?= BASEURL; ?>/img/UserImg/<?= $MotorAdmin['foto_transport']; ?>" alt="">
                     <div class="layer">
                         <div class="button-icon">
-                            <a href="<?= BASEURL; ?>/Produkadmin/update">
+                            <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
                             <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
@@ -78,7 +78,7 @@
 
 
             <div class="tambah-motor">
-                <a href="<?= BASEURL; ?>?controller=Produkadmin&method=tambah">
+                <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=tambah">
                     <button class="plus-motor" onclick="addmt()"><iconify-icon icon="mdi-light:plus"></iconify-icon></button>
                 </a>
             </div>

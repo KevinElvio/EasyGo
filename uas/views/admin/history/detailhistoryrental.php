@@ -16,7 +16,7 @@
     <div class="atas-1">
         <h2 class="judul">Detail History</h2>
         <div class="back">
-            <a href="<?= BASEURL; ?>?controller=Historyadmin">
+            <a href="<?= BASEURL; ?>/?controller=Historyadmin">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </a>
         </div>

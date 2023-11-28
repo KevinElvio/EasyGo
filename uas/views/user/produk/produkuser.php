@@ -28,7 +28,7 @@
     $endIndexMobil = $startIndexMobil + 9;
 
     foreach (array_slice($data['ProdukUserMobil'], $startIndexMobil, 10) as $ProdukUserMobil) : ?>
-      <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMobil['id_transport']; ?>">
+      <a href="<?= BASEURL; ?>/?controller=Produk&method=detail&id_transport=<?= $ProdukUserMobil['id_transport']; ?>">
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMobil['foto_transport']; ?>' alt="mobil">
           <div class="tulisan">
@@ -45,7 +45,7 @@
     $endIndexMotor = $startIndexMotor + 9;
 
     foreach (array_slice($data['ProdukUserMotor'], $startIndexMotor, 10) as $ProdukUserMotor) : ?>
-      <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMotor['id_transport']; ?>">
+      <a href="<?= BASEURL; ?>/?controller=Produk&method=detail&id_transport=<?= $ProdukUserMotor['id_transport']; ?>">
         <div class="sepedah" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMotor['foto_transport']; ?>' alt="mobil">
           <div class="tulisan">

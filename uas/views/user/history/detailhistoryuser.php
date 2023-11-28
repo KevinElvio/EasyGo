@@ -16,13 +16,13 @@
 
     <div class="dalamnya">
         <h2 class="judul">Detail History</h2>
-        <a href="<?= BASEURL; ?>/produk">
+        <a href="<?= BASEURL; ?>/?controller=History">
             <div class="back">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </div>
         </a>
         <div class="pembungkus">
-            <div class="gambar"><img src="<?= BASEURL; ?>/img/avanza.jpg" alt=""></div>
+        <div class="gambar"><img src="<?= BASEURL; ?>/img/UserImg/<?= $data['historyUser']['foto_transport']; ?>" alt=""></div>
 
             <div class="list-isi">
                 <h1><?= $data['historyUser']['nama_transport']; ?></h1>

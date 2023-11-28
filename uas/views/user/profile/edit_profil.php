@@ -13,6 +13,11 @@
 
 <body>
     <h2 class="judulnya">Ubah Password</h2>
+    <div class="back">
+        <a href="<?= BASEURL; ?>/?controller=Profile">
+            <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
+        </a>
+    </div>
     <div class="box-profile">
         <h2 class="nama">Kevin Elvio</h2>
         <img src="<?= BASEURL; ?>/img/profil.JPG" alt="">

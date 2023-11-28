@@ -22,7 +22,7 @@
                 EasyGo Rental Form
             </div>
             <div class="back">
-                <a href="<?= BASEURL; ?>/produk">
+                <a href="<?= BASEURL; ?>/?controller=Produk">
                     <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
                 </a>
             </div>

@@ -41,8 +41,8 @@
                     <h3><a href="">Hapus Akun</a></h3>
                 </div>
                 <div class="edit-profile">
-                    <h3><a href="<?= BASEURL; ?>/profile/editprofil">Edit Profile</a></h3>
-                    <a href="<?= BASEURL; ?>/profile/editprofil"><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
+                    <h3><a href="<?= BASEURL; ?>/?controller=Profile&method=editprofil">Edit Profile</a></h3>
+                    <a href="<?= BASEURL; ?>/?controller=Profile&method=editprofil"><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
                 </div>
             </div>
             <a class="logout" href=""><iconify-icon icon="tabler:logout" style="color: #004aad;"></iconify-icon></a>
