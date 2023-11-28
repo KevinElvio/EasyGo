@@ -13,7 +13,7 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="<?=BASEURL; ?>/login/tambah" method="post">
+            <form action="<?=BASEURL; ?>/?controller=Login&method=Tambah" method="post">
                 <H1>Register</H1>
                 <div class="register">
                     <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap" required>
@@ -30,7 +30,7 @@
                 <div class="register">
                     <input type="password" placeholder="Re-Password" id="re-password" name="re-password" required>
                 </div>
-                <p class="daftarrental" style="text-align: right;"><a href="<?= BASEURL; ?>/login/registeradmin">Register as Rental</a></p>
+                <p class="daftarrental" style="text-align: right;"><a href="<?= BASEURL; ?>/?controller=Login&method=registeradmin">Register as Rental</a></p>
                 <!-- <label>
                     <input class="ketentuan" id="checkPenyewa" type="checkbox" name="admin">
                     Daftar sebagai penyewa <br>

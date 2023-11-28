@@ -11,9 +11,8 @@
 
 <body>
     <div class="login">
-        <!-- <img src="<?= BASEURL; ?>/img/background-login.png" alt=""> -->
         <div class="box">
-            <form action="<?= BASEURL; ?>/login/forgetpw" method="post"> 
+            <form action="<?= BASEURL; ?>/?controller=Login&method=Forgetpw" method="post"> 
                 <H2>Forget Password</H2>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
