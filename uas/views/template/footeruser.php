@@ -7,6 +7,7 @@
     <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
     <link rel="icon" href="<?= BASEURL; ?>/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/footer.css">
+    <script src="<?= BASEURL; ?>/js/script.js"></script>
 </head>
 
 <body>

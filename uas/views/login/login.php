@@ -12,7 +12,7 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="<?= BASEURL; ?>/login/validasi" method="post"> 
+            <form action="?controller=login&method=validasi" method="post"> 
                 <H1>LOGIN</H1>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>

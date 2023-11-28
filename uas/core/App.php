@@ -10,13 +10,13 @@ class App
         $url = $this->parseURL();
 
         // Ini Controller
-        if (file_exists('../app/controllers/' . $url[0] . '.php')) {
+        if (file_exists('../uas/controllers/' . $url[0] . '.php')) {
             $this->controller = $url[0];
             
             unset($url[0]);
         }
 
-        require_once '../app/controllers/' . $this->controller . '.php';
+        require_once '../uas/controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller;
 
 
@@ -38,12 +38,25 @@ class App
     }
     public function parseURL()
     {
-        if (isset($_GET['url'])) {
-            $url = $_GET['url'];
-            $url = rtrim($_GET['url'], '/');
-            $url = filter_var($url, FILTER_SANITIZE_URL);
-            $url = explode('/', $url);
-            return $url;
+        // if (isset($_GET['url'])) {
+        //     $url = $_GET['url'];
+        //     $url = rtrim($_GET['url'], '/');
+        //     $url = filter_var($url, FILTER_SANITIZE_URL);
+        //     $url = explode('/', $url);
+        //     return $url;
+        // }
+
+        $url = [null, null];
+        if (isset($_GET["controller"])) {
+            $url[0] = $_GET["controller"];
         }
+        if (isset($_GET["method"])) {
+            $url[1] = $_GET["method"];
+        }
+        return $url;
+
+        
+
+        
     }
 }

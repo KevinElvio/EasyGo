@@ -60,14 +60,14 @@ class Login extends Controller
         $data['validasiAdmin'] = $this->model('READ')->login_admin($username, $passRent);
 
         if ($data['validasi'] != NULL) {
-            header("Location:" . BASEURL . "/destinasi");
+            header("Location:" . BASEURL . "?controller=Destinasi");
             exit(); 
         } elseif ($data['validasiAdmin'] != NULL) {
-            header("Location:" . BASEURL . "/homeadmin");
+            header("Location:" . BASEURL . "?controller=homeadmin");
             exit();
         } elseif ($data['validasi'] == NULL) {
             
-            header("Location:" . BASEURL . "/login");
+            header("Location:" . BASEURL . "?controller=login");
             exit(); 
         }
 
