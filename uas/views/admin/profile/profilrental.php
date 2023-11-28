@@ -38,7 +38,7 @@
                     <h3><a href="">Hapus Akun</a></h3>
                 </div>
                 <div class="edit-profile">
-                    <h3><a href="<?= BASEURL; ?>/profiladmin/editprofil">Edit Profile</a></h3>
+                    <h3><a href="<?= BASEURL; ?>?controller=Profiladmin&method=editprofil">Edit Profile</a></h3>
                     <a href=""><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
                 </div>
             </div>

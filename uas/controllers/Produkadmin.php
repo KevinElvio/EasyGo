@@ -25,7 +25,7 @@ class Produkadmin extends Controller {
 
         if($this->model('DELETE')->HapusKendaraan($id_transport) > 0)
         {
-            header('Location: ' . BASEURL . '/Produkadmin');
+            header('Location: ' . BASEURL . '?controller=Produkadmin');
             exit;
         }
         
@@ -36,7 +36,7 @@ class Produkadmin extends Controller {
 
         if($this->model('CREATE')->TambahKendaraan($_POST) > 0)
         {
-            header('Location: ' . BASEURL . '/Produkadmin');
+            header('Location: ' . BASEURL . '?controller=Produkadmin');
             exit;
         }
         

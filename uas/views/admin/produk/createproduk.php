@@ -21,13 +21,13 @@
         <h2 class="judul">Tambah Kendaraan</h2>
 
         <div class="back">
-            <a href="<?= BASEURL; ?>/Produkadmin/produk">
+            <a href="<?= BASEURL; ?>?controller=Produkadmin">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </a>
         </div>
 
 
-        <form action="<?= BASEURL; ?>/produkadmin/tambahprodukadmin" method="post">
+        <form action="<?= BASEURL; ?>?controller=Produkadmin&method=tambahprodukadmin" method="post">
             <div class="pembungkus">
                 <div class="gambar">
                     <h2>Upload Image</h2>

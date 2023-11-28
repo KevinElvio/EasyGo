@@ -16,12 +16,12 @@
     <div class="atas-1">
         <h2 class="judul">Detail History</h2>
         <div class="back">
-            <a href="<?= BASEURL; ?>/historyadmin">
+            <a href="<?= BASEURL; ?>?controller=Historyadmin">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </a>
         </div>
         <div class="pembungkus">
-            <div class="gambar"><img src="<?= BASEURL; ?>/img/avanza.jpg" alt=""></div>
+            <div class="gambar"><img src="<?= BASEURL; ?>/img/UserImg/<?= $data['history']['foto_transport']; ?>" alt=""></div>
 
             <div class="list-isi">
                 <h1><?= $data['history']['nama_transport']; ?></h1>

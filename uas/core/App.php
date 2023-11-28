@@ -53,6 +53,26 @@ class App
         if (isset($_GET["method"])) {
             $url[1] = $_GET["method"];
         }
+
+        $url = [];
+
+        // Mendapatkan nilai controller dari URL
+        if (isset($_GET['controller'])) {
+            $url[] = $_GET['controller'];
+        }
+
+        // Mendapatkan nilai method dari URL
+        if (isset($_GET['method'])) {
+            $url[] = $_GET['method'];
+        }
+
+        // Mendapatkan nilai parameter dari URL
+        foreach ($_GET as $key => $value) {
+            if ($key !== 'controller' && $key !== 'method') {
+                $url[$key] = $value;
+            }
+        }
+
         return $url;
 
         
