@@ -1,6 +1,6 @@
 <?php
 
-define("BASEURL","http://localhost/EasyGoMVC/EasyGo/public");
+define("BASEURL","http://localhost/EasyGoMVC/EasyGo/uas");
 
 // Database
 

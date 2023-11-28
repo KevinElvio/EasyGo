@@ -24,7 +24,7 @@
                 </div>
                 <p class="lupapass"><a href="<?= BASEURL; ?>/login/forgetpassword">Forget password?</a></p>
                 <button class="button-login" type="submit">Login</button>
-                <p class="daftarskrg">Don't have account? <a href="<?= BASEURL; ?>/login/register">Register</a></p>
+                <p class="daftarskrg">Don't have account? <a href="<?= BASEURL; ?>/?controller=Login&method=Register">Register</a></p>
                 <!-- <input class="button-login" type="submit" value="Login"> -->
             </form>
         </div>
