@@ -13,12 +13,12 @@
 
 <body>
     <div class="atas">
-        <a href="<?= BASEURL;?>/homeadmin"><img src="<?= BASEURL;?>/img/logo.png" alt=""></a>
+        <a href="<?= BASEURL;?>/?controller=homeadmin"><img src="<?= BASEURL;?>/img/logo.png" alt=""></a>
         <div class="tombol">
-            <a href="<?= BASEURL;?>/HomeAdmin">Home</a>
-            <a href="<?= BASEURL;?>/ProdukAdmin">Produk</a>
-            <a href="<?= BASEURL;?>/HistoryAdmin">History</a>
-            <a href="<?= BASEURL;?>/ProfilAdmin">Profil</a>
+            <a href="<?= BASEURL;?>/?controller=HomeAdmin">Home</a>
+            <a href="<?= BASEURL;?>/?controller=ProdukAdmin">Produk</a>
+            <a href="<?= BASEURL;?>/?controller=HistroyAdmin">History</a>
+            <a href="<?= BASEURL;?>/?controller=ProfilAdmin">Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>
