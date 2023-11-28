@@ -75,8 +75,5 @@ class App
 
         return $url;
 
-        
-
-        
     }
 }

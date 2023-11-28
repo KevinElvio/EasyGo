@@ -39,7 +39,7 @@
                             <li>Bandung</li>
                         </ul>
                     </div>
-                    <button class="btn-lokasi"><a href="<?= BASEURL; ?>/destinasi">See details</a></button>
+                    <button class="btn-lokasi"><a href="<?= BASEURL; ?>/?controller=Destinasi">See details</a></button>
                 </div>
             </div>
         </div>

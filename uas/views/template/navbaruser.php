@@ -13,11 +13,11 @@
 
 <body>
     <div class="atas">
-        <a href="<?= BASEURL; ?>/destinasi"><img src="<?= BASEURL; ?>/img/logo.png" alt=""></a>
+        <a href="<?= BASEURL; ?>/?controller=destinasi"><img src="<?= BASEURL; ?>/img/logo.png" alt=""></a>
         <div class="tombol">
-            <a href="<?= BASEURL; ?>/Destinasi">Home</a>
-            <a href="<?= BASEURL; ?>/History">History</a>
-            <a href="<?= BASEURL; ?>/Profile">Profil</a>
+            <a href="<?= BASEURL;?>/?controller=Destinasi">Home</a>
+            <a href="<?= BASEURL;?>/?controller=History">History</a>
+            <a href="<?= BASEURL;?>/?controller=Profile">Profil</a>
         </div>
         <div class="profil">
             <p>Username</p>

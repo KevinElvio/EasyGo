@@ -13,7 +13,7 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="<?=BASEURL; ?>/login/tambah" method="post">
+            <form action="<?=BASEURL; ?>/?controller=Login&method=Tambah" method="post">
                 <H1>Register</H1>
                 <div class="register">
                     <input type="text" placeholder="Nama" id="nama_lengkap" name="nama_lengkap" required>

@@ -22,7 +22,7 @@
                     <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
                     <input type="password" placeholder="Password" name="password" id="password" required>
                 </div>
-                <p class="lupapass"><a href="<?= BASEURL; ?>/login/forgetpassword">Forget password?</a></p>
+                <p class="lupapass"><a href="<?= BASEURL; ?>/?controller=Login&method=forgetpassword">Forget password?</a></p>
                 <button class="button-login" type="submit">Login</button>
                 <p class="daftarskrg">Don't have account? <a href="<?= BASEURL; ?>/?controller=Login&method=Register">Register</a></p>
                 <!-- <input class="button-login" type="submit" value="Login"> -->
