@@ -38,7 +38,7 @@
                             </a>
 
                             <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus&id_transport=<?= $MobilAdmin['id_transport'];?>" method="post">
-                                <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                                <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus produk mobil?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
                             </form>
 
 
@@ -69,7 +69,9 @@
                             <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
-                            <button class="hapus"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus&id_transport=<?= $MotorAdmin['id_transport'];?>">
+                                <button class="hapus" onclick="return confirm('Anda yakin ingin menghapus produk motor?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                            </form>
                         </div>
                         <p><?= $MotorAdmin['nama_transport']; ?></p>
                     </div>
