@@ -35,7 +35,7 @@
   <ul class="pagination">
     <?php for ($i = 1; $i <= $data['pagination']['totalPages']; $i++) : ?>
       <li class="page-item <?php echo ($i == $data['pagination']['currentPage']) ? 'active' : ''; ?>">
-        <a class="page-link" href="<?php echo BASEURL . '?controller=Produk' . $i; ?>"><?php echo $i; ?></a>
+        <a class="page-link" href="<?php echo BASEURL . '?controller=Produk&method=index&page=' . $i; ?>"><?php echo $i; ?></a>
       </li>
     <?php endfor; ?>
   </ul>

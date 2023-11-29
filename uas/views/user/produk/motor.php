@@ -13,8 +13,8 @@
 
 <body>
   <div class="container1">
-    <button class="mobil"><a href="<?= BASEURL; ?>/produk/index" class="mobil">Mobil</a></button>
-    <button class="motor"><a href="<?= BASEURL; ?>/produk/motor" class="motor">Motor</a></button>
+    <button class="mobil"><a href="<?= BASEURL; ?>?controller=Produk&method=index" class="mobil">Mobil</a></button>
+    <button class="motor"><a href="<?= BASEURL; ?>?controller=Produk&method=motor">Motor</a></button>
   </div>
 
   <div class="container2">
@@ -35,7 +35,7 @@
   <ul class="pagination">
     <?php for ($i = 1; $i <= $data['pagination']['totalPages']; $i++) : ?>
       <li class="page-item <?php echo ($i == $data['pagination']['currentPage']) ? 'active' : ''; ?>">
-        <a class="page-link" href="<?php echo BASEURL . '/produk/motor/' . $i; ?>"><?php echo $i; ?></a>
+        <a class="page-link" href="<?php echo BASEURL . '?controller=Produk&method=motor&page=' . $i; ?>"><?php echo $i; ?></a>
       </li>
     <?php endfor; ?>
   </ul>
