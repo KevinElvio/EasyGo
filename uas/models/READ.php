@@ -88,23 +88,32 @@ class READ
         return $this->db->resultSet();
     }
 
-    public function ListProdukMotor()
+    public function ListProdukMotor($start = 0, $limit = 10)
     {
-        $this->db->query('select foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
-        from tbl_transport
-        where id_jenistransport = 2');
-
+        $this->db->query('SELECT foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        FROM tbl_transport
+        WHERE id_jenistransport = 2
+        LIMIT :start, :limit');
+    
+        $this->db->bind(':start', $start, PDO::PARAM_INT);
+        $this->db->bind(':limit', $limit, PDO::PARAM_INT);
+    
         return $this->db->resultSet();
     }
-
-    public function ListProdukMobil()
+    
+    public function ListProdukMobil($start = 0, $limit = 10)
     {
-        $this->db->query('select foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
-        from tbl_transport
-        where id_jenistransport = 1');
+        $this->db->query('SELECT foto_transport, id_transport, nama_transport, deskripsi_produk, tahun_keluar, harga_sewa
+        FROM tbl_transport
+        WHERE id_jenistransport = 1
+        LIMIT :start, :limit');
 
+        $this->db->bind(':start', $start, PDO::PARAM_INT);
+        $this->db->bind(':limit', $limit, PDO::PARAM_INT);
         return $this->db->resultSet();
     }
+    
+
 
     public function GetDetailProduk($id_transport)
     {
