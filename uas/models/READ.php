@@ -140,7 +140,7 @@ class READ
 
     public function ListMobilAdmin()
     {
-        $this->db->query('select foto_transport, nama_transport, tahun_keluar, harga_sewa
+        $this->db->query('select id_transport, foto_transport, nama_transport, tahun_keluar, harga_sewa
         from tbl_transport
         where id_jenistransport = 1');
 

@@ -37,7 +37,7 @@
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
 
-                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus" method="post">
+                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus&id_transport=<?= $MobilAdmin['id_transport'];?>" method="post">
                                 <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
                             </form>
 
