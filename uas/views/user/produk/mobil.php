@@ -13,14 +13,14 @@
 
 <body>
   <div class="container1">
-    <button class="mobil"><a href="<?= BASEURL; ?>/produk/index" class="mobil">Mobil</a></button>
-    <button class="motor"><a href="<?= BASEURL; ?>/produk/motor" class="motor">Motor</a></button>
+    <button class="mobil"><a href="<?= BASEURL; ?>?controller=Produk" class="mobil">Mobil</a></button>
+    <button class="motor"><a href="<?= BASEURL; ?>?controller=Produk&method=motor" class="motor">Motor</a></button>
   </div>
 
   <div class="container2">
     <?php
     foreach ($data['mobil'] as $ProdukUserMobil) : ?>
-      <a href="<?= BASEURL; ?>/produk/detail/<?= $ProdukUserMobil['id_transport']; ?>">
+      <a href="<?= BASEURL; ?>?controller=Produk&method=detail&id_transport=<?= $ProdukUserMobil['id_transport']; ?>">
         <div class="car" onclick="myfungsi()">
           <img src='<?= BASEURL; ?>/img/UserImg/<?= $ProdukUserMobil['foto_transport']; ?>' alt="mobil">
           <div class="tulisan">
@@ -35,7 +35,7 @@
   <ul class="pagination">
     <?php for ($i = 1; $i <= $data['pagination']['totalPages']; $i++) : ?>
       <li class="page-item <?php echo ($i == $data['pagination']['currentPage']) ? 'active' : ''; ?>">
-        <a class="page-link" href="<?php echo BASEURL . '/produk/index/' . $i; ?>"><?php echo $i; ?></a>
+        <a class="page-link" href="<?php echo BASEURL . '?controller=Produk' . $i; ?>"><?php echo $i; ?></a>
       </li>
     <?php endfor; ?>
   </ul>
