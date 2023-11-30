@@ -8,6 +8,10 @@ class CREATE
     {
         $this->db = new Database;
     }
+    public function setDatabase($db)
+    {
+        $this->db = $db;
+    }
 
     public function RegisterUser($data)
     {
