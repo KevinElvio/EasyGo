@@ -12,7 +12,7 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="?controller=login&method=validasi" method="post"> 
+            <form action="?controller=Login&method=validasi" method="post"> 
                 <H1>LOGIN</H1>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
@@ -24,7 +24,7 @@
                 </div>
                 <p class="lupapass"><a href="<?= BASEURL; ?>/?controller=Login&method=forgetpassword">Forget password?</a></p>
                 <button class="button-login" type="submit">Login</button>
-                <p class="daftarskrg">Don't have account? <a href="<?= BASEURL; ?>/?controller=Login&method=Register">Register</a></p>
+                <p class="daftarskrg">Don't have account? <a href="<?= BASEURL; ?>/?controller=Login&method=register">Register</a></p>
                 <!-- <input class="button-login" type="submit" value="Login"> -->
             </form>
         </div>

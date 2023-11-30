@@ -29,13 +29,13 @@ class Login extends Controller
     {
         if ($_POST['password'] == $_POST['re-password']) {
             if ($this->model('CREATE')->RegisterUser($_POST) > 0) {
-                header('Location: ' . BASEURL . '/login');
+                header('Location: ' . BASEURL . '/?controller=Login');
                 exit;
             }
         }
         else 
         {
-            header('Location:' . BASEURL . '/login/register');
+            header('Location:' . BASEURL . '/?controller=Login&method=register');
             exit;
         }
     }
@@ -44,13 +44,13 @@ class Login extends Controller
     {
         if ($_POST['password'] == $_POST['re-password']) {
             if ($this->model('CREATE')->RegisterAdmin($_POST) > 0) {
-                header('Location: ' . BASEURL . '/login');
+                header('Location: ' . BASEURL . '/?controller=Login');
                 exit;
             }
         }
         else 
         {
-            header('Location:' . BASEURL . '/login/registeradmin');
+            header('Location:' . BASEURL . '/?controller=Login&method=registeradmin');
             exit;
         }
     }
@@ -67,15 +67,15 @@ class Login extends Controller
 
         if ($data['validasi'] != NULL) {
             $_SESSION["login"] = true ;
-            header("Location:" . BASEURL . "?controller=Destinasi");
+            header("Location:" . BASEURL . "/?controller=Destinasi");
             exit(); 
         } elseif ($data['validasiAdmin'] != NULL) {
             $_SESSION["login"] = true ;
-            header("Location:" . BASEURL . "?controller=homeadmin");
+            header("Location:" . BASEURL . "/?controller=Homeadmin");
             exit();
         } elseif ($data['validasi'] == NULL) {
             
-            header("Location:" . BASEURL . "?controller=login");
+            header("Location:" . BASEURL . "/?controller=Login");
             exit(); 
         }
 

@@ -16,8 +16,8 @@
 
     <div class="dalamnya">
         <div class="button-atas">
-            <button class="mobilmt"><a href="<?= BASEURL; ?>?controller=Produkadmin" class="mobilmt">Mobil</a></button>
-            <button class="motormt" ><a href="<?= BASEURL; ?>?controller=Produkadmin&method=motor" class="motormt">Motor</a></button>
+            <button class="mobilmt"><a href="<?= BASEURL; ?>/?controller=Produkadmin" class="mobilmt">Mobil</a></button>
+            <button class="motormt" ><a href="<?= BASEURL; ?>/?controller=Produkadmin&method=motor" class="motormt">Motor</a></button>
         </div>
 
 
@@ -48,7 +48,7 @@
         <ul class="pagination">
             <?php for ($i = 1; $i <= $data['pagination']['totalPages']; $i++) : ?>
             <li class="page-item <?php echo ($i == $data['pagination']['currentPage']) ? 'active' : ''; ?>">
-                <a class="page-link" href="<?php echo BASEURL . '?controller=Produkadmin&method=motor&page=' . $i; ?>"><?php echo $i; ?></a>
+                <a class="page-link" href="<?php echo BASEURL . '/?controller=Produkadmin&method=motor&page=' . $i; ?>"><?php echo $i; ?></a>
             </li>
             <?php endfor; ?>
         </ul>

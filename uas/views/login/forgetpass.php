@@ -12,7 +12,7 @@
 <body>
     <div class="login">
         <div class="box">
-            <form action="<?= BASEURL; ?>/?controller=Login&method=Forgetpw" method="post"> 
+            <form action="<?= BASEURL; ?>/?controller=Login&method=forgetpw" method="post"> 
                 <H2>Forget Password</H2>
                 <div class="username-login">
                     <iconify-icon icon="tdesign:user"></iconify-icon>
