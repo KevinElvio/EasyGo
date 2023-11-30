@@ -1,5 +1,11 @@
 <?php
+session_start();
 
+if( isset($_SESSION["login"]))
+{
+    header("Location:" . BASEURL . "?controller=Destinasi");
+    exit;
+}
 class Login extends Controller
 {
     public function index()
@@ -60,9 +66,11 @@ class Login extends Controller
         $data['validasiAdmin'] = $this->model('READ')->login_admin($username, $passRent);
 
         if ($data['validasi'] != NULL) {
+            $_SESSION["login"] = true ;
             header("Location:" . BASEURL . "?controller=Destinasi");
             exit(); 
         } elseif ($data['validasiAdmin'] != NULL) {
+            $_SESSION["login"] = true ;
             header("Location:" . BASEURL . "?controller=homeadmin");
             exit();
         } elseif ($data['validasi'] == NULL) {
@@ -74,6 +82,8 @@ class Login extends Controller
         
         
     }
+
+
 
     // public function forgetpw()
     // {
