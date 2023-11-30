@@ -24,6 +24,14 @@ class Login extends Controller
     {
         $this->view('login/forgetpass');
     }
+    public function kode()
+    {
+        $this->view('login/kode');
+    }
+    public function newpassword()
+    {
+        $this->view('login/passwordbaru');
+    }
 
     public function tambah()
     {

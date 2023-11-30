@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
     <link rel="icon" href="<?= BASEURL; ?>/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/forgetpass.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/passwordbaru.css">
 </head>
 
 <body>
     <div class="login">
         <div class="box">
             <form action="<?= BASEURL; ?>/?controller=Login&method=forgetpw" method="post"> 
-                <H2>Forget Password</H2>
-                <div class="username-login">
-                    <iconify-icon icon="tdesign:user"></iconify-icon>
-                    <input type="email" placeholder="Email" name="email" required>
+                <H2>New Password</H2>
+                <div class="password-login">
+                    <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
+                    <input type="password" placeholder="Password Baru" name="password" required>
+                </div>
+                <div class="password-login">
+                    <iconify-icon icon="simple-line-icons:lock"></iconify-icon>
+                    <input type="password" placeholder="Konfirmasi Password" name="re-password" required>
                 </div>
                 <button class="button-login" type="submit">Submit</button>
             </form>
