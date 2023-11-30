@@ -42,12 +42,36 @@ class Produkadmin extends Controller {
     }
 
 
-
-    public function update()
+    public function update($id_transport)
     {
+        $data['ALLProduk'] = $this->model('READ')->AllProdukAdmin($id_transport);
         $this->view("template/navbarrental");
-        $this->view('admin/produk/updateproduk');
+        $this->view('admin/produk/updateproduk',$data);
         $this->view("template/footeradmin");
+    }
+
+    public function updatedata($id_transport)
+    {
+        $result = $this->model('UPDATE')->UpdateKendaraan($id_transport);
+
+        if ($result !== null && $result > 0) {
+            // Jika update berhasil
+            header('Location: ' . BASEURL . '/?controller=Produkadmin');
+            exit;
+        } else {
+            header('Location: ' . BASEURL . '/?controller=Produkadmin');
+            exit;
+        }
+
+
+
+
+
+        // if($this->model('UPDATE')->UpdateKendaraan($_POST) != null)
+        // {
+        //     header('Location: ' . BASEURL . '/?controller=Produkadmin');
+        //     exit;
+        // }
     }
 
 }

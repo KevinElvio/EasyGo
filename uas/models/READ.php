@@ -140,7 +140,7 @@ class READ
 
     public function ListMobilAdmin()
     {
-        $this->db->query('select id_transport, foto_transport, nama_transport, tahun_keluar, harga_sewa
+        $this->db->query('select id_transport, foto_transport, nama_transport, total_kilometer, deskripsi_produk, tahun_keluar, harga_sewa
         from tbl_transport
         where id_jenistransport = 1');
 
@@ -149,11 +149,21 @@ class READ
 
     public function ListMotorAdmin()
     {
-        $this->db->query('select  id_transport, foto_transport, nama_transport, tahun_keluar, harga_sewa
+        $this->db->query('select  id_transport, foto_transport, nama_transport, total_kilometer, deskripsi_produk, tahun_keluar, harga_sewa
         from tbl_transport
         where id_jenistransport = 2');
 
         return $this->db->resultSet();
+    }
+
+    public function AllProdukAdmin($id_transport)
+    {
+        $this->db->query('select  id_transport, foto_transport, nama_transport, total_kilometer, deskripsi_produk, tahun_keluar, harga_sewa
+        from tbl_transport WHERE id_transport = :id_transport');
+
+        $this->db->bind('id_transport',$id_transport);
+        return $this->db->single();
+
     }
 
     public function CountMobil()

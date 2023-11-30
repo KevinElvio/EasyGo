@@ -28,9 +28,9 @@
             <div class="gambar">
                 <h2>Upload Image</h2>
                 <div class="inputan">
-                    <img src="<?= BASEURL; ?>/img/avanza.jpg" alt="">
+                    <img src="<?= BASEURL; ?>/img/UserImg/<?= $data['ALLProduk']['foto_transport']; ?>" alt="">
                     <div class="pilihfile">
-                        <input type="file" name="choose file" id="">
+                        <input type="file" name="file" id="">
                     </div>
                 </div>
 
@@ -41,41 +41,43 @@
                     <label for="MerkMobil">Merk Mobil</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="" value="Avanza">
+                        <input type="text" name="MerkMobil" id="" value="<?= $data['ALLProduk']['nama_transport'];?>">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="HargaSewa">Harga Sewa</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="fa6-solid:rupiah-sign" width="25" height="25"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="" value="250.000">
+                        <input type="text" name="harga" id="" value="<?= $data['ALLProduk']['harga_sewa'];?>">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="TotalKilo">Total Kilometer</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="material-symbols-light:speed-outline" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="" value="25 Kilometer">
+                        <input type="text" name="total_kilometer" id="" value="<?= $data['ALLProduk']['total_kilometer'];?> Kilometer">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="TahunKeluar">Tahun Keluaran</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="ph:calendar-thin" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="" value="2019">
+                        <input type="text" name="tahun" id="" value="<?= $data['ALLProduk']['tahun_keluar'];?>">
                     </div>
                 </div>
                 <div class="form-1">
                     <label for="Deskripsi">Deskripsi Singkat</label>
                     <div class="input-with-icon">
                         <iconify-icon icon="material-symbols-light:text-ad-outline" width="30" height="30"></iconify-icon>
-                        <input type="text" name="MerkMobil" id="" value="Baret di sebelah kanan">
+                        <input type="text" name="deskripsi" id="" value="<?= $data['ALLProduk']['deskripsi_produk'];?>">
                     </div>
                 </div>
             </div>
         </div>
         <div class="button-kirim">
-            <button>Update</button>
+            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=updatedata&id_transport=<?= $MobilAdmin['id_transport'];?>" method="post">
+                <button>Update</button>
+            </form>
         </div>
     </div>
 </body>

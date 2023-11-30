@@ -34,7 +34,7 @@
                     <img src="<?= BASEURL; ?>/img/UserImg/<?= $MobilAdmin['foto_transport']; ?>" alt="">
                     <div class="layer">
                         <div class="button-icon">
-                            <a class="cobaajax" href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
+                            <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update&id_transport=<?= $MobilAdmin['id_transport'];?>">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
 
