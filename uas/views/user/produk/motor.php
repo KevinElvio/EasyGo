@@ -13,8 +13,8 @@
 
 <body>
   <div class="container1">
-    <button class="mobil"><a href="<?= BASEURL; ?>?controller=Produk&method=index" class="mobil">Mobil</a></button>
-    <button class="motor"><a href="<?= BASEURL; ?>?controller=Produk&method=motor">Motor</a></button>
+    <a href="<?= BASEURL; ?>?controller=Produk&method=index" class="mobilmt"><button class="mobilmt">Mobil</button></a>
+    <a href="<?= BASEURL; ?>?controller=Produk&method=motor"class="motormt"><button class="motormt">Motor</button></a>
   </div>
 
   <div class="container2">

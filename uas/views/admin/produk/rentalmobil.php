@@ -14,19 +14,12 @@
 </head>
 
 <body>
-    <?php
-    // include "navbarrental.php";
-    ?>
-
+    
     <div class="dalamnya">
         <div class="button-atas">
-            <button class="mobil" onclick="page('mobil')">Mobil</button>
-            <button class="motor" onclick="page('motor')">Motor</button>
+        <button class="mobil"><a href="<?= BASEURL; ?>?controller=Produkadmin" class="mobil">Mobil</a></button>
+        <button class="motor" ><a href="<?= BASEURL; ?>?controller=Produkadmin&method=motor" class="motor">Motor</a></button>
         </div>
-
-
-
-
 
         <div class="list-mobil">
             <?php foreach ($data['MobilAdmin'] as $MobilAdmin) : ?>
@@ -56,35 +49,17 @@
                     <button class="plus-mobil" onclick="add()"><iconify-icon icon="mdi-light:plus"></iconify-icon></button>
                 </a>
             </div>
+            
 
         </div>
 
-
-
-        <div class="list-motor">
-            <?php foreach ($data['MotorAdmin'] as $MotorAdmin) : ?>
-                <div class="produk-motor">
-                    <img src="<?= BASEURL; ?>/img/UserImg/<?= $MotorAdmin['foto_transport']; ?>" alt="">
-                    <div class="layer">
-                        <div class="button-icon">
-                            <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
-                                <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
-                            </a>
-                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus&id_transport=<?= $MotorAdmin['id_transport'];?>">
-                                <button class="hapus" onclick="return confirm('Anda yakin ingin menghapus produk motor?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
-                            </form>
-                        </div>
-                        <p><?= $MotorAdmin['nama_transport']; ?></p>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-
-
-            <div class="tambah-motor">
-                <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=tambah">
-                    <button class="plus-motor" onclick="addmt()"><iconify-icon icon="mdi-light:plus"></iconify-icon></button>
-                </a>
-            </div>
+        <ul class="pagination">
+            <?php for ($i = 1; $i <= $data['pagination']['totalPages']; $i++) : ?>
+            <li class="page-item <?php echo ($i == $data['pagination']['currentPage']) ? 'active' : ''; ?>">
+                <a class="page-link" href="<?php echo BASEURL . '?controller=Produkadmin&method=index&page=' . $i; ?>"><?php echo $i; ?></a>
+            </li>
+            <?php endfor; ?>
+        </ul>
 
         </div>
 
