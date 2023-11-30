@@ -42,7 +42,7 @@
                     <a href=""><iconify-icon icon="akar-icons:edit" style="color: white; vertical-align: middle;"></iconify-icon></a>
                 </div>
             </div>
-            <a class="logout" href="href=<?= BASEURL; ?>/?controller=logout"><iconify-icon icon="tabler:logout" style="color: #004aad;"></iconify-icon></a>
+            <a class="logout" href="<?= BASEURL; ?>/?controller=logout"><iconify-icon icon="tabler:logout" style="color: #004aad;"></iconify-icon></a>
 
         </div>
 
