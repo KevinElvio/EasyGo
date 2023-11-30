@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyGo - Solusi Terbaik Penyewaan Transportasi</title>
     <script src="<?= BASEURL; ?>/js/fungsi.js"></script>
+    <script src="<?= BASEURL; ?>/js/ajax.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="icon" href="<?= BASEURL; ?>/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/rentalmobil.css">
@@ -26,12 +27,12 @@
                     <img src="<?= BASEURL; ?>/img/UserImg/<?= $MobilAdmin['foto_transport']; ?>" alt="">
                     <div class="layer">
                         <div class="button-icon">
-                            <a href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
+                            <a class="cobaajax" href="<?= BASEURL; ?>/?controller=Produkadmin&method=update">
                                 <button class="edit"><iconify-icon icon="cil:pencil"></iconify-icon></button>
                             </a>
 
-                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus" method="post">
-                                <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
+                            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=hapus&id_transport=<?= $MobilAdmin['id_transport'];?>" method="post">
+                                <button name="hapus" class="hapus" onclick="return confirm('Anda yakin ingin menghapus produk mobil?')"><iconify-icon icon="system-uicons:trash"></iconify-icon></button>
                             </form>
 
 
@@ -59,8 +60,6 @@
             </li>
             <?php endfor; ?>
         </ul>
-
-       
 
         </div>
 
