@@ -107,7 +107,7 @@ a{
     color: black;
 }
 
-.mobil, .motor{
+.mobil, .motor ,.mobilmt, .motormt{
     width: 9rem;
     height: 2.7rem;
     font-size: 0.9rem;
@@ -115,6 +115,7 @@ a{
     border-style: none;
     border-radius: 5px;
     background-color: white;
+    text-align: center;
 }
 
 
@@ -123,17 +124,42 @@ a{
 .mobil{
     border: 1px solid #004AAD;
     background-color: #004AAD;
-    color:white;
+    color: white;
     cursor: pointer;
+    text-decoration: none;
+   
 }
 
 .motor{
-    border: 1px solid #004AAD;
+    border: 1px solid #000000;
     background-color: white;
     color: black;
     cursor: pointer;
+    text-decoration: none;
 }
 
+.motor a{
+    border: none;
+}
+
+.mobilmt{
+    border: 1px solid #000000;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mobilmt a{
+    border: none;
+}
+.motormt{
+    border: 1px solid #004AAD;
+    background-color: #004AAD;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 .container2{
     margin-top: 10vh;

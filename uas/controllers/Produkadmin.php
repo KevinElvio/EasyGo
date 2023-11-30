@@ -1,12 +1,57 @@
 <?php
 
 class Produkadmin extends Controller {
-    public function index()
-    {
-        $data['MobilAdmin'] = $this->model('READ')->ListMobilAdmin();
-        $data['MotorAdmin'] = $this->model('READ')->ListMotorAdmin();
+    public function index($page = 1)
+    {$model = $this->model('READ');
+        
+        $itemsPerPage = 10;
+        $totalItems = $model->CountMobil();
+        $totalPages = ceil($totalItems / $itemsPerPage);
+
+        if ($page < 1) {
+            $page = 1;
+        } elseif ($page > $totalPages && $totalPages > 0) {
+            $page = $totalPages;
+        }
+
+        $start = ($page - 1) * $itemsPerPage;
+
+        $data['MobilAdmin'] = $model->ListProdukMobil($start, $itemsPerPage);
+        
+        $data['pagination'] = [
+            'currentPage' => $page,
+            'totalPages' => $totalPages,
+        ];
         $this->view("template/navbarrental");
         $this->view('admin/produk/rentalmobil', $data);
+        $this->view("template/footeradmin");
+    }
+
+    public function motor($page = 1)
+    {
+        $model = $this->model('READ');
+        
+        $itemsPerPage = 10;
+        $totalItems = $model->CountMotor();
+        $totalPages = ceil($totalItems / $itemsPerPage);
+
+        if ($page < 1) {
+            $page = 1;
+        } elseif ($page > $totalPages && $totalPages > 0) {
+            $page = $totalPages;
+        }
+
+        $start = ($page - 1) * $itemsPerPage;
+
+        $data['MotorAdmin'] = $model->ListProdukMotor($start, $itemsPerPage);
+        
+        $data['pagination'] = [
+            'currentPage' => $page,
+            'totalPages' => $totalPages,
+        ];
+       
+        $this->view("template/navbarrental");
+        $this->view('admin/produk/rentalmotor', $data);
         $this->view("template/footeradmin");
     }
 
