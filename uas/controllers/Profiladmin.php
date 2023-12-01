@@ -3,7 +3,6 @@
 class Profiladmin extends Controller{
     public function index()
     {
-        $this->view("template/session");
         $this->view("template/navbarrental");
         $this->view('admin/profile/profilrental');
         $this->view("template/footeradmin");
@@ -11,7 +10,6 @@ class Profiladmin extends Controller{
 
     public function editprofil()
     {
-        $this->view("template/session");
         $this->view("template/navbarrental");
         $this->view('admin/profile/edit_profilrental');
         $this->view("template/footeradmin");

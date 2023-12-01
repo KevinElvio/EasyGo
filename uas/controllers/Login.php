@@ -1,11 +1,5 @@
 <?php
-session_start();
 
-if( isset($_SESSION["login"]))
-{
-    header("Location:" . BASEURL . "?controller=Destinasi");
-    exit;
-}
 class Login extends Controller
 {
     public function index()
@@ -24,26 +18,18 @@ class Login extends Controller
     {
         $this->view('login/forgetpass');
     }
-    public function kode()
-    {
-        $this->view('login/kode');
-    }
-    public function newpassword()
-    {
-        $this->view('login/passwordbaru');
-    }
 
     public function tambah()
     {
         if ($_POST['password'] == $_POST['re-password']) {
             if ($this->model('CREATE')->RegisterUser($_POST) > 0) {
-                header('Location: ' . BASEURL . '/?controller=Login');
+                header('Location: ' . BASEURL . '/login');
                 exit;
             }
         }
         else 
         {
-            header('Location:' . BASEURL . '/?controller=Login&method=register');
+            header('Location:' . BASEURL . '/login/register');
             exit;
         }
     }
@@ -52,13 +38,13 @@ class Login extends Controller
     {
         if ($_POST['password'] == $_POST['re-password']) {
             if ($this->model('CREATE')->RegisterAdmin($_POST) > 0) {
-                header('Location: ' . BASEURL . '/?controller=Login');
+                header('Location: ' . BASEURL . '/login');
                 exit;
             }
         }
         else 
         {
-            header('Location:' . BASEURL . '/?controller=Login&method=registeradmin');
+            header('Location:' . BASEURL . '/login/registeradmin');
             exit;
         }
     }
@@ -74,24 +60,20 @@ class Login extends Controller
         $data['validasiAdmin'] = $this->model('READ')->login_admin($username, $passRent);
 
         if ($data['validasi'] != NULL) {
-            $_SESSION["login"] = true ;
-            header("Location:" . BASEURL . "/?controller=Destinasi");
+            header("Location:" . BASEURL . "?controller=Destinasi");
             exit(); 
         } elseif ($data['validasiAdmin'] != NULL) {
-            $_SESSION["login"] = true ;
-            header("Location:" . BASEURL . "/?controller=Homeadmin");
+            header("Location:" . BASEURL . "?controller=homeadmin");
             exit();
         } elseif ($data['validasi'] == NULL) {
             
-            header("Location:" . BASEURL . "/?controller=Login");
+            header("Location:" . BASEURL . "?controller=login");
             exit(); 
         }
 
         
         
     }
-
-
 
     // public function forgetpw()
     // {

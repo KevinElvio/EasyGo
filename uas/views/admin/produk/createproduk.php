@@ -21,7 +21,7 @@
         <h2 class="judul">Tambah Kendaraan</h2>
 
         <div class="back">
-            <a href="<?= BASEURL; ?>/?controller=Produkadmin">
+            <a href="<?= BASEURL; ?>?controller=Produkadmin">
                 <iconify-icon icon="ph:arrow-up-thin" rotate="-90deg" style="vertical-align: middle;"></iconify-icon>
             </a>
         </div>
@@ -42,7 +42,7 @@
                         <div class="input-with-icon">
                             <iconify-icon icon="fluent:arrow-eject-20-regular" rotate="90deg" width="30" height="30"></iconify-icon>
                             <select name="JenisKendaraan" id="JenisKendaraan">
-                                <option value="" disabled selected>Pilih Merek Transportation</option>
+                                <option value="" disabled selected>Pilih Merek Mobil</option>
                                 <option value="1">Mobil</option>
                                 <option value="2">Motor</option>
                             </select>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="form-1">
-                        <label for="MerkMobil">Merk Transport</label>
+                        <label for="MerkMobil">Merk Mobil</label>
                         <div class="input-with-icon">
                             <iconify-icon icon="arcticons:car" width="30" height="30"></iconify-icon>
                             <input type="text" name="MerkMobil" id="MerkMobil" required>

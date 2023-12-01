@@ -38,7 +38,7 @@
                             <li>Bandung</li>
                         </ul>
                     </div>
-                    <button class="btn-lokasi"><a href="<?= BASEURL; ?>/?controller=Homeadmin">See details</a></button>
+                    <button class="btn-lokasi"><a href="<?= BASEURL; ?>/?controller=homeadmin">See details</a></button>
                 </div>
             </div>
         </div>

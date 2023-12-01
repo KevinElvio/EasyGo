@@ -13,7 +13,7 @@
 
 <body>
     <div class="atas">
-        <a href="<?= BASEURL; ?>/?controller=Destinasi"><img src="<?= BASEURL; ?>/img/logo.png" alt=""></a>
+        <a href="<?= BASEURL; ?>/?controller=destinasi"><img src="<?= BASEURL; ?>/img/logo.png" alt=""></a>
         <div class="tombol">
             <a href="<?= BASEURL;?>/?controller=Destinasi">Home</a>
             <a href="<?= BASEURL;?>/?controller=History">History</a>

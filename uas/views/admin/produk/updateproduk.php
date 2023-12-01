@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="button-kirim">
-            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=updatedata&id_transport=<?= $MobilAdmin['id_transport'];?>" method="post">
+            <form action="<?= BASEURL; ?>/?controller=Produkadmin&method=updatedata&id_transport=<?= $MobilAdmin['id_transport'];?>" method="POST">
                 <button>Update</button>
             </form>
         </div>

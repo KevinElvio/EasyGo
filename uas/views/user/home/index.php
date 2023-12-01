@@ -20,7 +20,7 @@
             <a href="#">Profil</a>
         </div>
         <div class="login-awal">
-            <button><a href="<?= BASEURL; ?>/?controller=Login">Login</a></button>
+            <button><a href="<?= BASEURL; ?>/?controller=login">Login</a></button>
         </div>
     </div>
 
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="daftar-kotak">
-                <button class="btn-kotak"><a href="<?= BASEURL; ?>/?controller=Login">Coba Gratis!</a></button>
+                <button class="btn-kotak"><a href="<?= BASEURL; ?>/?controller=login">Coba Gratis!</a></button>
             </div>
         </div>
     </div>

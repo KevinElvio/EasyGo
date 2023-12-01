@@ -4,8 +4,6 @@ class Produk extends Controller
 {
     public function index($page = 1)
     {
-        $this->view("template/session");
-
         $model = $this->model('READ');
         
         $itemsPerPage = 10;
@@ -34,7 +32,6 @@ class Produk extends Controller
 
     public function motor($page = 1)
     {
-        $this->view("template/session");
         $model = $this->model('READ');
         
         $itemsPerPage = 10;
@@ -64,7 +61,6 @@ class Produk extends Controller
 
     public function detail($id_transport)
     {
-        $this->view("template/session");
         $data['DetailProduk'] = $this->model('READ')->GetDetailProduk($id_transport);
         $this->view("template/navbaruser");
         $this->view("user/produk/produkdetail", $data);
@@ -72,7 +68,6 @@ class Produk extends Controller
     }
     public function pemesanan()
     {
-        $this->view("template/session");
         $this->view("template/navbaruser");
         $this->view("user/produk/formpemesanan");
         $this->view("template/footeruser");

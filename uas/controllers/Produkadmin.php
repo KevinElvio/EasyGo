@@ -2,9 +2,7 @@
 
 class Produkadmin extends Controller {
     public function index($page = 1)
-    {
-        $this->view("template/session");
-        $model = $this->model('READ');
+    {$model = $this->model('READ');
         
         $itemsPerPage = 10;
         $totalItems = $model->CountMobil();
@@ -31,7 +29,6 @@ class Produkadmin extends Controller {
 
     public function motor($page = 1)
     {
-        $this->view("template/session");
         $model = $this->model('READ');
         
         $itemsPerPage = 10;
@@ -60,7 +57,6 @@ class Produkadmin extends Controller {
 
     public function tambah()
     {
-        $this->view("template/session");
         // $Tambah = $_POST['file']. $_POST['JenisKendaraan'] . $_POST['NamaTransport'] . $_POST['MerkMobil'] . $_POST['HargaSewa'] . $_POST['TotalKilometer'] . $_POST['Deskripsi'];
         
         $this->view("template/navbarrental");
@@ -71,7 +67,6 @@ class Produkadmin extends Controller {
 
     public function hapus($id_transport)
     {
-        $this->view("template/session");
         if($this->model('DELETE')->HapusKendaraan($id_transport) > 0)
         {
             header('Location: ' . BASEURL . '/?controller=Produkadmin');
@@ -82,7 +77,6 @@ class Produkadmin extends Controller {
 
     public function tambahprodukadmin()
     {
-        $this->view("template/session");
 
         if($this->model('CREATE')->TambahKendaraan($_POST) > 0)
         {
@@ -95,36 +89,40 @@ class Produkadmin extends Controller {
 
     public function update($id_transport)
     {
-        $this->view("template/session");
         $data['ALLProduk'] = $this->model('READ')->AllProdukAdmin($id_transport);
         $this->view("template/navbarrental");
         $this->view('admin/produk/updateproduk',$data);
         $this->view("template/footeradmin");
     }
 
-    public function updatedata($id_transport)
-    {
-        $this->view("template/session");
-        $result = $this->model('UPDATE')->UpdateKendaraan($id_transport);
+    public function updatedata() {
+        // Assuming you have a model for handling data updates
+        $produkModel = $this->model('ProdukModel'); // Adjust the model class name based on your actual implementation
 
-        if ($result !== null && $result > 0) {
-            // Jika update berhasil
-            header('Location: ' . BASEURL . '/?controller=Produkadmin');
-            exit;
-        } else {
-            header('Location: ' . BASEURL . '/?controller=Produkadmin');
-            exit;
+        // Assuming your form data is submitted via POST
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Collect form data
+            $id_transport = $_POST['id_transport'];
+            $merkMobil = $_POST['MerkMobil'];
+            $hargaSewa = $_POST['harga'];
+            $totalKilometer = $_POST['total_kilometer'];
+            $tahunKeluar = $_POST['tahun'];
+            $deskripsi = $_POST['deskripsi'];
+
+            // Call the model method to update data
+            $result = $produkModel->UpdateKendaraan($id_transport, $merkMobil, $hargaSewa, $totalKilometer, $tahunKeluar, $deskripsi);
+
+            // Check the result and redirect accordingly
+            if ($result !== null && $result > 0) {
+                // Jika update berhasil
+                header('Location: ' . BASEURL . '/?controller=Produkadmin');
+                exit;
+            } else {
+                // Jika update gagal
+                header('Location: ' . BASEURL . '/?controller=Produkadmin');
+                exit;
+            }
         }
-
-
-
-
-
-        // if($this->model('UPDATE')->UpdateKendaraan($_POST) != null)
-        // {
-        //     header('Location: ' . BASEURL . '/?controller=Produkadmin');
-        //     exit;
-        // }
     }
 
 }
