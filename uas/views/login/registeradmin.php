@@ -51,7 +51,7 @@
                 </div>
                 <div class="register">
                 <select name="kota" id="kota">
-                        <option value="" disabled selected>Pilih Provinsi</option>
+                        <option value="" disabled selected>Pilih Kota</option>
                         <option value="1">Surabaya</option>
                         <option value="2">Jakarta</option>
                         <option value="3">Bandung</option>

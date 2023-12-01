@@ -61,6 +61,18 @@ label {
     outline: none;
 }
 
+select{	
+    border:1px solid #bababa;	
+    border-radius: 3px;	
+    height: 2rem;	
+    width: 15.6rem;	
+    font-size: 0.8rem;	
+}	
+
+option{	
+    font-size: 0.8rem;	
+}
+
 a {
     text-decoration: none;
     color: #03008F;
