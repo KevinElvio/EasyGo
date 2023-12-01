@@ -71,7 +71,7 @@ class Login extends Controller
             header("Location:" . BASEURL . "/?controller=Destinasi");
             exit(); 
         } elseif ($data['validasiAdmin'] != NULL) {
-            $_SESSION["login"] = true ;
+            $_SESSION["loginAdmin"] = true ;
             header("Location:" . BASEURL . "/?controller=Homeadmin");
             exit();
         } elseif ($data['validasi'] == NULL) {

@@ -3,7 +3,7 @@
 class Produkadmin extends Controller {
     public function index($page = 1)
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         $model = $this->model('READ');
         
         $itemsPerPage = 10;
@@ -31,7 +31,7 @@ class Produkadmin extends Controller {
 
     public function motor($page = 1)
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         $model = $this->model('READ');
         
         $itemsPerPage = 10;
@@ -60,7 +60,7 @@ class Produkadmin extends Controller {
 
     public function tambah()
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         // $Tambah = $_POST['file']. $_POST['JenisKendaraan'] . $_POST['NamaTransport'] . $_POST['MerkMobil'] . $_POST['HargaSewa'] . $_POST['TotalKilometer'] . $_POST['Deskripsi'];
         
         $this->view("template/navbarrental");
@@ -71,7 +71,7 @@ class Produkadmin extends Controller {
 
     public function hapus($id_transport)
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         if($this->model('DELETE')->HapusKendaraan($id_transport) > 0)
         {
             header('Location: ' . BASEURL . '/?controller=Produkadmin');
@@ -82,7 +82,7 @@ class Produkadmin extends Controller {
 
     public function tambahprodukadmin()
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
 
         if($this->model('CREATE')->TambahKendaraan($_POST) > 0)
         {
@@ -122,10 +122,12 @@ class Produkadmin extends Controller {
 
             // Check the result and redirect accordingly
             if ($result !== null && $result > 0) {
+                $this->view("template/sessionAdmin");
                 // Jika update berhasil
                 header('Location: ' . BASEURL . '/?controller=Produkadmin');
                 exit;
             } else {
+                $this->view("template/sessionAdmin");
                 // Jika update gagal
                 header('Location: ' . BASEURL . '/?controller=Produkadmin');
                 exit;
