@@ -17,7 +17,7 @@
 
         <div class="container2">
             <?php foreach ($data['destinasi'] as $destinasi) : ?>
-                <a href="<?= BASEURL; ?>/produk">
+                <a href="<?= BASEURL; ?>/?controller=Produk">
                     <div class="box" style="background-image: linear-gradient(rgba(43, 43, 43, 0.8), rgba(48, 48, 48, 0.8)), url(<?= BASEURL; ?>/img/UserImg/<?= $destinasi['foto_kota']; ?>); background-size: cover;">
                         <div class="textbox"><?= $destinasi['nama_kota'] ?></div>
                     </div>

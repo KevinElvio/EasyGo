@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="daftar-kotak">
-                <button class="btn-kotak"><a href="<?= BASEURL; ?>/?controller=login">Coba Gratis!</a></button>
+                <button class="btn-kotak"><a href="<?= BASEURL; ?>/?controller=Login">Coba Gratis!</a></button>
             </div>
         </div>
     </div>
