@@ -20,7 +20,7 @@
             <a href="#">Profil</a>
         </div>
         <div class="login-awal">
-            <button><a href="<?= BASEURL; ?>/?controller=login">Login</a></button>
+            <button><a href="<?= BASEURL; ?>/?controller=Login">Login</a></button>
         </div>
     </div>
 
