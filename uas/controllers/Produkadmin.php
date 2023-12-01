@@ -95,7 +95,7 @@ class Produkadmin extends Controller {
 
     public function update($id_transport)
     {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         $data['ALLProduk'] = $this->model('READ')->AllProdukAdmin($id_transport);
         $this->view("template/navbarrental");
         $this->view('admin/produk/updateproduk',$data);
@@ -103,7 +103,7 @@ class Produkadmin extends Controller {
     }
 
     public function updatedata() {
-        $this->view("template/session");
+        $this->view("template/sessionAdmin");
         // Assuming you have a model for handling data updates
         $produkModel = $this->model('ProdukModel'); // Adjust the model class name based on your actual implementation
 
