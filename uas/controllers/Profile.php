@@ -2,6 +2,7 @@
 
 class Profile extends Controller{
     public function index(){
+        $this->view("template/session");
         // $data['DataProfile'] = $this->model('READ')->DataProfile();
         $this->view("template/navbaruser");
         $this->view("user/profile/profil-user");
@@ -9,6 +10,7 @@ class Profile extends Controller{
     }
 
     public function editprofil(){
+        $this->view("template/session");
         $this->view("template/navbaruser");
         $this->view("user/profile/edit_profil");
         $this->view("template/footeruser");
