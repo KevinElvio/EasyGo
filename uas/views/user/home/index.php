@@ -16,8 +16,8 @@
         <img src="<?= BASEURL; ?>/img/logo.png" alt="">
         <div class="tombol">
             <a href="index.php">Home</a>
-            <a href="#">History</a>
-            <a href="#">Profil</a>
+            <a href="<?= BASEURL;?>/?controller=History">History</a>
+            <a href="<?= BASEURL;?>/?controller=Profile">Profil</a>
         </div>
         <div class="login-awal">
             <button><a href="<?= BASEURL; ?>/?controller=Login">Login</a></button>
